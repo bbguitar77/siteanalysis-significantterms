@@ -1,0 +1,2954 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Stripe: About</title>
+
+    <link rel="stylesheet" type="text/css" href="/assets/site-1b4560dc314af622d95847570b8988d1.css" media="screen" />
+
+    <script type="text/javascript">
+        var _sf_startpt=(new Date()).getTime()
+        var APIValues = {};
+
+    </script>
+    <script type="text/javascript" src="//use.typekit.net/gbh7uto.js"></script>
+    <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+    <script type="application/json" id="mixpanel_config">{&quot;identifier&quot;:&quot;eb71b6171a4f7ed97de9b7a0395b7ca5&quot;}</script>
+<script type="application/json" id="analytics_config">{}</script>
+<script src="https://www.googleadservices.com/pagead/conversion.js"></script>
+<script src="/assets/external_analytics-a9e3d39cd6110aa8c184d9c1f2e5777e.js"></script>
+<script src="/assets/qframe-cb903dc9166e266dc7d9f11d44f5e81a.js"></script>
+<script src="/assets/adroll-2c65ca4279f1eae4a1e4ef09755dc695.js"></script>
+
+</head>
+<body>
+    <div id="background"></div>
+
+    <div id="header">
+        <h1><a href="/">Stripe</a></h1>
+
+
+        <div class="navigation">
+    <div class="signin"><a id='signin' href="https://dashboard.stripe.com/login"><span>Sign In</span></a></div>
+
+  <ul class="global">
+    <li><a href="/docs">Documentation</a></li>
+    <li><a href="https://support.stripe.com">Help &amp; Support</a></li>
+  </ul>
+</div>
+
+    </div> <!-- END HEADER -->
+
+    <div id="about" class="box">
+
+        <div class="title">
+            <h1>About Stripe</h1>
+            <p>
+                Stripe is a developer-friendly way to accept payments online and in mobile apps.<br />We process billions of dollars a year for thousands of companies of all sizes.</p>
+        </div>
+
+        <div id="team" class="clearfix">
+            <a href="https://twitter.com/agmetcalf" target="_blank" id="team-andrew">
+                <span class="bio">
+                    <span class="inner">
+                        <em>Andrew Metcalf</em>
+                              Andrew is taking a break from his hot glue gun to code for
+      Stripe. He studied at Penn and took a detour to McKinsey on the way to
+      San Francisco to help build product at startups.
+
+                    </span>
+                    <span class="arrow"></span>
+                </span>
+
+                <strong>
+                    <span class="frame"></span>
+                    <img src="/img/about/team/andrew.png" width="100" height="100" />
+                    <span class="shadow"></span>
+                </strong>
+            </a>
+            <a href="https://twitter.com/slawley" target="_blank" id="team-spencer">
+                <span class="bio">
+                    <span class="inner">
+                        <em>Spencer Lawley</em>
+                              Spencer previously provided programming support and data management to the
+      Engineering and Oil &amp; Gas industries. He studied Engineering at Dartmouth,
+      and lives in Alaska with his wife, two dogs, and two chickens; they help
+      him provide top-notch support to Stripe users.
+
+                    </span>
+                    <span class="arrow"></span>
+                </span>
+
+                <strong>
+                    <span class="frame"></span>
+                    <img src="/img/about/team/spencer.png" width="100" height="100" />
+                    <span class="shadow"></span>
+                </strong>
+            </a>
+            <a href="https://twitter.com/skipp" target="_blank" id="team-eli">
+                <span class="bio">
+                    <span class="inner">
+                        <em>Eli Skipp</em>
+                              Before Stripe, Eli Skipp studied at CalArts, SAIC, and DASH. Eli is
+      passionate about building things, reading things, hiking up things, and beer.
+
+                    </span>
+                    <span class="arrow"></span>
+                </span>
+
+                <strong>
+                    <span class="frame"></span>
+                    <img src="/img/about/team/eli.png" width="100" height="100" />
+                    <span class="shadow"></span>
+                </strong>
+            </a>
+            <a href="https://twitter.com/slmlb" target="_blank" id="team-sam">
+                <span class="bio">
+                    <span class="inner">
+                        <em>Sam Balinghasay</em>
+                              Sam studied mathematics at MIT and loves karaoke and dancing.
+
+                    </span>
+                    <span class="arrow"></span>
+                </span>
+
+                <strong>
+                    <span class="frame"></span>
+                    <img src="/img/about/team/sam.png" width="100" height="100" />
+                    <span class="shadow"></span>
+                </strong>
+            </a>
+            <a href="http://www.benamy.info/" target="_blank" id="team-dbenamy">
+                <span class="bio">
+                    <span class="inner">
+                        <em>Dan Benamy</em>
+                              Dan loves to build stuff and wants to save the world. He built a log
+      cabin by hand and worked on the first robotic car which finished the
+      Mini Grand Challenge competition.
+
+                    </span>
+                    <span class="arrow"></span>
+                </span>
+
+                <strong>
+                    <span class="frame"></span>
+                    <img src="/img/about/team/dbenamy.png" width="100" height="100" />
+                    <span class="shadow"></span>
+                </strong>
+            </a>
+            <a href="https://twitter.com/storeyobrittany" target="_blank" id="team-brittany">
+                <span class="bio">
+                    <span class="inner">
+                        <em>Brittany Storey</em>
+                              Before joining Stripe, Brittany earned her masters in Visual
+      Arts Administration from NYU. She spends her time proselytizing
+      San Francisco's superiority over NYC.
+
+                    </span>
+                    <span class="arrow"></span>
+                </span>
+
+                <strong>
+                    <span class="frame"></span>
+                    <img src="/img/about/team/brittany.png" width="100" height="100" />
+                    <span class="shadow"></span>
+                </strong>
+            </a>
+            <a href="https://twitter.com/francescabtweet" target="_blank" id="team-francesca">
+                <span class="bio">
+                    <span class="inner">
+                        <em>Francesca Barbera</em>
+                              Francesca works on recruiting at Stripe. She previously spent time
+      at Virgin America and Fitbit, and studied economics
+      at Emory University.
+
+                    </span>
+                    <span class="arrow"></span>
+                </span>
+
+                <strong>
+                    <span class="frame"></span>
+                    <img src="/img/about/team/francesca.png" width="100" height="100" />
+                    <span class="shadow"></span>
+                </strong>
+            </a>
+            <a href="https://twitter.com/anjalipandas" target="_blank" id="team-anjali">
+                <span class="bio">
+                    <span class="inner">
+                        <em>Anjali Khurana</em>
+                              Before Stripe, Anjali worked at Quora and Facebook on all things support
+      and bugs. She also makes amazing desserts.
+
+                    </span>
+                    <span class="arrow"></span>
+                </span>
+
+                <strong>
+                    <span class="frame"></span>
+                    <img src="/img/about/team/anjali.png" width="100" height="100" />
+                    <span class="shadow"></span>
+                </strong>
+            </a>
+            <a href="https://twitter.com/marcprecipice" target="_blank" id="team-marc">
+                <span class="bio">
+                    <span class="inner">
+                        <em>Marc Hedlund</em>
+                              Marc is Stripe's VP Engineering, and he was previously part of Etsy, Wesabe,
+      O'Reilly, and Lucasfilm. He went to Reed College.
+
+                    </span>
+                    <span class="arrow"></span>
+                </span>
+
+                <strong>
+                    <span class="frame"></span>
+                    <img src="/img/about/team/marc.png" width="100" height="100" />
+                    <span class="shadow"></span>
+                </strong>
+            </a>
+            <a href="https://twitter.com/jayeb333" target="_blank" id="team-jason">
+                <span class="bio">
+                    <span class="inner">
+                        <em>Jason Eberle</em>
+                              Jason grew up in Boston, went to school in Rochester NY, and worked at Odopod
+      and Everpix before joining Stripe.
+
+                    </span>
+                    <span class="arrow"></span>
+                </span>
+
+                <strong>
+                    <span class="frame"></span>
+                    <img src="/img/about/team/jason.png" width="100" height="100" />
+                    <span class="shadow"></span>
+                </strong>
+            </a>
+            <a href="https://twitter.com/tonydebok" target="_blank" id="team-tony">
+                <span class="bio">
+                    <span class="inner">
+                        <em>Tony Debok</em>
+                              Tony was a professional soccer player before becoming a professional chef,
+      and now hacks on food infrastructure at Stripe.
+
+                    </span>
+                    <span class="arrow"></span>
+                </span>
+
+                <strong>
+                    <span class="frame"></span>
+                    <img src="/img/about/team/tony.png" width="100" height="100" />
+                    <span class="shadow"></span>
+                </strong>
+            </a>
+            <a href="https://twitter.com/Al2getherBernie" target="_blank" id="team-bernie">
+                <span class="bio">
+                    <span class="inner">
+                        <em>Bernie Schlotfeldt</em>
+                              Bernie helped social change non-profits collaborate effectively before
+      joining the support team at Stripe. He studied at Reed College.
+
+                    </span>
+                    <span class="arrow"></span>
+                </span>
+
+                <strong>
+                    <span class="frame"></span>
+                    <img src="/img/about/team/bernie.png" width="100" height="100" />
+                    <span class="shadow"></span>
+                </strong>
+            </a>
+            <a href="https://twitter.com/eekedm" target="_blank" id="team-eeke">
+                <span class="bio">
+                    <span class="inner">
+                        <em>Eeke de Milliano</em>
+                              Eeke studied Government and Arabic at Harvard and worked at McKinsey &amp;
+      Company before joining Stripe. She hails from the Netherlands but grew
+      up mostly in Africa.
+
+                    </span>
+                    <span class="arrow"></span>
+                </span>
+
+                <strong>
+                    <span class="frame"></span>
+                    <img src="/img/about/team/eeke.png" width="100" height="100" />
+                    <span class="shadow"></span>
+                </strong>
+            </a>
+            <a href="https://twitter.com/padolsey" target="_blank" id="team-james">
+                <span class="bio">
+                    <span class="inner">
+                        <em>James Padolsey</em>
+                              James enjoys silly JavaScript things and cycling.
+
+                    </span>
+                    <span class="arrow"></span>
+                </span>
+
+                <strong>
+                    <span class="frame"></span>
+                    <img src="/img/about/team/james.png" width="100" height="100" />
+                    <span class="shadow"></span>
+                </strong>
+            </a>
+            <a href="https://twitter.com/ausdemfenster" target="_blank" id="team-tiffany">
+                <span class="bio">
+                    <span class="inner">
+                        <em>Tiffany Fenster</em>
+                              When she's not recruiting for Stripe, Tiffany enjoys fostering eensy kittens
+      and attending live music/theater events. Previously, Tiffany studied film
+      theory at Swarthmore and recruited scientists at Sloan Kettering Cancer Center
+      in New York.
+
+                    </span>
+                    <span class="arrow"></span>
+                </span>
+
+                <strong>
+                    <span class="frame"></span>
+                    <img src="/img/about/team/tiffany.png" width="100" height="100" />
+                    <span class="shadow"></span>
+                </strong>
+            </a>
+            <a href="https://twitter.com/briansze" target="_blank" id="team-bsze">
+                <span class="bio">
+                    <span class="inner">
+                        <em>Brian Sze</em>
+                              Brian previously was Head of Analytics at TrialPay and worked on the
+      Analytics team for the Obama campaign. He studied economics at Stanford.
+
+                    </span>
+                    <span class="arrow"></span>
+                </span>
+
+                <strong>
+                    <span class="frame"></span>
+                    <img src="/img/about/team/bsze.png" width="100" height="100" />
+                    <span class="shadow"></span>
+                </strong>
+            </a>
+            <a href="https://twitter.com/aitskovi" target="_blank" id="team-aitskovi">
+                <span class="bio">
+                    <span class="inner">
+                        <em>Avi Itskovich</em>
+                              Before joining Stripe Avi studied at Waterloo and completed a slew of internships.
+      He grew up in Canada, where celsius and kilometres are the norm.
+
+                    </span>
+                    <span class="arrow"></span>
+                </span>
+
+                <strong>
+                    <span class="frame"></span>
+                    <img src="/img/about/team/aitskovi.png" width="100" height="100" />
+                    <span class="shadow"></span>
+                </strong>
+            </a>
+            <a href="https://twitter.com/_sheenajain" target="_blank" id="team-sheenajain">
+                <span class="bio">
+                    <span class="inner">
+                        <em>Sheena Jain</em>
+                              Sheena comes to Stripe from a background in law and social
+      entrepreneurship. She has a J.D. from Villanova University and sits on
+      the board of SPARK.
+
+                    </span>
+                    <span class="arrow"></span>
+                </span>
+
+                <strong>
+                    <span class="frame"></span>
+                    <img src="/img/about/team/sheenajain.png" width="100" height="100" />
+                    <span class="shadow"></span>
+                </strong>
+            </a>
+            <a href="https://twitter.com/_russelldavis" target="_blank" id="team-russell">
+                <span class="bio">
+                    <span class="inner">
+                        <em>Russell Davis</em>
+                              Previously at Hipmunk, Plaxo, and Microsoft, Russell has been coding
+      since age 12. He studied Computer Science at BYU.
+
+                    </span>
+                    <span class="arrow"></span>
+                </span>
+
+                <strong>
+                    <span class="frame"></span>
+                    <img src="/img/about/team/russell.png" width="100" height="100" />
+                    <span class="shadow"></span>
+                </strong>
+            </a>
+            <a href="https://twitter.com/phlntn" target="_blank" id="team-pa">
+                <span class="bio">
+                    <span class="inner">
+                        <em>Philipp Antoni</em>
+                              Philipp is an icon and user interface designer from Austria who
+      previously worked with the Macintosh Business Unit at Microsoft.
+
+                    </span>
+                    <span class="arrow"></span>
+                </span>
+
+                <strong>
+                    <span class="frame"></span>
+                    <img src="/img/about/team/pa.png" width="100" height="100" />
+                    <span class="shadow"></span>
+                </strong>
+            </a>
+            <a href="https://twitter.com/thisisfranklin" target="_blank" id="team-franklin">
+                <span class="bio">
+                    <span class="inner">
+                        <em>Franklin Hu</em>
+                              Franklin likes working on distributed systems, eating food, and
+      hanging out with red pandas.
+
+                    </span>
+                    <span class="arrow"></span>
+                </span>
+
+                <strong>
+                    <span class="frame"></span>
+                    <img src="/img/about/team/franklin.png" width="100" height="100" />
+                    <span class="shadow"></span>
+                </strong>
+            </a>
+            <a href="https://twitter.com/OwenCadigan" target="_blank" id="team-owen">
+                <span class="bio">
+                    <span class="inner">
+                        <em>Owen Cadigan</em>
+                              Originally from Oakland, Owen now helps to feed people of all stripes.
+
+                    </span>
+                    <span class="arrow"></span>
+                </span>
+
+                <strong>
+                    <span class="frame"></span>
+                    <img src="/img/about/team/owen.png" width="100" height="100" />
+                    <span class="shadow"></span>
+                </strong>
+            </a>
+            <a href="https://twitter.com/andyy" target="_blank" id="team-ay">
+                <span class="bio">
+                    <span class="inner">
+                        <em>Andy Young</em>
+                              Andy previously founded GroupSpaces, created and grew Selective Tweets to a million
+      users and first started programming on a ZX Spectrum. He grew up in the Shropshire
+      hills, studied Computer Science at Oxford, and loves living in London.
+
+                    </span>
+                    <span class="arrow"></span>
+                </span>
+
+                <strong>
+                    <span class="frame"></span>
+                    <img src="/img/about/team/ay.png" width="100" height="100" />
+                    <span class="shadow"></span>
+                </strong>
+            </a>
+            <a href="https://twitter.com/danielhfrank" target="_blank" id="team-df">
+                <span class="bio">
+                    <span class="inner">
+                        <em>Dan Frank</em>
+                              Dan works on the data team at Stripe, and previously worked at Bitly
+      and Trendrr. He spends a lot of time on mountains.
+
+                    </span>
+                    <span class="arrow"></span>
+                </span>
+
+                <strong>
+                    <span class="frame"></span>
+                    <img src="/img/about/team/df.png" width="100" height="100" />
+                    <span class="shadow"></span>
+                </strong>
+            </a>
+            <a href="https://twitter.com/ArjunNYC" target="_blank" id="team-arjun">
+                <span class="bio">
+                    <span class="inner">
+                        <em>Arjun Shah</em>
+                              Before Stripe, Arjun worked in private equity at Blackstone and in e-commerce at Twice.
+      He studied at Penn and Harvard.
+
+                    </span>
+                    <span class="arrow"></span>
+                </span>
+
+                <strong>
+                    <span class="frame"></span>
+                    <img src="/img/about/team/arjun.png" width="100" height="100" />
+                    <span class="shadow"></span>
+                </strong>
+            </a>
+            <a href="https://twitter.com/patrickc" target="_blank" id="team-patrick">
+                <span class="bio">
+                    <span class="inner">
+                        <em>Patrick Collison</em>
+                              Before Stripe, Patrick co-founded Auctomatic and wrote Encyclopedia. He
+      studied math at MIT.
+
+                    </span>
+                    <span class="arrow"></span>
+                </span>
+
+                <strong>
+                    <span class="frame"></span>
+                    <img src="/img/about/team/patrick.png" width="100" height="100" />
+                    <span class="shadow"></span>
+                </strong>
+            </a>
+            <a href="https://twitter.com/jpellerin" target="_blank" id="team-jhp">
+                <span class="bio">
+                    <span class="inner">
+                        <em>Jason Pellerin</em>
+                              Jason is a New Englander from north of the Sox/Yankee line. When not 
+      bossing computers around, he reads a lot of SFF. While bossing computers
+      around, he drinks a lot of tea. 
+
+                    </span>
+                    <span class="arrow"></span>
+                </span>
+
+                <strong>
+                    <span class="frame"></span>
+                    <img src="/img/about/team/jhp.png" width="100" height="100" />
+                    <span class="shadow"></span>
+                </strong>
+            </a>
+            <a href="https://twitter.com/v_cogan" target="_blank" id="team-vince">
+                <span class="bio">
+                    <span class="inner">
+                        <em>Vince Cogan</em>
+                              Vince studied mathematics at UC Santa Cruz and was a software developer
+      before pursuing a career as an attorney. Prior to joining Stripe, he was Senior Counsel
+      at Silicon Valley Bank.
+
+                    </span>
+                    <span class="arrow"></span>
+                </span>
+
+                <strong>
+                    <span class="frame"></span>
+                    <img src="/img/about/team/vince.png" width="100" height="100" />
+                    <span class="shadow"></span>
+                </strong>
+            </a>
+            <a href="https://twitter.com/getCos" target="_blank" id="team-cos">
+                <span class="bio">
+                    <span class="inner">
+                        <em>Cosmin Nicolaescu</em>
+                              Cos is a new and excited resident of SF. Prior to Stripe, he built large-scale services
+      at Microsoft, and before that he studied CS at Drexel University. When not on his laptop,
+      he enjoys sports, running, traveling and tasting delicious food.
+
+                    </span>
+                    <span class="arrow"></span>
+                </span>
+
+                <strong>
+                    <span class="frame"></span>
+                    <img src="/img/about/team/cos.png" width="100" height="100" />
+                    <span class="shadow"></span>
+                </strong>
+            </a>
+            <a href="https://twitter.com/traylornation" target="_blank" id="team-taylorm">
+                <span class="bio">
+                    <span class="inner">
+                        <em>Taylor Maurits</em>
+                              Taylor Maurits is an academic nomad that loves stand-up comedy,
+      Meryl Streep and pick-up basketball games.
+
+                    </span>
+                    <span class="arrow"></span>
+                </span>
+
+                <strong>
+                    <span class="frame"></span>
+                    <img src="/img/about/team/taylorm.png" width="100" height="100" />
+                    <span class="shadow"></span>
+                </strong>
+            </a>
+            <a href="https://twitter.com/yitian83000" target="_blank" id="team-alice">
+                <span class="bio">
+                    <span class="inner">
+                        <em>Alice Wang</em>
+                              Previously, Alice worked on social impact assessments at New Sector Alliance. She
+      studied Psychology and Sociology at Stanford.
+
+                    </span>
+                    <span class="arrow"></span>
+                </span>
+
+                <strong>
+                    <span class="frame"></span>
+                    <img src="/img/about/team/alice.png" width="100" height="100" />
+                    <span class="shadow"></span>
+                </strong>
+            </a>
+            <a href="https://twitter.com/LeighDeacon" target="_blank" id="team-leigh">
+                <span class="bio">
+                    <span class="inner">
+                        <em>Leigh Deacon</em>
+                              Prior to Stripe, Leigh provided support at MIT, Ringling Bros., and Steam
+      Heavy Industries. She enjoys getting lost in books and raiding in Azeroth.
+
+                    </span>
+                    <span class="arrow"></span>
+                </span>
+
+                <strong>
+                    <span class="frame"></span>
+                    <img src="/img/about/team/leigh.png" width="100" height="100" />
+                    <span class="shadow"></span>
+                </strong>
+            </a>
+            <a href="https://twitter.com/kbrinkley2" target="_blank" id="team-kay">
+                <span class="bio">
+                    <span class="inner">
+                        <em>Kay Brinkley</em>
+                              Originally from England, Kay has helped many payment companies with
+      compliance and risk strategies.
+
+                    </span>
+                    <span class="arrow"></span>
+                </span>
+
+                <strong>
+                    <span class="frame"></span>
+                    <img src="/img/about/team/kay.png" width="100" height="100" />
+                    <span class="shadow"></span>
+                </strong>
+            </a>
+            <a href="https://twitter.com/larryullman" target="_blank" id="team-larry">
+                <span class="bio">
+                    <span class="inner">
+                        <em>Larry Ullman</em>
+                              An author and developer, Larry helped others integrate Stripe before
+      joining the Support team in that same capacity.
+
+                    </span>
+                    <span class="arrow"></span>
+                </span>
+
+                <strong>
+                    <span class="frame"></span>
+                    <img src="/img/about/team/larry.png" width="100" height="100" />
+                    <span class="shadow"></span>
+                </strong>
+            </a>
+            <a href="https://twitter.com/emilytweedfield" target="_blank" id="team-emilyf">
+                <span class="bio">
+                    <span class="inner">
+                        <em>Emily Field</em>
+                              Before joining Stripe for the summer, Emily finished up her junior
+      year at Stanford where she studies Econ and CS. She’s originally from
+      Los Angeles and probably has more siblings than you.
+
+                    </span>
+                    <span class="arrow"></span>
+                </span>
+
+                <strong>
+                    <span class="frame"></span>
+                    <img src="/img/about/team/emilyf.png" width="100" height="100" />
+                    <span class="shadow"></span>
+                </strong>
+            </a>
+            <a href="https://twitter.com/doreenh" target="_blank" id="team-doreen">
+                <span class="bio">
+                    <span class="inner">
+                        <em>Doreen Hoang</em>
+                              Doreen works on partnerships at Stripe. Previously, she was at eBay and
+      studied economics at Stanford. She enjoys playing drums and percussion.
+
+                    </span>
+                    <span class="arrow"></span>
+                </span>
+
+                <strong>
+                    <span class="frame"></span>
+                    <img src="/img/about/team/doreen.png" width="100" height="100" />
+                    <span class="shadow"></span>
+                </strong>
+            </a>
+            <a href="https://twitter.com/anyharder" target="_blank" id="team-ann">
+                <span class="bio">
+                    <span class="inner">
+                        <em>Ann Harter</em>
+                              Prior to Stripe, Ann taught statistics to college kids and developed 
+      psychology's first measure of aesthetic personality. She always checks 
+      out too many books from the library at once.
+
+                    </span>
+                    <span class="arrow"></span>
+                </span>
+
+                <strong>
+                    <span class="frame"></span>
+                    <img src="/img/about/team/ann.png" width="100" height="100" />
+                    <span class="shadow"></span>
+                </strong>
+            </a>
+            <a href="https://twitter.com/avibryant" target="_blank" id="team-avi">
+                <span class="bio">
+                    <span class="inner">
+                        <em>Avi Bryant</em>
+                              Avi grew up in Vancouver, and now lives on a nearby island. Before Stripe,
+      he worked on tools and infrastructure at DabbleDB, Twitter, and Etsy.
+      He used to help Patrick with his Smalltalk woes back in the day.
+
+                    </span>
+                    <span class="arrow"></span>
+                </span>
+
+                <strong>
+                    <span class="frame"></span>
+                    <img src="/img/about/team/avi.png" width="100" height="100" />
+                    <span class="shadow"></span>
+                </strong>
+            </a>
+            <a href="https://twitter.com/jpstockwell" target="_blank" id="team-jp">
+                <span class="bio">
+                    <span class="inner">
+                        <em>Patrick Stockwell</em>
+                              Before joining Stripe, Patrick founded Volta, a CRM for phone-centric
+      businesses. He was previously a Stripe user and has been building web
+      products since 1997.
+
+                    </span>
+                    <span class="arrow"></span>
+                </span>
+
+                <strong>
+                    <span class="frame"></span>
+                    <img src="/img/about/team/jp.png" width="100" height="100" />
+                    <span class="shadow"></span>
+                </strong>
+            </a>
+            <a href="https://twitter.com/davidliammoran" target="_blank" id="team-david">
+                <span class="bio">
+                    <span class="inner">
+                        <em>David Moran</em>
+                              David grew up in Brooklyn and previously ran an indie bookstore chain in New York
+      City. When not helping out with Support for Stripe, he digs reading, writing, running,
+      and rolling dice.
+
+                    </span>
+                    <span class="arrow"></span>
+                </span>
+
+                <strong>
+                    <span class="frame"></span>
+                    <img src="/img/about/team/david.png" width="100" height="100" />
+                    <span class="shadow"></span>
+                </strong>
+            </a>
+            <a href="https://twitter.com/dvlamoen" target="_blank" id="team-diede">
+                <span class="bio">
+                    <span class="inner">
+                        <em>Diede van Lamoen</em>
+                              Diede studied computer science at Dartmouth, co-founded Groupon
+      China, and has lived on 5 continents.
+
+                    </span>
+                    <span class="arrow"></span>
+                </span>
+
+                <strong>
+                    <span class="frame"></span>
+                    <img src="/img/about/team/diede.png" width="100" height="100" />
+                    <span class="shadow"></span>
+                </strong>
+            </a>
+            <a href="https://twitter.com/colinmarc" target="_blank" id="team-colin">
+                <span class="bio">
+                    <span class="inner">
+                        <em>Colin Marc</em>
+                              Colin is a graduate of Hacker School batch[2]. His interests include
+      board games, Tuvan throat singing, and iambic tetrameter.
+
+                    </span>
+                    <span class="arrow"></span>
+                </span>
+
+                <strong>
+                    <span class="frame"></span>
+                    <img src="/img/about/team/colin.png" width="100" height="100" />
+                    <span class="shadow"></span>
+                </strong>
+            </a>
+            <a href="https://stripe.com/about#alison" target="_blank" id="team-alison">
+                <span class="bio">
+                    <span class="inner">
+                        <em>Alison Harrington</em>
+                              Born and raised in the East Bay, Alison enjoys baking and spends her
+      spare time relaxing with her family and 3 dogs.
+
+                    </span>
+                    <span class="arrow"></span>
+                </span>
+
+                <strong>
+                    <span class="frame"></span>
+                    <img src="/img/about/team/alison.png" width="100" height="100" />
+                    <span class="shadow"></span>
+                </strong>
+            </a>
+            <a href="https://twitter.com/snoble" target="_blank" id="team-snoble">
+                <span class="bio">
+                    <span class="inner">
+                        <em>Steven Noble</em>
+                              Steve hacks on analytics at Stripe, and previously started
+      the Data Team at Shopify. He studied Math at Dalhousie University.
+
+                    </span>
+                    <span class="arrow"></span>
+                </span>
+
+                <strong>
+                    <span class="frame"></span>
+                    <img src="/img/about/team/snoble.png" width="100" height="100" />
+                    <span class="shadow"></span>
+                </strong>
+            </a>
+            <a href="https://www.sfcv.org/author/jessica-balik" target="_blank" id="team-jbalik">
+                <span class="bio">
+                    <span class="inner">
+                        <em>Jessica Balik</em>
+                              Jessica works on the risk team at Stripe. She is also a classically trained
+      flutist and holds a PhD in music history from Stanford.
+
+                    </span>
+                    <span class="arrow"></span>
+                </span>
+
+                <strong>
+                    <span class="frame"></span>
+                    <img src="/img/about/team/jbalik.png" width="100" height="100" />
+                    <span class="shadow"></span>
+                </strong>
+            </a>
+            <a href="https://twitter.com/Hazelcough" target="_blank" id="team-michelle">
+                <span class="bio">
+                    <span class="inner">
+                        <em>Michelle Bu</em>
+                              Michelle studied EECS at UC Berkeley. She used to have a chicken.
+
+                    </span>
+                    <span class="arrow"></span>
+                </span>
+
+                <strong>
+                    <span class="frame"></span>
+                    <img src="/img/about/team/michelle.png" width="100" height="100" />
+                    <span class="shadow"></span>
+                </strong>
+            </a>
+            <a href="https://github.com/btidor" target="_blank" id="team-btidor">
+                <span class="bio">
+                    <span class="inner">
+                        <em>Benjamin Tidor</em>
+                              Benjamin is an intern from MIT. He enjoys music, Shakespeare, and the creative abuse
+      of software systems.
+
+                    </span>
+                    <span class="arrow"></span>
+                </span>
+
+                <strong>
+                    <span class="frame"></span>
+                    <img src="/img/about/team/btidor.png" width="100" height="100" />
+                    <span class="shadow"></span>
+                </strong>
+            </a>
+            <a href="https://twitter.com/cjc" target="_blank" id="team-cristina">
+                <span class="bio">
+                    <span class="inner">
+                        <em>Cristina Cordova</em>
+                              Prior to joining Stripe, Cristina led business development at Pulse and
+      also worked at Google and Tapulous. She studied political science at
+      Stanford.
+
+                    </span>
+                    <span class="arrow"></span>
+                </span>
+
+                <strong>
+                    <span class="frame"></span>
+                    <img src="/img/about/team/cristina.png" width="100" height="100" />
+                    <span class="shadow"></span>
+                </strong>
+            </a>
+            <a href="https://twitter.com/guayosr" target="_blank" id="team-eduardo">
+                <span class="bio">
+                    <span class="inner">
+                        <em>Eduardo Serrano</em>
+                              Eduardo grew up in Mexico City, where he also helped to launch
+      Startup Weekend. Prior to joining Stripe, Eduardo worked on payments
+      at McKinsey.
+
+                    </span>
+                    <span class="arrow"></span>
+                </span>
+
+                <strong>
+                    <span class="frame"></span>
+                    <img src="/img/about/team/eduardo.png" width="100" height="100" />
+                    <span class="shadow"></span>
+                </strong>
+            </a>
+            <a href="https://twitter.com/nelhage" target="_blank" id="team-nelhage">
+                <span class="bio">
+                    <span class="inner">
+                        <em>Nelson Elhage</em>
+                              Nelson previously wrote rebootless kernel updates at Ksplice and studied
+      computer science at MIT. He built livegrep in his spare time.
+
+                    </span>
+                    <span class="arrow"></span>
+                </span>
+
+                <strong>
+                    <span class="frame"></span>
+                    <img src="/img/about/team/nelhage.png" width="100" height="100" />
+                    <span class="shadow"></span>
+                </strong>
+            </a>
+            <a href="https://twitter.com/andrew2liu" target="_blank" id="team-drew">
+                <span class="bio">
+                    <span class="inner">
+                        <em>Andrew Liu</em>
+                              Andrew studies math and computer science at Harvard. He enjoys thinking about the impact of
+      science, looking at data, and writing. He was previously at
+      Udacity and the Stanford School of Medicine.
+
+                    </span>
+                    <span class="arrow"></span>
+                </span>
+
+                <strong>
+                    <span class="frame"></span>
+                    <img src="/img/about/team/drew.png" width="100" height="100" />
+                    <span class="shadow"></span>
+                </strong>
+            </a>
+            <a href="https://twitter.com/raycmorgan" target="_blank" id="team-ray">
+                <span class="bio">
+                    <span class="inner">
+                        <em>Ray Morgan</em>
+                              Before Stripe, Ray worked at Zappos.com helping the world get more shoes.
+      He is also a proud new father.
+
+                    </span>
+                    <span class="arrow"></span>
+                </span>
+
+                <strong>
+                    <span class="frame"></span>
+                    <img src="/img/about/team/ray.png" width="100" height="100" />
+                    <span class="shadow"></span>
+                </strong>
+            </a>
+            <a href="https://www.linkedin.com/in/jnkuhn" target="_blank" id="team-jk">
+                <span class="bio">
+                    <span class="inner">
+                        <em>Jonathan Kuhn</em>
+                              Jonathan spent his childhood on stage and playing dress up and pursued
+      that passion at Fordham University in NYC. Jonathan is currently based
+      in Hamburg, Germany, and loves absorbing new cultures and history
+      by traveling regularly.
+
+                    </span>
+                    <span class="arrow"></span>
+                </span>
+
+                <strong>
+                    <span class="frame"></span>
+                    <img src="/img/about/team/jk.png" width="100" height="100" />
+                    <span class="shadow"></span>
+                </strong>
+            </a>
+            <a href="https://twitter.com/jeremydhoon" target="_blank" id="team-jhoon">
+                <span class="bio">
+                    <span class="inner">
+                        <em>Jeremy Hoon</em>
+                              Jeremy loves cycling, cooking, and building computing systems. He previously
+      worked on infrastructure at Facebook and studied CS at Harvard.
+
+                    </span>
+                    <span class="arrow"></span>
+                </span>
+
+                <strong>
+                    <span class="frame"></span>
+                    <img src="/img/about/team/jhoon.png" width="100" height="100" />
+                    <span class="shadow"></span>
+                </strong>
+            </a>
+            <a href="https://twitter.com/kelleyrivoire" target="_blank" id="team-kelley">
+                <span class="bio">
+                    <span class="inner">
+                        <em>Kelley Rivoire</em>
+                              Kelley works on risk analysis at Stripe. She received a Ph.D. in
+      Electrical Engineering from Stanford for work on nanophotonics,
+      and continued that work at HP Labs.
+
+                    </span>
+                    <span class="arrow"></span>
+                </span>
+
+                <strong>
+                    <span class="frame"></span>
+                    <img src="/img/about/team/kelley.png" width="100" height="100" />
+                    <span class="shadow"></span>
+                </strong>
+            </a>
+            <a href="https://twitter.com/epang33" target="_blank" id="team-erica">
+                <span class="bio">
+                    <span class="inner">
+                        <em>Erica Pang</em>
+                              Erica previously worked partnerships and product at Yub, a card-linked
+      offers platform acquired by Coupons.com. She is a proud graduate of
+      UC Berkeley - Go Bears!
+
+                    </span>
+                    <span class="arrow"></span>
+                </span>
+
+                <strong>
+                    <span class="frame"></span>
+                    <img src="/img/about/team/erica.png" width="100" height="100" />
+                    <span class="shadow"></span>
+                </strong>
+            </a>
+            <a href="https://twitter.com/FoodnWords" target="_blank" id="team-moni">
+                <span class="bio">
+                    <span class="inner">
+                        <em>Moníca Brown</em>
+                              Moníca has been living in NYC for the last several years and is glad
+      to be back on the west coast. She likes to convince herself that
+      running is fun, make people laugh and smile, and create natural
+      health and beauty recipes in her spare time.
+
+                    </span>
+                    <span class="arrow"></span>
+                </span>
+
+                <strong>
+                    <span class="frame"></span>
+                    <img src="/img/about/team/moni.png" width="100" height="100" />
+                    <span class="shadow"></span>
+                </strong>
+            </a>
+            <a href="https://twitter.com/andrewpthorp" target="_blank" id="team-apt">
+                <span class="bio">
+                    <span class="inner">
+                        <em>Andrew Thorp</em>
+                              Andrew studied Computer Science at Liberty University. Before joining Stripe,
+      he was a developer at Pure Charity and Ace of Sales. He enjoys reading,
+      Philadelphia sports, running, and spending time with his wife and son in Nashville.
+
+                    </span>
+                    <span class="arrow"></span>
+                </span>
+
+                <strong>
+                    <span class="frame"></span>
+                    <img src="/img/about/team/apt.png" width="100" height="100" />
+                    <span class="shadow"></span>
+                </strong>
+            </a>
+            <a href="https://twitter.com/qookins" target="_blank" id="team-q">
+                <span class="bio">
+                    <span class="inner">
+                        <em>Q Kuhns</em>
+                              Before Stripe, Q worked in forensics, emergency management, research
+      administration, and education. She has a M.S. in forensic and biological
+      anthropology and now spends her free time acting, singing, and playing
+      with her corghuahua.
+
+                    </span>
+                    <span class="arrow"></span>
+                </span>
+
+                <strong>
+                    <span class="frame"></span>
+                    <img src="/img/about/team/q.png" width="100" height="100" />
+                    <span class="shadow"></span>
+                </strong>
+            </a>
+            <a href="https://twitter.com/sidd" target="_blank" id="team-sidd">
+                <span class="bio">
+                    <span class="inner">
+                        <em>Siddarth Chandrasekaran</em>
+                              Sidd enjoys hacking on anything security-related. He studied computer
+      science at Harvard.
+
+                    </span>
+                    <span class="arrow"></span>
+                </span>
+
+                <strong>
+                    <span class="frame"></span>
+                    <img src="/img/about/team/sidd.png" width="100" height="100" />
+                    <span class="shadow"></span>
+                </strong>
+            </a>
+            <a href="http://www.linkedin.com/pub/elizabeth-hounshell/8/b33/60b" target="_blank" id="team-lizz">
+                <span class="bio">
+                    <span class="inner">
+                        <em>Lizz Hounshell</em>
+                              Lizz works on recruiting at Stripe. Previously, she worked at the
+      SF Opera and studied at Carnegie Mellon. She used to be a professional harpist.
+
+                    </span>
+                    <span class="arrow"></span>
+                </span>
+
+                <strong>
+                    <span class="frame"></span>
+                    <img src="/img/about/team/lizz.png" width="100" height="100" />
+                    <span class="shadow"></span>
+                </strong>
+            </a>
+            <a href="https://twitter.com/michaelvillar" target="_blank" id="team-mv">
+                <span class="bio">
+                    <span class="inner">
+                        <em>Michaël Villar</em>
+                              Michaël co-founded Kickoff, a collaboration app for iOS and OS X acquired by
+      Stripe in 2013. Michaël is originally from Belgium and studied Computer Engineering
+      at Université Catholique de Louvain.
+
+                    </span>
+                    <span class="arrow"></span>
+                </span>
+
+                <strong>
+                    <span class="frame"></span>
+                    <img src="/img/about/team/mv.png" width="100" height="100" />
+                    <span class="shadow"></span>
+                </strong>
+            </a>
+            <a href="http://instagram.com/the_carrie_b" target="_blank" id="team-carrie">
+                <span class="bio">
+                    <span class="inner">
+                        <em>Carrie Bentley</em>
+                              Carrie worked at Silicon Valley Bank before joining Stripe's
+      legal team. When not digging through paperwork, Carrie can be
+      found undertaking all types of DIY projects and migrating up and
+      down the California coast.
+
+                    </span>
+                    <span class="arrow"></span>
+                </span>
+
+                <strong>
+                    <span class="frame"></span>
+                    <img src="/img/about/team/carrie.png" width="100" height="100" />
+                    <span class="shadow"></span>
+                </strong>
+            </a>
+            <a href="https://twitter.com/jorgeo" target="_blank" id="team-jorge">
+                <span class="bio">
+                    <span class="inner">
+                        <em>Jorge Ortiz</em>
+                              Jorge grew up in Mexico, studied Symbolic Systems at Stanford, and previously
+      worked at Foursquare and LinkedIn.
+
+                    </span>
+                    <span class="arrow"></span>
+                </span>
+
+                <strong>
+                    <span class="frame"></span>
+                    <img src="/img/about/team/jorge.png" width="100" height="100" />
+                    <span class="shadow"></span>
+                </strong>
+            </a>
+            <a href="https://twitter.com/slexaxton" target="_blank" id="team-alex">
+                <span class="bio">
+                    <span class="inner">
+                        <em>Alex Sexton</em>
+                              Alex studied Computer Science at The University of Texas. He contributes
+      to open source as a member of the jQuery and Modernizr teams.
+
+                    </span>
+                    <span class="arrow"></span>
+                </span>
+
+                <strong>
+                    <span class="frame"></span>
+                    <img src="/img/about/team/alex.png" width="100" height="100" />
+                    <span class="shadow"></span>
+                </strong>
+            </a>
+            <a href="https://twitter.com/thairu" target="_blank" id="team-thairu">
+                <span class="bio">
+                    <span class="inner">
+                        <em>Thairu</em>
+                              Thairu grew up in Kenya, studied computer science at Harvard, and
+      previously built systems at Microsoft and Optify.
+
+                    </span>
+                    <span class="arrow"></span>
+                </span>
+
+                <strong>
+                    <span class="frame"></span>
+                    <img src="/img/about/team/thairu.png" width="100" height="100" />
+                    <span class="shadow"></span>
+                </strong>
+            </a>
+            <a href="https://twitter.com/bdc" target="_blank" id="team-bdc">
+                <span class="bio">
+                    <span class="inner">
+                        <em>Benjamin De Cock</em>
+                              Ben focuses on user interface and icon design. He studied at the College
+      of Advertising and Design in Brussels.
+
+                    </span>
+                    <span class="arrow"></span>
+                </span>
+
+                <strong>
+                    <span class="frame"></span>
+                    <img src="/img/about/team/bdc.png" width="100" height="100" />
+                    <span class="shadow"></span>
+                </strong>
+            </a>
+            <a href="https://twitter.com/Christina_Mairs" target="_blank" id="team-cmairs">
+                <span class="bio">
+                    <span class="inner">
+                        <em>Christina Mairs</em>
+                              Christina studied Visual and Environmental Studies at Harvard and
+      Educational Multimedia at Queen's University Belfast. She enjoys
+      traveling, gift wrapping, and supporting
+      our users at Stripe!
+
+                    </span>
+                    <span class="arrow"></span>
+                </span>
+
+                <strong>
+                    <span class="frame"></span>
+                    <img src="/img/about/team/cmairs.png" width="100" height="100" />
+                    <span class="shadow"></span>
+                </strong>
+            </a>
+            <a href="https://twitter.com/darraghbuckley" target="_blank" id="team-darragh">
+                <span class="bio">
+                    <span class="inner">
+                        <em>Darragh Buckley</em>
+                              Darragh previously spent time at Lehman Brothers and studied mechanical
+      engineering at MIT.
+
+                    </span>
+                    <span class="arrow"></span>
+                </span>
+
+                <strong>
+                    <span class="frame"></span>
+                    <img src="/img/about/team/darragh.png" width="100" height="100" />
+                    <span class="shadow"></span>
+                </strong>
+            </a>
+            <a href="https://twitter.com/gastro_nerd" target="_blank" id="team-jessica">
+                <span class="bio">
+                    <span class="inner">
+                        <em>Jessica Lattif</em>
+                              Jessica has an MS in nutrition, and co-founded a sustainable seafood business
+      with her husband in 2012. Before joining Stripe, she completed a software
+      engineering fellowship at Hackbright Academy.
+
+                    </span>
+                    <span class="arrow"></span>
+                </span>
+
+                <strong>
+                    <span class="frame"></span>
+                    <img src="/img/about/team/jessica.png" width="100" height="100" />
+                    <span class="shadow"></span>
+                </strong>
+            </a>
+            <a href="https://twitter.com/tetrakazi" target="_blank" id="team-karla">
+                <span class="bio">
+                    <span class="inner">
+                        <em>Karla Burnett</em>
+                              Karla is from Sydney originally, but ironically loves skiing and snow
+      boarding. When there's no snow around, she enjoys orienteering, cycling,
+      and dabbling in languages.
+
+                    </span>
+                    <span class="arrow"></span>
+                </span>
+
+                <strong>
+                    <span class="frame"></span>
+                    <img src="/img/about/team/karla.png" width="100" height="100" />
+                    <span class="shadow"></span>
+                </strong>
+            </a>
+            <a href="https://twitter.com/angie_lal" target="_blank" id="team-angie">
+                <span class="bio">
+                    <span class="inner">
+                        <em>Angie Lal</em>
+                              Before Stripe, Angie decided she'd rather debug code than humans in
+      medical school, and so she worked as a developer at One Kings Lane.
+      She enjoys traveling, playing the tabla, and volunteering.
+
+                    </span>
+                    <span class="arrow"></span>
+                </span>
+
+                <strong>
+                    <span class="frame"></span>
+                    <img src="/img/about/team/angie.png" width="100" height="100" />
+                    <span class="shadow"></span>
+                </strong>
+            </a>
+            <a href="https://twitter.com/ludwig" target="_blank" id="team-ludwig">
+                <span class="bio">
+                    <span class="inner">
+                        <em>Ludwig Pettersson</em>
+                              Ludwig hacked on Cappuccino from an early age, and released Observer, a
+      real-time version of Google Analytics, while still in high school. He
+      works on design at Stripe.
+
+                    </span>
+                    <span class="arrow"></span>
+                </span>
+
+                <strong>
+                    <span class="frame"></span>
+                    <img src="/img/about/team/ludwig.png" width="100" height="100" />
+                    <span class="shadow"></span>
+                </strong>
+            </a>
+            <a href="http://www.daniellesucher.com/" target="_blank" id="team-d">
+                <span class="bio">
+                    <span class="inner">
+                        <em>Danielle Sucher</em>
+                              Danielle is a graduate of Hacker School batch[2]. Her hobbies tend
+      to include fire and/or stinging insects. She likes solving puzzles
+      and building stuff because it's easier than sitting still.
+
+                    </span>
+                    <span class="arrow"></span>
+                </span>
+
+                <strong>
+                    <span class="frame"></span>
+                    <img src="/img/about/team/d.png" width="100" height="100" />
+                    <span class="shadow"></span>
+                </strong>
+            </a>
+            <a href="https://twitter.com/jeffbalogh" target="_blank" id="team-jeff">
+                <span class="bio">
+                    <span class="inner">
+                        <em>Jeff Balogh</em>
+                              Prior to Stripe, Jeff scaled websites and introduced Python at Mozilla.
+      He's an aspiring chef and gardener, and a retired triathlete.
+
+                    </span>
+                    <span class="arrow"></span>
+                </span>
+
+                <strong>
+                    <span class="frame"></span>
+                    <img src="/img/about/team/jeff.png" width="100" height="100" />
+                    <span class="shadow"></span>
+                </strong>
+            </a>
+            <a href="https://twitter.com/balvarado" target="_blank" id="team-billy">
+                <span class="bio">
+                    <span class="inner">
+                        <em>Billy Alvarado</em>
+                              Prior to joining Stripe, Billy co-founded Lala, which was acquired by
+      Apple in late 2009. He has degrees from Georgia Tech and Stanford.
+
+                    </span>
+                    <span class="arrow"></span>
+                </span>
+
+                <strong>
+                    <span class="frame"></span>
+                    <img src="/img/about/team/billy.png" width="100" height="100" />
+                    <span class="shadow"></span>
+                </strong>
+            </a>
+            <a href="https://twitter.com/griffgaff" target="_blank" id="team-griffin">
+                <span class="bio">
+                    <span class="inner">
+                        <em>Griffin Gaffney</em>
+                              Before Stripe Griffin worked in LinkedIn's Global Sales Organization.
+      Griffin studied social studies at Harvard and is passionate about
+      cooking and running marathons.
+
+                    </span>
+                    <span class="arrow"></span>
+                </span>
+
+                <strong>
+                    <span class="frame"></span>
+                    <img src="/img/about/team/griffin.png" width="100" height="100" />
+                    <span class="shadow"></span>
+                </strong>
+            </a>
+            <a href="https://twitter.com/mduvall_" target="_blank" id="team-matt">
+                <span class="bio">
+                    <span class="inner">
+                        <em>Matt DuVall</em>
+                              Matt went to Berkeley and has worked in the Bay Area since. He likes to
+      explore California and eat all the food in SF.
+
+                    </span>
+                    <span class="arrow"></span>
+                </span>
+
+                <strong>
+                    <span class="frame"></span>
+                    <img src="/img/about/team/matt.png" width="100" height="100" />
+                    <span class="shadow"></span>
+                </strong>
+            </a>
+            <a href="https://twitter.com/zenazn" target="_blank" id="team-carl">
+                <span class="bio">
+                    <span class="inner">
+                        <em>Carl Jackson</em>
+                              Carl enjoys hacking on distributed systems and eating dark chocolate. He
+      was part of Stripe's first batch of interns, where they failed to scare
+      him away for good.
+
+                    </span>
+                    <span class="arrow"></span>
+                </span>
+
+                <strong>
+                    <span class="frame"></span>
+                    <img src="/img/about/team/carl.png" width="100" height="100" />
+                    <span class="shadow"></span>
+                </strong>
+            </a>
+            <a href="https://twitter.com/paxcameronus" target="_blank" id="team-omar">
+                <span class="bio">
+                    <span class="inner">
+                        <em>Omar Cameron</em>
+                              Originally from New York, Omar studied at Duke University and Tulane.
+      He enjoys playing pickup basketball, traveling, and trying new foods.
+
+                    </span>
+                    <span class="arrow"></span>
+                </span>
+
+                <strong>
+                    <span class="frame"></span>
+                    <img src="/img/about/team/omar.png" width="100" height="100" />
+                    <span class="shadow"></span>
+                </strong>
+            </a>
+            <a href="https://twitter.com/krithix" target="_blank" id="team-krithix">
+                <span class="bio">
+                    <span class="inner">
+                        <em>Krithika Muthukumar</em>
+                              After studying at Berkeley and working at Google and Dropbox, Krithika now
+      helps the world better understand Stripe.
+
+                    </span>
+                    <span class="arrow"></span>
+                </span>
+
+                <strong>
+                    <span class="frame"></span>
+                    <img src="/img/about/team/krithix.png" width="100" height="100" />
+                    <span class="shadow"></span>
+                </strong>
+            </a>
+            <a href="https://twitter.com/antifuchs" target="_blank" id="team-andreas">
+                <span class="bio">
+                    <span class="inner">
+                        <em>Andreas Fuchs</em>
+                              Andreas has hacked on everything from packaging systems to graph databases
+      in Common Lisp. He used to help Patrick with his Lisp woes in #lisp back
+      in the day.
+
+                    </span>
+                    <span class="arrow"></span>
+                </span>
+
+                <strong>
+                    <span class="frame"></span>
+                    <img src="/img/about/team/andreas.png" width="100" height="100" />
+                    <span class="shadow"></span>
+                </strong>
+            </a>
+            <a href="https://twitter.com/daniellegee" target="_blank" id="team-dgriffith">
+                <span class="bio">
+                    <span class="inner">
+                        <em>Danielle Griffith</em>
+                              A Southerner without an accent living in New York City, Danielle comes
+      to Stripe with a background in production and writing. She is very
+      passionate about animated gifs.
+
+                    </span>
+                    <span class="arrow"></span>
+                </span>
+
+                <strong>
+                    <span class="frame"></span>
+                    <img src="/img/about/team/dgriffith.png" width="100" height="100" />
+                    <span class="shadow"></span>
+                </strong>
+            </a>
+            <a href="https://twitter.com/jamesreggio" target="_blank" id="team-james.reggio">
+                <span class="bio">
+                    <span class="inner">
+                        <em>James Reggio</em>
+                              James studied circuits in Austin, wrote compilers in Seattle, and
+      obsesses over the front-end at Stripe. In another life, he'd be a
+      circus performer.
+
+                    </span>
+                    <span class="arrow"></span>
+                </span>
+
+                <strong>
+                    <span class="frame"></span>
+                    <img src="/img/about/team/james.reggio.png" width="100" height="100" />
+                    <span class="shadow"></span>
+                </strong>
+            </a>
+            <a href="https://twitter.com/GraceParkRhee" target="_blank" id="team-grace">
+                <span class="bio">
+                    <span class="inner">
+                        <em>Grace Rhee</em>
+                              Grace enjoys recruiting, spending time with her family, and golf.
+      Before Stripe, she spent time at McKinsey, working on recruiting and
+      consulting, and at Stanford, where she received a PhD in Molecular Pharmacology.
+
+                    </span>
+                    <span class="arrow"></span>
+                </span>
+
+                <strong>
+                    <span class="frame"></span>
+                    <img src="/img/about/team/grace.png" width="100" height="100" />
+                    <span class="shadow"></span>
+                </strong>
+            </a>
+            <a href="https://twitter.com/daniellemdeleon" target="_blank" id="team-dani">
+                <span class="bio">
+                    <span class="inner">
+                        <em>Dani DeLeon</em>
+                              Ever curious, Dani investigates risk at Stripe. Previously, she worked
+      in environmental consulting in Paris and studied history and ethics in
+      society at Stanford.
+
+                    </span>
+                    <span class="arrow"></span>
+                </span>
+
+                <strong>
+                    <span class="frame"></span>
+                    <img src="/img/about/team/dani.png" width="100" height="100" />
+                    <span class="shadow"></span>
+                </strong>
+            </a>
+            <a href="https://twitter.com/mlmanapat" target="_blank" id="team-mlm">
+                <span class="bio">
+                    <span class="inner">
+                        <em>Michael Manapat</em>
+                              Before joining Stripe, Michael worked in advertising and commerce
+      at Google. He studied math at Berkeley and MIT and taught at Harvard.
+
+                    </span>
+                    <span class="arrow"></span>
+                </span>
+
+                <strong>
+                    <span class="frame"></span>
+                    <img src="/img/about/team/mlm.png" width="100" height="100" />
+                    <span class="shadow"></span>
+                </strong>
+            </a>
+            <a href="https://twitter.com/alberge" target="_blank" id="team-andy">
+                <span class="bio">
+                    <span class="inner">
+                        <em>Andy Brody</em>
+                              Andy studied computer science at Harvard, where he managed a variety of
+      infrastructure. He also worked on technology for the Obama campaign.
+
+                    </span>
+                    <span class="arrow"></span>
+                </span>
+
+                <strong>
+                    <span class="frame"></span>
+                    <img src="/img/about/team/andy.png" width="100" height="100" />
+                    <span class="shadow"></span>
+                </strong>
+            </a>
+            <a href="http://www.linkedin.com/profile/view?id=595020" target="_blank" id="team-fang">
+                <span class="bio">
+                    <span class="inner">
+                        <em>Fang Yuan</em>
+                              Before Stripe, Fang worked as a management consultant focusing on
+      the emerging markets. She studied Social Studies at Harvard and
+      enjoys traveling, reading, and dancing in her spare time.
+
+                    </span>
+                    <span class="arrow"></span>
+                </span>
+
+                <strong>
+                    <span class="frame"></span>
+                    <img src="/img/about/team/fang.png" width="100" height="100" />
+                    <span class="shadow"></span>
+                </strong>
+            </a>
+            <a href="https://twitter.com/amfeng" target="_blank" id="team-amber">
+                <span class="bio">
+                    <span class="inner">
+                        <em>Amber Feng</em>
+                              Amber studied EECS at Berkeley and has previously hacked on
+      distributed databases, front-end web design, and cereal visualization.
+
+                    </span>
+                    <span class="arrow"></span>
+                </span>
+
+                <strong>
+                    <span class="frame"></span>
+                    <img src="/img/about/team/amber.png" width="100" height="100" />
+                    <span class="shadow"></span>
+                </strong>
+            </a>
+            <a href="https://twitter.com/jimdanz" target="_blank" id="team-jim">
+                <span class="bio">
+                    <span class="inner">
+                        <em>Jim Danz</em>
+                              Jim studied computer science at Harvard, and also TF'd CS51 a bunch of times.
+      He has previously worked at Facebook, Jane Street, and Ness.
+
+                    </span>
+                    <span class="arrow"></span>
+                </span>
+
+                <strong>
+                    <span class="frame"></span>
+                    <img src="/img/about/team/jim.png" width="100" height="100" />
+                    <span class="shadow"></span>
+                </strong>
+            </a>
+            <a href="https://twitter.com/huberfelix" target="_blank" id="team-felix">
+                <span class="bio">
+                    <span class="inner">
+                        <em>Felix Huber</em>
+                              Before joining Stripe, Felix was a project manager at McKinsey and also worked
+      at Google and fotocommunity. He studied Management Science and Engineering
+      at Stanford.
+
+                    </span>
+                    <span class="arrow"></span>
+                </span>
+
+                <strong>
+                    <span class="frame"></span>
+                    <img src="/img/about/team/felix.png" width="100" height="100" />
+                    <span class="shadow"></span>
+                </strong>
+            </a>
+            <a href="https://twitter.com/mmcgrana" target="_blank" id="team-mark">
+                <span class="bio">
+                    <span class="inner">
+                        <em>Mark McGranaghan</em>
+                              Before Stripe, Mark worked in infrastructure engineering at Heroku. He
+      studied math and computer science at Bowdoin College.
+
+                    </span>
+                    <span class="arrow"></span>
+                </span>
+
+                <strong>
+                    <span class="frame"></span>
+                    <img src="/img/about/team/mark.png" width="100" height="100" />
+                    <span class="shadow"></span>
+                </strong>
+            </a>
+            <a href="https://twitter.com/monroelabouisse" target="_blank" id="team-monroe">
+                <span class="bio">
+                    <span class="inner">
+                        <em>Monroe Labouisse</em>
+                              Monroe heads up user operations at Stripe. Previously, he worked at
+      Airbnb, eBay, and PayPal.
+
+                    </span>
+                    <span class="arrow"></span>
+                </span>
+
+                <strong>
+                    <span class="frame"></span>
+                    <img src="/img/about/team/monroe.png" width="100" height="100" />
+                    <span class="shadow"></span>
+                </strong>
+            </a>
+            <a href="https://twitter.com/porterjamesj" target="_blank" id="team-porterjamesj">
+                <span class="bio">
+                    <span class="inner">
+                        <em>James Porter</em>
+                              James graduated from the University of Chicago in 2014 and never-graduated from
+      Hacker School a year earlier. Before Stripe he worked in a fruit fly genetics
+      lab and on infrastructure for bioinformatics.
+
+                    </span>
+                    <span class="arrow"></span>
+                </span>
+
+                <strong>
+                    <span class="frame"></span>
+                    <img src="/img/about/team/porterjamesj.png" width="100" height="100" />
+                    <span class="shadow"></span>
+                </strong>
+            </a>
+            <a href="https://twitter.com/DanielaAmodei" target="_blank" id="team-daniela">
+                <span class="bio">
+                    <span class="inner">
+                        <em>Daniela Amodei</em>
+                              Daniela works on recruiting at Stripe, previously worked as a
+      Congressional staffer and for several political campaigns and
+      international development nonprofits. She studied English literature,
+      politics and music at UC Santa Cruz.
+
+                    </span>
+                    <span class="arrow"></span>
+                </span>
+
+                <strong>
+                    <span class="frame"></span>
+                    <img src="/img/about/team/daniela.png" width="100" height="100" />
+                    <span class="shadow"></span>
+                </strong>
+            </a>
+            <a href="https://twitter.com/gregsabo" target="_blank" id="team-gregsabo">
+                <span class="bio">
+                    <span class="inner">
+                        <em>Greg Sabo</em>
+                              Greg is a software engineer.
+      He worked at HubSpot, The Echo Nest, and IBM before making computer
+      magic at Stripe.
+
+                    </span>
+                    <span class="arrow"></span>
+                </span>
+
+                <strong>
+                    <span class="frame"></span>
+                    <img src="/img/about/team/gregsabo.png" width="100" height="100" />
+                    <span class="shadow"></span>
+                </strong>
+            </a>
+            <a href="https://twitter.com/chriswu_" target="_blank" id="team-chris">
+                <span class="bio">
+                    <span class="inner">
+                        <em>Chris Wu</em>
+                              Chris studied Mechatronics at University of Waterloo. Living the life
+      of a co-op, he switched between school and internships every 4 months
+      until he managed to settle down at Stripe.
+
+                    </span>
+                    <span class="arrow"></span>
+                </span>
+
+                <strong>
+                    <span class="frame"></span>
+                    <img src="/img/about/team/chris.png" width="100" height="100" />
+                    <span class="shadow"></span>
+                </strong>
+            </a>
+            <a href="https://twitter.com/jono_hernandez" target="_blank" id="team-jonathan">
+                <span class="bio">
+                    <span class="inner">
+                        <em>Jonathan Hernandez</em>
+                              Jonathan grew up in Canada and was a user of the Stripe API before joining
+      full-time. He studied Electrical and Biomedical Engineering at McMaster
+      University.
+
+                    </span>
+                    <span class="arrow"></span>
+                </span>
+
+                <strong>
+                    <span class="frame"></span>
+                    <img src="/img/about/team/jonathan.png" width="100" height="100" />
+                    <span class="shadow"></span>
+                </strong>
+            </a>
+            <a href="https://twitter.com/awfy" target="_blank" id="team-greg">
+                <span class="bio">
+                    <span class="inner">
+                        <em>Greg Cooper</em>
+                              Greg designs for Stripe. On the side he practices Jack Peñate's foot shuffle.
+
+                    </span>
+                    <span class="arrow"></span>
+                </span>
+
+                <strong>
+                    <span class="frame"></span>
+                    <img src="/img/about/team/greg.png" width="100" height="100" />
+                    <span class="shadow"></span>
+                </strong>
+            </a>
+            <a href="https://twitter.com/rrjamie" target="_blank" id="team-ry">
+                <span class="bio">
+                    <span class="inner">
+                        <em>Ryan Daw</em>
+                              Ryan grew up in Canada, studied mathematics at SFU, and built web
+      apps for Mobify before joining Stripe.
+
+                    </span>
+                    <span class="arrow"></span>
+                </span>
+
+                <strong>
+                    <span class="frame"></span>
+                    <img src="/img/about/team/ry.png" width="100" height="100" />
+                    <span class="shadow"></span>
+                </strong>
+            </a>
+            <a href="https://www.linkedin.com/profile/view?id=83642078" target="_blank" id="team-ja">
+                <span class="bio">
+                    <span class="inner">
+                        <em>James Allgrove</em>
+                              James studied at the London School of Economics and worked at
+      Bain &amp; Company before joining Stripe. He grew up all over the world
+      but now calls London home. He likes to run, cycle, and eat.
+
+                    </span>
+                    <span class="arrow"></span>
+                </span>
+
+                <strong>
+                    <span class="frame"></span>
+                    <img src="/img/about/team/ja.png" width="100" height="100" />
+                    <span class="shadow"></span>
+                </strong>
+            </a>
+            <a href="https://twitter.com/laskerer" target="_blank" id="team-eric">
+                <span class="bio">
+                    <span class="inner">
+                        <em>Eric Lasker</em>
+                              While at Colgate, Eric studied Physics with a computational
+      neuroscience bent. He dabbled in fancy restaurants and kitchens
+      before finding his way to Stripe.
+
+                    </span>
+                    <span class="arrow"></span>
+                </span>
+
+                <strong>
+                    <span class="frame"></span>
+                    <img src="/img/about/team/eric.png" width="100" height="100" />
+                    <span class="shadow"></span>
+                </strong>
+            </a>
+            <a href="https://twitter.com/kellylsims" target="_blank" id="team-kelly">
+                <span class="bio">
+                    <span class="inner">
+                        <em>Kelly Sims</em>
+                              Kelly works on communications at Stripe. She previously helped
+      IBM, Toyota, Credit Suisse, and an assortment of startups more effectively
+      explain what they do.
+
+                    </span>
+                    <span class="arrow"></span>
+                </span>
+
+                <strong>
+                    <span class="frame"></span>
+                    <img src="/img/about/team/kelly.png" width="100" height="100" />
+                    <span class="shadow"></span>
+                </strong>
+            </a>
+            <a href="https://twitter.com/jocelynross" target="_blank" id="team-jocelyn">
+                <span class="bio">
+                    <span class="inner">
+                        <em>Jocelyn Ross</em>
+                              Jocelyn oversaw various aspects of payments fraud at Facebook, and
+      previously studied at Stanford and Berkeley.
+
+                    </span>
+                    <span class="arrow"></span>
+                </span>
+
+                <strong>
+                    <span class="frame"></span>
+                    <img src="/img/about/team/jocelyn.png" width="100" height="100" />
+                    <span class="shadow"></span>
+                </strong>
+            </a>
+            <a href="https://twitter.com/kiranb" target="_blank" id="team-kiran">
+                <span class="bio">
+                    <span class="inner">
+                        <em>Kiran Bhattaram</em>
+                              Kiran studied EECS at MIT. She likes making things, and is currently
+      hand-quilting a large silk map of Boston.
+
+                    </span>
+                    <span class="arrow"></span>
+                </span>
+
+                <strong>
+                    <span class="frame"></span>
+                    <img src="/img/about/team/kiran.png" width="100" height="100" />
+                    <span class="shadow"></span>
+                </strong>
+            </a>
+            <a href="https://twitter.com/collision" target="_blank" id="team-john">
+                <span class="bio">
+                    <span class="inner">
+                        <em>John Collison</em>
+                              John grew up in Ireland and started building websites when he was fourteen.
+      He was studying physics at Harvard before dropping out to work on Stripe
+      full-time.
+
+                    </span>
+                    <span class="arrow"></span>
+                </span>
+
+                <strong>
+                    <span class="frame"></span>
+                    <img src="/img/about/team/john.png" width="100" height="100" />
+                    <span class="shadow"></span>
+                </strong>
+            </a>
+            <a href="https://twitter.com/danielshi" target="_blank" id="team-daniel">
+                <span class="bio">
+                    <span class="inner">
+                        <em>Daniel Heffernan</em>
+                              Daniel works on all things Japan at Stripe. Previously he developed games at COOKPAD
+      and studied natural language processing at the University of Tokyo.
+
+                    </span>
+                    <span class="arrow"></span>
+                </span>
+
+                <strong>
+                    <span class="frame"></span>
+                    <img src="/img/about/team/daniel.png" width="100" height="100" />
+                    <span class="shadow"></span>
+                </strong>
+            </a>
+            <a href="https://twitter.com/jzieger" target="_blank" id="team-jon">
+                <span class="bio">
+                    <span class="inner">
+                        <em>Jon Zieger</em>
+                              Jon was previously Associate General Counsel at Microsoft where he managed
+      various internet, privacy, payments, and compliance projects. He holds a
+      J.D. from the University of Illinois.
+
+                    </span>
+                    <span class="arrow"></span>
+                </span>
+
+                <strong>
+                    <span class="frame"></span>
+                    <img src="/img/about/team/jon.png" width="100" height="100" />
+                    <span class="shadow"></span>
+                </strong>
+            </a>
+            <a href="https://twitter.com/beect" target="_blank" id="team-brendan">
+                <span class="bio">
+                    <span class="inner">
+                        <em>Brendan Taylor</em>
+                              Brendan works in Edmonton as an engineer. He makes beer and rides bikes.
+
+                    </span>
+                    <span class="arrow"></span>
+                </span>
+
+                <strong>
+                    <span class="frame"></span>
+                    <img src="/img/about/team/brendan.png" width="100" height="100" />
+                    <span class="shadow"></span>
+                </strong>
+            </a>
+            <a href="https://twitter.com/johnjianwang" target="_blank" id="team-wangjohn">
+                <span class="bio">
+                    <span class="inner">
+                        <em>John Wang</em>
+                              John likes to contribute to open source and dance to techno (concurrently).
+      Previously, he co-founded Zinc, a YC backed startup, and sharpened his pattern matching skills at MIT.
+
+                    </span>
+                    <span class="arrow"></span>
+                </span>
+
+                <strong>
+                    <span class="frame"></span>
+                    <img src="/img/about/team/wangjohn.png" width="100" height="100" />
+                    <span class="shadow"></span>
+                </strong>
+            </a>
+            <a href="https://twitter.com/danielisaacwein" target="_blank" id="team-dan">
+                <span class="bio">
+                    <span class="inner">
+                        <em>Dan Weinstein</em>
+                              Before joining Stripe, Dan worked on fraud analysis for Google Wallet.
+      He studied history and CS at Columbia and is passionate about backpacking,
+      natural history, and playing classical piano.
+
+                    </span>
+                    <span class="arrow"></span>
+                </span>
+
+                <strong>
+                    <span class="frame"></span>
+                    <img src="/img/about/team/dan.png" width="100" height="100" />
+                    <span class="shadow"></span>
+                </strong>
+            </a>
+            <a href="https://twitter.com/brahn" target="_blank" id="team-brahn">
+                <span class="bio">
+                    <span class="inner">
+                        <em>Ben Rahn</em>
+                              Ben studied physics at Caltech, cofounded ActBlue (the largest political
+      fundraising platform in the world), and created mashupbreakdown.com.
+
+                    </span>
+                    <span class="arrow"></span>
+                </span>
+
+                <strong>
+                    <span class="frame"></span>
+                    <img src="/img/about/team/brahn.png" width="100" height="100" />
+                    <span class="shadow"></span>
+                </strong>
+            </a>
+            <a href="https://twitter.com/thecurlery" target="_blank" id="team-yvonne">
+                <span class="bio">
+                    <span class="inner">
+                        <em>Yvonne Robinson</em>
+                              Yvonne lived in Italy for several years and worked in education and
+      non-profits before joining the Support team at Stripe.
+
+                    </span>
+                    <span class="arrow"></span>
+                </span>
+
+                <strong>
+                    <span class="frame"></span>
+                    <img src="/img/about/team/yvonne.png" width="100" height="100" />
+                    <span class="shadow"></span>
+                </strong>
+            </a>
+            <a href="https://twitter.com/coda" target="_blank" id="team-coda">
+                <span class="bio">
+                    <span class="inner">
+                        <em>Coda Hale</em>
+                              Coda is an infrastructure engineer who lives in Berkeley, CA with his wife
+      and two cats.
+
+                    </span>
+                    <span class="arrow"></span>
+                </span>
+
+                <strong>
+                    <span class="frame"></span>
+                    <img src="/img/about/team/coda.png" width="100" height="100" />
+                    <span class="shadow"></span>
+                </strong>
+            </a>
+            <a href="https://twitter.com/sch" target="_blank" id="team-michael">
+                <span class="bio">
+                    <span class="inner">
+                        <em>Michael Schade</em>
+                              Michael wrote Stripe’s Haskell bindings before joining full-time to help
+      make Stripe’s support awesome.
+
+                    </span>
+                    <span class="arrow"></span>
+                </span>
+
+                <strong>
+                    <span class="frame"></span>
+                    <img src="/img/about/team/michael.png" width="100" height="100" />
+                    <span class="shadow"></span>
+                </strong>
+            </a>
+            <a href="https://twitter.com/rlordio" target="_blank" id="team-rlord">
+                <span class="bio">
+                    <span class="inner">
+                        <em>Robert Lord</em>
+                              Robert is a Hacker School graduate, Bay Area native, and Stripe
+      intern. Besides programming, he enjoys chocolate, cats, and more cats.
+      Also, more chocolate.
+
+                    </span>
+                    <span class="arrow"></span>
+                </span>
+
+                <strong>
+                    <span class="frame"></span>
+                    <img src="/img/about/team/rlord.png" width="100" height="100" />
+                    <span class="shadow"></span>
+                </strong>
+            </a>
+            <a href="https://twitter.com/hamish_kerr" target="_blank" id="team-hamish">
+                <span class="bio">
+                    <span class="inner">
+                        <em>Hamish Kerr</em>
+                              Hamish is originally from chilly Hobart, Tasmania. Before Stripe, he
+      fiddled with space hardware in Germany, designed UAVs in China, and
+      studied AeroEng in Melbourne.
+
+                    </span>
+                    <span class="arrow"></span>
+                </span>
+
+                <strong>
+                    <span class="frame"></span>
+                    <img src="/img/about/team/hamish.png" width="100" height="100" />
+                    <span class="shadow"></span>
+                </strong>
+            </a>
+            <a href="https://twitter.com/srwoodrow" target="_blank" id="team-woodrow">
+                <span class="bio">
+                    <span class="inner">
+                        <em>Steve Woodrow</em>
+                              Before Stripe, Steve worked on Project BISmark, measuring Internet routing
+      and broadband performance. He grew up in Canada, and studied at MIT and
+      the University of Manitoba.
+
+                    </span>
+                    <span class="arrow"></span>
+                </span>
+
+                <strong>
+                    <span class="frame"></span>
+                    <img src="/img/about/team/woodrow.png" width="100" height="100" />
+                    <span class="shadow"></span>
+                </strong>
+            </a>
+            <a href="https://twitter.com/dodgrile" target="_blank" id="team-ian">
+                <span class="bio">
+                    <span class="inner">
+                        <em>Ian Mellett</em>
+                              Ian took down the local news industry in Cannock before joining Stripe
+      to work on support.
+
+                    </span>
+                    <span class="arrow"></span>
+                </span>
+
+                <strong>
+                    <span class="frame"></span>
+                    <img src="/img/about/team/ian.png" width="100" height="100" />
+                    <span class="shadow"></span>
+                </strong>
+            </a>
+            <a href="https://twitter.com/andrewlundsten" target="_blank" id="team-alundsten">
+                <span class="bio">
+                    <span class="inner">
+                        <em>Andrew Lundsten</em>
+                              Andrew does Finance at Stripe and previously worked at
+      PwC with growth and IPO startups, most recently with Twitter. His
+      passions include photography, music, and the oxford comma.
+
+                    </span>
+                    <span class="arrow"></span>
+                </span>
+
+                <strong>
+                    <span class="frame"></span>
+                    <img src="/img/about/team/alundsten.png" width="100" height="100" />
+                    <span class="shadow"></span>
+                </strong>
+            </a>
+            <a href="https://twitter.com/sw" target="_blank" id="team-susan">
+                <span class="bio">
+                    <span class="inner">
+                        <em>Susan Wu</em>
+                              Susan lives somewhere between SF, France and Australia. Before Stripe,
+      she was CMO of Apache, Founding Partner at Obvious (Medium), and a VC.
+
+                    </span>
+                    <span class="arrow"></span>
+                </span>
+
+                <strong>
+                    <span class="frame"></span>
+                    <img src="/img/about/team/susan.png" width="100" height="100" />
+                    <span class="shadow"></span>
+                </strong>
+            </a>
+            <a href="https://twitter.com/kitchenettekat" target="_blank" id="team-kat">
+                <span class="bio">
+                    <span class="inner">
+                        <em>Kat Li</em>
+                              Kat studied linguistics and psychology at Stanford. Before Stripe,
+      she was part of the business team at Quora, working on such projects
+      as the Top Writers program and The Last Mile collaboration.
+
+                    </span>
+                    <span class="arrow"></span>
+                </span>
+
+                <strong>
+                    <span class="frame"></span>
+                    <img src="/img/about/team/kat.png" width="100" height="100" />
+                    <span class="shadow"></span>
+                </strong>
+            </a>
+            <a href="https://twitter.com/b0rk" target="_blank" id="team-julia">
+                <span class="bio">
+                    <span class="inner">
+                        <em>Julia Evans</em>
+                              Julia studied math at McGill, left to become a programmer, and now
+      works on data at Stripe. She went to Hacker School and thinks a
+      lot about how to make everywhere as welcoming and productive as
+      HS.
+
+                    </span>
+                    <span class="arrow"></span>
+                </span>
+
+                <strong>
+                    <span class="frame"></span>
+                    <img src="/img/about/team/julia.png" width="100" height="100" />
+                    <span class="shadow"></span>
+                </strong>
+            </a>
+            <a href="https://twitter.com/pgergis" target="_blank" id="team-pierre">
+                <span class="bio">
+                    <span class="inner">
+                        <em>Pierre Gergis</em>
+                              In the Before Stripe phase of his life, Pierre studied philosophy
+      and computer science at Columbia and worked at IBM. He sometimes
+      entertains the idea that he is a photographer and a writer.
+
+                    </span>
+                    <span class="arrow"></span>
+                </span>
+
+                <strong>
+                    <span class="frame"></span>
+                    <img src="/img/about/team/pierre.png" width="100" height="100" />
+                    <span class="shadow"></span>
+                </strong>
+            </a>
+            <a href="https://twitter.com/anuraggoel" target="_blank" id="team-anurag">
+                <span class="bio">
+                    <span class="inner">
+                        <em>Anurag Goel</em>
+                              Anurag grew up in India, and studied computer science at IIT Delhi. He
+      started a company that processed payments with Stripe, but was convinced
+      to join Stripe instead.
+
+                    </span>
+                    <span class="arrow"></span>
+                </span>
+
+                <strong>
+                    <span class="frame"></span>
+                    <img src="/img/about/team/anurag.png" width="100" height="100" />
+                    <span class="shadow"></span>
+                </strong>
+            </a>
+            <a href="https://twitter.com/sophiegwb" target="_blank" id="team-sophie">
+                <span class="bio">
+                    <span class="inner">
+                        <em>Sophie Wiepking-Brown</em>
+                              Sophie was born and raised in Alaska, headed south for warmth (and 
+      an international relations degree from Stanford), and now she's on 
+      the risk team at Stripe.
+
+                    </span>
+                    <span class="arrow"></span>
+                </span>
+
+                <strong>
+                    <span class="frame"></span>
+                    <img src="/img/about/team/sophie.png" width="100" height="100" />
+                    <span class="shadow"></span>
+                </strong>
+            </a>
+            <a href="https://twitter.com/chranderson" target="_blank" id="team-christian">
+                <span class="bio">
+                    <span class="inner">
+                        <em>Christian Anderson</em>
+                              Christian studied math, physics, and computer science at Harvard.
+      He codes, hikes, and thinks about science.
+
+                    </span>
+                    <span class="arrow"></span>
+                </span>
+
+                <strong>
+                    <span class="frame"></span>
+                    <img src="/img/about/team/christian.png" width="100" height="100" />
+                    <span class="shadow"></span>
+                </strong>
+            </a>
+            <a href="https://twitter.com/gui_princen" target="_blank" id="team-guillaume">
+                <span class="bio">
+                    <span class="inner">
+                        <em>Guillaume Princen</em>
+                              Before joining Stripe, Guillaume worked at McKinsey on Aerospace &amp; Defense
+      and studied business at Harvard. Currently, he's busy bringing Stripe to France.
+
+                    </span>
+                    <span class="arrow"></span>
+                </span>
+
+                <strong>
+                    <span class="frame"></span>
+                    <img src="/img/about/team/guillaume.png" width="100" height="100" />
+                    <span class="shadow"></span>
+                </strong>
+            </a>
+            <a href="https://twitter.com/ebroder" target="_blank" id="team-evan">
+                <span class="bio">
+                    <span class="inner">
+                        <em>Evan Broder</em>
+                              Evan previously worked on VMs and kernels at MIT, Ksplice, and MokaFive.
+      He was technical lead on XVM, an early Xen-based hosting infrastructure.
+
+                    </span>
+                    <span class="arrow"></span>
+                </span>
+
+                <strong>
+                    <span class="frame"></span>
+                    <img src="/img/about/team/evan.png" width="100" height="100" />
+                    <span class="shadow"></span>
+                </strong>
+            </a>
+            <a href="https://twitter.com/Heather_R" target="_blank" id="team-heather">
+                <span class="bio">
+                    <span class="inner">
+                        <em>Heather Rasley</em>
+                              Heather holds a Humanities BA and studied at NYU's ITP program.
+      Occasionally, she hosts Twitter poetry readings. She works on keeping
+      Stripe users happy.
+
+                    </span>
+                    <span class="arrow"></span>
+                </span>
+
+                <strong>
+                    <span class="frame"></span>
+                    <img src="/img/about/team/heather.png" width="100" height="100" />
+                    <span class="shadow"></span>
+                </strong>
+            </a>
+            <a href="https://twitter.com/jabntaj" target="_blank" id="team-jesse">
+                <span class="bio">
+                    <span class="inner">
+                        <em>Jesse Branstetter</em>
+                              Jesse implements his passion and creativity to make exciting and
+      comforting food that brings people together.
+
+                    </span>
+                    <span class="arrow"></span>
+                </span>
+
+                <strong>
+                    <span class="frame"></span>
+                    <img src="/img/about/team/jesse.png" width="100" height="100" />
+                    <span class="shadow"></span>
+                </strong>
+            </a>
+            <a href="https://twitter.com/ameseys" target="_blank" id="team-amy">
+                <span class="bio">
+                    <span class="inner">
+                        <em>Amy Seaman</em>
+                              Amy splits her time between SF, Tokyo and the rest of the world,
+      and focuses on supporting users at Stripe. She enjoys writing,
+      wandering and trying new foods.
+
+                    </span>
+                    <span class="arrow"></span>
+                </span>
+
+                <strong>
+                    <span class="frame"></span>
+                    <img src="/img/about/team/amy.png" width="100" height="100" />
+                    <span class="shadow"></span>
+                </strong>
+            </a>
+            <a href="https://twitter.com/jordanmerrick" target="_blank" id="team-jordan">
+                <span class="bio">
+                    <span class="inner">
+                        <em>Jordan Merrick</em>
+                              Before Stripe, Jordan worked at companies like Apple and Ticketmaster to provide
+      Mac support for their users. He enjoys writing, listening to podcasts and video games.
+
+                    </span>
+                    <span class="arrow"></span>
+                </span>
+
+                <strong>
+                    <span class="frame"></span>
+                    <img src="/img/about/team/jordan.png" width="100" height="100" />
+                    <span class="shadow"></span>
+                </strong>
+            </a>
+            <a href="https://twitter.com/na10b" target="_blank" id="team-nathan">
+                <span class="bio">
+                    <span class="inner">
+                        <em>Nathan Bailey</em>
+                              Nathan studied Evolutionary Biology and Sustainable Development at
+      Columbia. Before Stripe, he helped build Nuru Social Enterprises in Kenya.
+
+                    </span>
+                    <span class="arrow"></span>
+                </span>
+
+                <strong>
+                    <span class="frame"></span>
+                    <img src="/img/about/team/nathan.png" width="100" height="100" />
+                    <span class="shadow"></span>
+                </strong>
+            </a>
+            <a href="https://twitter.com/spillda" target="_blank" id="team-dspillane">
+                <span class="bio">
+                    <span class="inner">
+                        <em>David Spillane</em>
+                              Originally from Ireland, Dave studied commerce at UCD and
+      accounting at the Smurfit GSB. Prior to Stripe,
+      Dave was the Chief Accounting officer at Facebook where he helped
+      build the finance team and worked on the Facebook IPO.  He also loves
+      to travel.
+
+                    </span>
+                    <span class="arrow"></span>
+                </span>
+
+                <strong>
+                    <span class="frame"></span>
+                    <img src="/img/about/team/dspillane.png" width="100" height="100" />
+                    <span class="shadow"></span>
+                </strong>
+            </a>
+            <a href="https://twitter.com/jflinter" target="_blank" id="team-jack">
+                <span class="bio">
+                    <span class="inner">
+                        <em>Jack Flintermann</em>
+                              Jack studied Computer Science at Brown. After building iOS apps for eHarmony
+      and Grouper, he's excited to bring his veteran online dating experience to
+      Stripe's product team.
+
+                    </span>
+                    <span class="arrow"></span>
+                </span>
+
+                <strong>
+                    <span class="frame"></span>
+                    <img src="/img/about/team/jack.png" width="100" height="100" />
+                    <span class="shadow"></span>
+                </strong>
+            </a>
+            <a href="https://twitter.com/thegdb" target="_blank" id="team-gdb">
+                <span class="bio">
+                    <span class="inner">
+                        <em>Greg Brockman</em>
+                              Greg has worked on crypto for the NSA and infrastructure at Ksplice. He
+      studied math at Harvard and computer science at MIT.
+
+                    </span>
+                    <span class="arrow"></span>
+                </span>
+
+                <strong>
+                    <span class="frame"></span>
+                    <img src="/img/about/team/gdb.png" width="100" height="100" />
+                    <span class="shadow"></span>
+                </strong>
+            </a>
+            <a href="https://twitter.com/orlamchenry" target="_blank" id="team-orla">
+                <span class="bio">
+                    <span class="inner">
+                        <em>Orla McHenry</em>
+                              Orla previously worked for Commerzbank and Merrill Lynch. She studied
+      chemistry at Trinity College Dublin and finance at the University of
+      Manchester.
+
+                    </span>
+                    <span class="arrow"></span>
+                </span>
+
+                <strong>
+                    <span class="frame"></span>
+                    <img src="/img/about/team/orla.png" width="100" height="100" />
+                    <span class="shadow"></span>
+                </strong>
+            </a>
+            <a href="https://alpha.app.net/berg" target="_blank" id="team-bryan">
+                <span class="bio">
+                    <span class="inner">
+                        <em>Bryan Berg</em>
+                              Before joining Stripe, Bryan launched App.net and worked on infrastructure
+      at imeem. He enjoys taking things apart, photographing things, and
+      drinking coffee.
+
+                    </span>
+                    <span class="arrow"></span>
+                </span>
+
+                <strong>
+                    <span class="frame"></span>
+                    <img src="/img/about/team/bryan.png" width="100" height="100" />
+                    <span class="shadow"></span>
+                </strong>
+            </a>
+            <a href="https://twitter.com/stephencwan" target="_blank" id="team-stephen">
+                <span class="bio">
+                    <span class="inner">
+                        <em>Stephen Wan</em>
+                              Stephen goes to UT Austin. He hasn't figured out what belongs in this field yet.
+
+                    </span>
+                    <span class="arrow"></span>
+                </span>
+
+                <strong>
+                    <span class="frame"></span>
+                    <img src="/img/about/team/stephen.png" width="100" height="100" />
+                    <span class="shadow"></span>
+                </strong>
+            </a>
+            <a href="/" target="_blank" id="team-karl">
+                <span class="bio">
+                    <span class="inner">
+                        <em>Karl-Aksel Puulmann</em>
+                              Karl is an engineering intern from Estonia. He enjoys music,
+      board games and building awesome things.
+
+                    </span>
+                    <span class="arrow"></span>
+                </span>
+
+                <strong>
+                    <span class="frame"></span>
+                    <img src="/img/about/team/karl.png" width="100" height="100" />
+                    <span class="shadow"></span>
+                </strong>
+            </a>
+            <a href="https://twitter.com/kyle_conroy" target="_blank" id="team-kjc">
+                <span class="bio">
+                    <span class="inner">
+                        <em>Kyle Conroy</em>
+                              Kyle works on APIs at Stripe. Hailing from the mountains of Lake Tahoe,
+      he enjoys skiing and hiking. He studied at UC Berkeley.
+
+                    </span>
+                    <span class="arrow"></span>
+                </span>
+
+                <strong>
+                    <span class="frame"></span>
+                    <img src="/img/about/team/kjc.png" width="100" height="100" />
+                    <span class="shadow"></span>
+                </strong>
+            </a>
+            <a href="https://twitter.com/shefaliroy" target="_blank" id="team-shefali">
+                <span class="bio">
+                    <span class="inner">
+                        <em>Shefali Roy</em>
+                              Shefali studied art, journalism, law and economics at RMIT, Oxford 
+      and LSE. She’s a sucker for punishment, so she's currently researching 
+      for a doctorate in Behavioural Management. While not at a university, 
+      prior to Stripe, she worked at Goldman Sachs, Christies and Apple, 
+      building compliance and risk frameworks. She loves a good giggle, 
+      architecture, Bach, ping pong, dogs and travelling. 
+
+                    </span>
+                    <span class="arrow"></span>
+                </span>
+
+                <strong>
+                    <span class="frame"></span>
+                    <img src="/img/about/team/shefali.png" width="100" height="100" />
+                    <span class="shadow"></span>
+                </strong>
+            </a>
+            <a href="https://twitter.com/mospete" target="_blank" id="team-peter">
+                <span class="bio">
+                    <span class="inner">
+                        <em>Peter Mosqueda</em>
+                              In his Stripe life, Peter cooks delicious food and gives excellent high fives.
+      In his other life, he works in film production.
+
+                    </span>
+                    <span class="arrow"></span>
+                </span>
+
+                <strong>
+                    <span class="frame"></span>
+                    <img src="/img/about/team/peter.png" width="100" height="100" />
+                    <span class="shadow"></span>
+                </strong>
+            </a>
+            <a href="https://twitter.com/jennyhackeling" target="_blank" id="team-jenny">
+                <span class="bio">
+                    <span class="inner">
+                        <em>Jenny Hackeling</em>
+                              Jenny's from the East Coast and studied Computer Science and Information Science
+      at UNC Chapel Hill. Before Stripe, she worked in retail doing windows/displays
+      and wrote code at Deutsche Bank.
+
+                    </span>
+                    <span class="arrow"></span>
+                </span>
+
+                <strong>
+                    <span class="frame"></span>
+                    <img src="/img/about/team/jenny.png" width="100" height="100" />
+                    <span class="shadow"></span>
+                </strong>
+            </a>
+            <a href="/" target="_blank" id="team-rb">
+                <span class="bio">
+                    <span class="inner">
+                        <em>Ray Bejjani</em>
+                              Ray has built everything from WiFi Thermostats to CDNs and can't resist learning something new. He still hasn't figured out cooking, though.
+
+                    </span>
+                    <span class="arrow"></span>
+                </span>
+
+                <strong>
+                    <span class="frame"></span>
+                    <img src="/img/about/team/rb.png" width="100" height="100" />
+                    <span class="shadow"></span>
+                </strong>
+            </a>
+            <a href="https://twitter.com/tavarm" target="_blank" id="team-tavish">
+                <span class="bio">
+                    <span class="inner">
+                        <em>Tavish Armstrong</em>
+                              Tavish grew up near Toronto and studied software engineering at Concordia University in Montreal.
+      While working on his degree, he edited The Performance of Open Source Applications, a collection
+      of essays on software optimization.
+
+                    </span>
+                    <span class="arrow"></span>
+                </span>
+
+                <strong>
+                    <span class="frame"></span>
+                    <img src="/img/about/team/tavish.png" width="100" height="100" />
+                    <span class="shadow"></span>
+                </strong>
+            </a>
+            <a href="https://twitter.com/bkrausz" target="_blank" id="team-bkrausz">
+                <span class="bio">
+                    <span class="inner">
+                        <em>Brian Krausz</em>
+                              &quot;I have complete faith in the continued absurdity of whatever's going on.&quot;
+      - Jon Stewart
+
+                    </span>
+                    <span class="arrow"></span>
+                </span>
+
+                <strong>
+                    <span class="frame"></span>
+                    <img src="/img/about/team/bkrausz.png" width="100" height="100" />
+                    <span class="shadow"></span>
+                </strong>
+            </a>
+            <a href="http://www.twitter.com/ryw90" target="_blank" id="team-ryan">
+                <span class="bio">
+                    <span class="inner">
+                        <em>Ryan Wang</em>
+                              Ryan previously worked at The Greatest Good and studied Economics
+      and Statistics at the University of Chicago. Before Stripe, he
+      spent his entire life in Chicago (if you count the suburbs). He
+      also likes pandas.
+
+                    </span>
+                    <span class="arrow"></span>
+                </span>
+
+                <strong>
+                    <span class="frame"></span>
+                    <img src="/img/about/team/ryan.png" width="100" height="100" />
+                    <span class="shadow"></span>
+                </strong>
+            </a>
+            <a href="https://twitter.com/dave_coen" target="_blank" id="team-dave">
+                <span class="bio">
+                    <span class="inner">
+                        <em>Dave Coen</em>
+                              Before Stripe, Dave worked in management consulting and venture capital.
+      He studied engineering at Dartmouth.
+
+                    </span>
+                    <span class="arrow"></span>
+                </span>
+
+                <strong>
+                    <span class="frame"></span>
+                    <img src="/img/about/team/dave.png" width="100" height="100" />
+                    <span class="shadow"></span>
+                </strong>
+            </a>
+            <a href="https://twitter.com/ElizabethLush" target="_blank" id="team-lauren">
+                <span class="bio">
+                    <span class="inner">
+                        <em>Lauren Lusher</em>
+                              Lauren is a Binghamton University alumna who, when not
+      merrily typing away on her Stripe laptop, can be found exploring
+      California's natural landscape, hanging out at the park, or enjoying
+      a good book on her couch.
+
+                    </span>
+                    <span class="arrow"></span>
+                </span>
+
+                <strong>
+                    <span class="frame"></span>
+                    <img src="/img/about/team/lauren.png" width="100" height="100" />
+                    <span class="shadow"></span>
+                </strong>
+            </a>
+            <a href="https://twitter.com/briancollins" target="_blank" id="team-brian">
+                <span class="bio">
+                    <span class="inner">
+                        <em>Brian Collins</em>
+                              Brian built the world’s largest social network for cricket fans. He
+      studied computer science at Cardiff University.
+
+                    </span>
+                    <span class="arrow"></span>
+                </span>
+
+                <strong>
+                    <span class="frame"></span>
+                    <img src="/img/about/team/brian.png" width="100" height="100" />
+                    <span class="shadow"></span>
+                </strong>
+            </a>
+            <a href="https://www.linkedin.com/pub/daren-guo/21/452/b8b" target="_blank" id="team-daren">
+                <span class="bio">
+                    <span class="inner">
+                        <em>Daren Guo</em>
+                              Daren grew up in Canada and studied at the University of Toronto.
+      In his spare time, he enjoys long walks on the beach and playing basketball.
+
+                    </span>
+                    <span class="arrow"></span>
+                </span>
+
+                <strong>
+                    <span class="frame"></span>
+                    <img src="/img/about/team/daren.png" width="100" height="100" />
+                    <span class="shadow"></span>
+                </strong>
+            </a>
+            <a href="https://twitter.com/lachygroom" target="_blank" id="team-lachy">
+                <span class="bio">
+                    <span class="inner">
+                        <em>Lachy Groom</em>
+                              Lachy grew up in Australia. He started several businesses there, before
+      coming to San Francisco, where he both learned and taught at Dev Bootcamp.
+
+                    </span>
+                    <span class="arrow"></span>
+                </span>
+
+                <strong>
+                    <span class="frame"></span>
+                    <img src="/img/about/team/lachy.png" width="100" height="100" />
+                    <span class="shadow"></span>
+                </strong>
+            </a>
+        </div>
+
+        <div id="additional" class="clearfix">
+            <div class="col">
+              <p>
+                We think that enabling frictionless transactions is a problem rooted in code and design, not finance. Our robust, clean APIs let <a href="https://stripe.com/gallery">our users</a> focus on building great products.
+              </p>
+              <p>
+                Stripe's investors include Sequoia Capital, Andreessen Horowitz, and PayPal co-founders Peter Thiel, Max Levchin, and Elon Musk.
+              </p>
+              <p>
+                Our address is 3180 18th Street, Suite 100, San Francisco, CA 94110.
+              </p>
+            </div>
+            <div class="col secondary">
+              <p>
+                We love the web, and care deeply about beautiful code, APIs, and documentation. We really like building things—the people at Stripe have previously helped start <a href="http://en.wikipedia.org/wiki/Lala_(website)">Lala</a>, <a href="http://actblue.com">Act Blue</a>, Wesabe, <a href="http://kickoffapp.com">Kickoff</a>, <a href="http://interstateapp.com">Interstate</a>, Auctomatic, <a href="http://groupspaces.com">GroupSpaces</a>, <a href="http://steamheavyindustries.com">Encyclopedia</a>, and&nbsp;<a href="http://observerapp.com">Observer</a>.
+              </p>
+              <p>
+                <ul>
+                    <li><a href="https://stripe.com/about/press">Press &amp; media info</a>.</li>
+                    <li><a href="https://stripe.com/about/resources">Logos &amp; resources</a>.</li>
+                    <li><a href="https://stripe.com/jobs">Join the team</a>.</li>
+                </ul>
+              </p>
+            </div>
+        </div>
+
+
+        <div id="get-started">
+            <p>Start accepting payments instantly. <a href="/signup" class="button blue medium rounded"><span>Get Started with Stripe</span></a></p>
+        </div>
+
+    </div> <!-- END ABOUT -->
+
+<div id="footer">
+    <div class="country-dropdown-view">
+        <a class="select">
+            <span>
+                <img src="/img/flags/us.png" width="23" height="17" data-hires="true" />
+                <strong>United States</strong>
+            </span>
+        </a>
+
+        <div class="popover">
+            <div class="arrow"></div>
+            <h4>Select your Country</h4>
+            <ul>
+                    <li>
+                        <a href="/country?country=US&redirect=/about" class="selected">
+                            <img src="/img/flags/us.png" width="23" height="17" data-hires="true" />
+                            <span>United States</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/country?country=CA&redirect=/about" >
+                            <img src="/img/flags/ca.png" width="23" height="17" data-hires="true" />
+                            <span>Canada</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/country?country=GB&redirect=/about" >
+                            <img src="/img/flags/gb.png" width="23" height="17" data-hires="true" />
+                            <span>United Kingdom</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/country?country=IE&redirect=/about" >
+                            <img src="/img/flags/ie.png" width="23" height="17" data-hires="true" />
+                            <span>Ireland</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/country?country=AU&redirect=/about" >
+                            <img src="/img/flags/au.png" width="23" height="17" data-hires="true" />
+                            <span>Australia</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/country?country=BE&redirect=/about" >
+                            <img src="/img/flags/be.png" width="23" height="17" data-hires="true" />
+                            <span>Belgium</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/country?country=DK&redirect=/about" >
+                            <img src="/img/flags/dk.png" width="23" height="17" data-hires="true" />
+                            <span>Denmark</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/country?country=FI&redirect=/about" >
+                            <img src="/img/flags/fi.png" width="23" height="17" data-hires="true" />
+                            <span>Finland</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/country?country=FR&redirect=/about" >
+                            <img src="/img/flags/fr.png" width="23" height="17" data-hires="true" />
+                            <span>France</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/country?country=DE&redirect=/about" >
+                            <img src="/img/flags/de.png" width="23" height="17" data-hires="true" />
+                            <span>Germany</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/country?country=IT&redirect=/about" >
+                            <img src="/img/flags/it.png" width="23" height="17" data-hires="true" />
+                            <span>Italy</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/country?country=LU&redirect=/about" >
+                            <img src="/img/flags/lu.png" width="23" height="17" data-hires="true" />
+                            <span>Luxembourg</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/country?country=NL&redirect=/about" >
+                            <img src="/img/flags/nl.png" width="23" height="17" data-hires="true" />
+                            <span>Netherlands</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/country?country=NO&redirect=/about" >
+                            <img src="/img/flags/no.png" width="23" height="17" data-hires="true" />
+                            <span>Norway</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/country?country=ES&redirect=/about" >
+                            <img src="/img/flags/es.png" width="23" height="17" data-hires="true" />
+                            <span>Spain</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/country?country=SE&redirect=/about" >
+                            <img src="/img/flags/se.png" width="23" height="17" data-hires="true" />
+                            <span>Sweden</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/country?country=CH&redirect=/about" >
+                            <img src="/img/flags/ch.png" width="23" height="17" data-hires="true" />
+                            <span>Switzerland</span>
+                        </a>
+                    </li>
+          </ul>
+        </div>
+    </div>
+
+
+    <p><a href="https://stripe.com">&copy; Stripe</a></p>
+
+    <ul>
+        <li><a href="https://status.stripe.com"><span>System Status</span></a></li>
+        <li><a href="https://stripe.com/about">About</a></li>
+        <li><a href="https://stripe.com/blog"><span>Blog</span></a></li>
+        <li><a href="https://stripe.com/jobs"><span>Jobs</span></a></li>
+        <li><a href="http://twitter.com/stripe">Twitter</a></li>
+    </ul>
+    <ul class="lesser">
+        <li><a href="https://stripe.com/terms">Terms of Service</a></li>
+        <li><a href="https://stripe.com/privacy">Privacy Policy</a></li>
+    </ul>
+</div>
+<div class="country-dropdown-overlay"></div>
+
+    <script src="/assets/jquery-47d53801b9f61ca8a21dcc2571aeb3ec.js"></script>
+    <script src="/assets/shared-3abadcaa3af6e785a085062e45894014.js"></script>
+
+<script src="/assets/footer_analytics-6e8fc3677422b1ab0ef7aca057103605.js"></script>
+
+<noscript>
+  <div style="display:inline;">
+  <img height="1" width="1" style="border-style:none;" alt="" src="https://googleads.g.doubleclick.net/pagead/viewthroughconversion/1008370075/?value=0&amp;guid=ON&amp;script=0"/>
+  </div>
+</noscript>
+
+
+<script src="/assets/about-9bf9693db405f598d22308af7b6515bc.js"></script>
+</body>
+</html>
+

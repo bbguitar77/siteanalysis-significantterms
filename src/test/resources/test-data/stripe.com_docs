@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Documentation</title>
+    <link rel="stylesheet" type="text/css" href="/assets/site-26954f50b39852851f77d08e7ace9222.css" media="screen" />
+    <script type="text/javascript">
+        var _sf_startpt=(new Date()).getTime()
+        var APIValues = {};
+    </script>
+    <script type="application/json" id="mixpanel_config">{&quot;identifier&quot;:&quot;eb71b6171a4f7ed97de9b7a0395b7ca5&quot;}</script>
+<script type="application/json" id="analytics_config">{}</script>
+<script src="https://www.googleadservices.com/pagead/conversion.js"></script>
+<script src="/assets/external_analytics-a9e3d39cd6110aa8c184d9c1f2e5777e.js"></script>
+<script src="/assets/qframe-cb903dc9166e266dc7d9f11d44f5e81a.js"></script>
+<script src="/assets/adroll-2c65ca4279f1eae4a1e4ef09755dc695.js"></script>
+
+    <!--[if lt IE 9]>
+    <script src="/assets/html5shiv-ed45ba46bc05da59e38de9dd0fdf531f.js"></script>
+    <![endif]-->
+    <script type="text/javascript" src="//use.typekit.net/gbh7uto.js"></script>
+    <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+    
+</head>
+<body id="documentation">
+
+  <div id="header">
+    <h1><a href="/">Stripe</a></h1>
+    <div class="navigation">
+    <div class="signin"><a id='signin' href="https://dashboard.stripe.com/login"><span>Sign In</span></a></div>
+
+  <ul class="global">
+    <li><a href="/docs" class="selected">Documentation</a></li>
+    <li><a href="https://support.stripe.com">Help &amp; Support</a></li>
+  </ul>
+</div>
+
+  </div><!-- #header -->
+
+  <section id="doc">
+
+    <nav>
+
+      <h1 class="getting-started">Documentation</h1>
+      <ul>
+        <li class="selected">
+          <a href="/docs">Getting Started</a>
+        </li>
+          <li class="unselected sub">
+            <a href="/docs/tutorials/checkout">Embedded Form</a>
+          </li>
+          <li class="unselected sub">
+            <a href="/docs/tutorials/forms">Custom Forms</a>
+          </li>
+          <li class="unselected sub">
+            <a href="/docs/mobile">Mobile Apps</a>
+          </li>
+
+        <li class="unselected">
+          <a href="/docs/tutorials/charges">Charging Cards</a>
+        </li>
+
+        <li class="unselected">
+          <a href="/docs/tutorials/sending-transfers">Sending Transfers</a>
+        </li>
+
+        <li class="unselected">
+          <a href="/docs/tutorials/dashboard">Your Account</a>
+        </li>
+      </ul>
+
+      <h1 class="references">References</h1>
+      <ul>
+        <li class="unselected">
+          <a href="/docs/stripe.js">Stripe.js</a>
+        </li>
+        <li class="unselected">
+          <a href="/docs/checkout">Checkout</a>
+        </li>
+        <li class="unselected">
+          <a href="/docs/webhooks">Webhooks</a>
+        </li>
+        <li class="unselected">
+          <a href="/docs/testing">Testing</a>
+        </li>
+        <li class="unselected">
+          <a href="/docs/examples">Examples</a>
+        </li>
+        <li class="unselected">
+          <a href="/docs/upgrades">API Upgrades</a>
+        </li>
+        <li class="unselected">
+          <a href="/docs/libraries">API Libraries</a>
+        </li>
+        <li class="unselected">
+          <a href="/docs/api" class="external" target="_blank">
+            Full API Reference
+          </a>
+        </li>
+      </ul>
+
+      <h1 class="subscriptions">Subscriptions</h1>
+      <ul>
+        <li class="unselected">
+          <a href="/docs/subscriptions">Overview</a>
+        </li>
+        <li class="unselected">
+          <a href="/docs/tutorials/subscriptions">Getting started</a>
+        </li>        
+        <li class="unselected">
+          <a href="/docs/guides/subscriptions">Integration guide</a>
+        </li>
+      </ul>
+
+      <h1 class="connect">Connect</h1>
+      <ul>
+        <li class="unselected">
+          <a href="/docs/connect">Overview</a>
+        </li>
+        <li class="unselected">
+          <a href="/docs/connect/getting-started">Getting Started</a>
+        </li>
+        <li class="unselected">
+          <a href="/docs/connect/oauth">Integrating OAuth</a>
+        </li>
+        <li class="unselected">
+          <a href="/docs/connect/collecting-fees">Collecting Fees</a>
+        </li>
+        <li class="unselected">
+          <a href="/docs/connect/shared-customers">Shared Customers</a>
+        </li>
+        <li class="unselected">
+          <a href="/docs/connect/reference">Reference</a>
+        </li>
+      </ul>
+
+      <h1 class="faq"><abbr title="Frequently Asked Questions">FAQ</abbr></h1>
+      <ul>
+        <li class="unselected">
+          <a href="/help/transfers">Getting Paid</a>
+        </li>
+        <li class="unselected">
+          <a href="/help/disputes">Disputes</a>
+        </li>
+        <li class="unselected">
+          <a href="/help/ssl">SSL</a>
+        </li>
+        <li class="unselected">
+          <a href="/help/security">Security</a>
+        </li>
+      </ul>
+
+      <h1 class="more">More</h1>
+      <ul>
+        <li class="unselected">
+          <a href="/help/contact">Contact</a>
+        </li>
+        <li class="unselected">
+          <a href="/global">Global Users</a>
+        </li>
+        <li class="unselected">
+          <a href="/gallery">Gallery</a>
+        </li>
+        <li class="last unselected">
+          <a href="/docs/integrations">Integrations</a>
+        </li>
+      </ul>
+
+    </nav>
+
+    <section id="content">
+      <section id="start">
+
+  <header>
+    <h1>Getting Started</h1>
+    <p>
+      Below you'll find tutorials that will teach you how to use Stripe,
+      and reference documentation for all the moving&nbsp;parts.
+    </p>
+  </header>
+
+  <section class="getting-started">
+
+    <div class="implementation-options">
+
+      <div class="guides">
+        <a class="web" href="/docs/tutorials/checkout">
+          <h2>On your website</h2>
+          <p>
+            Start accepting payments on your website with our JavaScript libraries. <span class="arrow">Learn more</span>
+          </p>
+        </a>
+        <a class="mobile" href="/docs/mobile">
+          <h2>In your mobile app</h2>
+          <p>
+            We have toolkits for native iPhone and Android applications. <span class="arrow">Learn more</span>
+          </p>
+        </a>
+      </div>
+
+      <div class="non-developer">
+        <a class="platforms" href="/docs/libraries#third-party-plugins">
+          <h3>Stripe plugins for 3rd party software</h3>
+          <p>
+            As well as the official API libraries listed above, there are a number of third-party plugins and libraries built by our community, such as for Wordpress and Drupal.
+
+            <span class="arrow">Learn more</span>
+          </p>
+        </a>
+
+        <a class="services" href="/docs/integrations">
+          <h3>Use Stripe with other services</h3>
+          <p>
+            Stripe has lots of third-party integrations which require no programming, hosting or complicated setup on your behalf, such as Shopify and Wufoo.
+
+            <span class="arrow">Learn more</span>
+          </p>
+        </a>
+      </div>
+
+    </div>
+
+    <section id="details">
+      <article>
+        <h2>Need help?</h2>
+        <p>We're always happy to help out with code or any other questions you might have. <a href="https://support.stripe.com" class="arrow">Learn more</a></p>
+
+        <h2>API mailing list</h2>
+        <p>Building a third party integration or Connect application? Join our mailing list to be notified of API changes and stay up to&nbsp;date. <a href="https://groups.google.com/a/lists.stripe.com/forum/#!forum/api-discuss" class="arrow">View mailing list</a></p>
+
+        <h2>Resources</h2>
+        <ul>
+          <li><a href="/docs/libraries">API libraries</a></li>
+          <li><a href="/docs/examples">Example projects</a></li>
+        </ul>
+      </article>
+    </section>
+  </section>
+</section>
+
+    </section>
+
+  </section><!-- #documentation -->
+
+  <div id="footer">
+    <div class="country-dropdown-view">
+        <a class="select">
+            <span>
+                <img src="/img/flags/us.png" width="23" height="17" data-hires="true" />
+                <strong>United States</strong>
+            </span>
+        </a>
+
+        <div class="popover">
+            <div class="arrow"></div>
+            <h4>Select your Country</h4>
+            <ul>
+                    <li>
+                        <a href="/country?country=US&redirect=/docs" class="selected">
+                            <img src="/img/flags/us.png" width="23" height="17" data-hires="true" />
+                            <span>United States</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/country?country=CA&redirect=/docs" >
+                            <img src="/img/flags/ca.png" width="23" height="17" data-hires="true" />
+                            <span>Canada</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/country?country=GB&redirect=/docs" >
+                            <img src="/img/flags/gb.png" width="23" height="17" data-hires="true" />
+                            <span>United Kingdom</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/country?country=IE&redirect=/docs" >
+                            <img src="/img/flags/ie.png" width="23" height="17" data-hires="true" />
+                            <span>Ireland</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/country?country=AU&redirect=/docs" >
+                            <img src="/img/flags/au.png" width="23" height="17" data-hires="true" />
+                            <span>Australia</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/country?country=BE&redirect=/docs" >
+                            <img src="/img/flags/be.png" width="23" height="17" data-hires="true" />
+                            <span>Belgium</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/country?country=DK&redirect=/docs" >
+                            <img src="/img/flags/dk.png" width="23" height="17" data-hires="true" />
+                            <span>Denmark</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/country?country=FI&redirect=/docs" >
+                            <img src="/img/flags/fi.png" width="23" height="17" data-hires="true" />
+                            <span>Finland</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/country?country=FR&redirect=/docs" >
+                            <img src="/img/flags/fr.png" width="23" height="17" data-hires="true" />
+                            <span>France</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/country?country=DE&redirect=/docs" >
+                            <img src="/img/flags/de.png" width="23" height="17" data-hires="true" />
+                            <span>Germany</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/country?country=IT&redirect=/docs" >
+                            <img src="/img/flags/it.png" width="23" height="17" data-hires="true" />
+                            <span>Italy</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/country?country=LU&redirect=/docs" >
+                            <img src="/img/flags/lu.png" width="23" height="17" data-hires="true" />
+                            <span>Luxembourg</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/country?country=NL&redirect=/docs" >
+                            <img src="/img/flags/nl.png" width="23" height="17" data-hires="true" />
+                            <span>Netherlands</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/country?country=NO&redirect=/docs" >
+                            <img src="/img/flags/no.png" width="23" height="17" data-hires="true" />
+                            <span>Norway</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/country?country=ES&redirect=/docs" >
+                            <img src="/img/flags/es.png" width="23" height="17" data-hires="true" />
+                            <span>Spain</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/country?country=SE&redirect=/docs" >
+                            <img src="/img/flags/se.png" width="23" height="17" data-hires="true" />
+                            <span>Sweden</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/country?country=CH&redirect=/docs" >
+                            <img src="/img/flags/ch.png" width="23" height="17" data-hires="true" />
+                            <span>Switzerland</span>
+                        </a>
+                    </li>
+          </ul>
+        </div>
+    </div>
+
+
+    <p><a href="https://stripe.com">&copy; Stripe</a></p>
+
+    <ul>
+        <li><a href="https://status.stripe.com"><span>System Status</span></a></li>
+        <li><a href="https://stripe.com/about">About</a></li>
+        <li><a href="https://stripe.com/blog"><span>Blog</span></a></li>
+        <li><a href="https://stripe.com/jobs"><span>Jobs</span></a></li>
+        <li><a href="http://twitter.com/stripe">Twitter</a></li>
+    </ul>
+    <ul class="lesser">
+        <li><a href="https://stripe.com/terms">Terms of Service</a></li>
+        <li><a href="https://stripe.com/privacy">Privacy Policy</a></li>
+    </ul>
+</div>
+<div class="country-dropdown-overlay"></div>
+
+    <script src="/assets/jquery-47d53801b9f61ca8a21dcc2571aeb3ec.js"></script>
+    <script src="/assets/shared-3abadcaa3af6e785a085062e45894014.js"></script>
+
+<script src="/assets/footer_analytics-6e8fc3677422b1ab0ef7aca057103605.js"></script>
+
+<noscript>
+  <div style="display:inline;">
+  <img height="1" width="1" style="border-style:none;" alt="" src="https://googleads.g.doubleclick.net/pagead/viewthroughconversion/1008370075/?value=0&amp;guid=ON&amp;script=0"/>
+  </div>
+</noscript>
+
+
+  
+
+  <script src="/assets/documentation-6a120856de81b5511bf1790365f19166.js"></script>
+  <script src="/assets/highlight.pack-8bd9d9dd93b5ef1f95e855d7641494d2.js"></script>
+<script src="/assets/highlighter-1268244f129b69592ca48d0f0f198cac.js"></script>
+
+  <script type="text/javascript">
+    Analytics.page("docs");
+  </script>
+</body>
+</html>
+
+

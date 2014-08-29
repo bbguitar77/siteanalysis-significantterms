@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="en" id="features" class="tablet mobile">
+  <head>
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="google-site-verification" content="f0LCrdI6z4Fo8zld4sHCgo5SiUE4EYYRUa6KVeX3Mw8" />
+<meta name="description" content="Stripe is a suite of APIs that powers commerce for businesses of all sizes." />
+
+
+<link rel="apple-touch-icon-precomposed" href="/img/apple-touch-icon/152x152.png?2" />
+<link rel="apple-touch-icon-precomposed" sizes="120x120" href="/img/apple-touch-icon/120x120.png?2" />
+
+<meta property="og:image" content="https://stripe.com/img/open-graph/logo.png?2" />
+<link rel="image_src" type="image/png" href="https://stripe.com/img/open-graph/logo.png?2"/>
+
+<link rel="stylesheet" href="//cloud.typography.com/711858/764882/css/fonts.css" />
+<link rel="stylesheet" href="/assets/shared-site-7d21dcd37f34563aa196674292c6ca9f.css" />
+  <link rel="stylesheet" href="/assets/features-9174e4fe0a4030adb7bc4559a922e06c.css">
+
+
+<!--[if lt IE 9]>
+<script src="/assets/html5shiv-ed45ba46bc05da59e38de9dd0fdf531f.js"></script>
+<![endif]-->
+
+<script src="/assets/shared-site-db4a6a71928574c1be21fc3d812e037c.js"></script>
+  <script src="/assets/features-d9d00ed64e0070f1ec1f317ac1ae42b4.js"></script>
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <title>Stripe: Features</title>
+  </head>
+  <body id="" class="">
+    <div id="main">
+
+      <header id="main-header" class='transparent'>
+  <div class="inner-col">
+    <h1><a href="/">Stripe</a></h1>
+    <nav>
+      <ul class="pages">
+        <li class="home"><a href="https://stripe.com">Home</a></li>
+        <li class="features"><a href="https://stripe.com/features">Features</a></li>
+        <li class="pricing"><a href="https://stripe.com/pricing">Pricing</a></li>
+        <li class="more">
+            <span>More</span>
+            <ul>
+              <li><a href='https://stripe.com/checkout'>Checkout</a></li>
+              <li><a href='https://stripe.com/marketplaces'>Marketplaces</a></li>
+              <li><a href='https://stripe.com/connect'>Connect</a></li>
+
+              <li class='separator'><a href="https://stripe.com/gallery">Gallery</a></li>
+              <li><a href="https://stripe.com/blog">Blog</a></li>
+              <li><a href="https://stripe.com/about">About</a></li>
+              <li><a href="https://stripe.com/jobs">Jobs</a></li>
+            </ul>
+        </li>
+      </ul>
+      <ul class="external">
+        <li><a href="https://stripe.com/docs">Documentation</a></li>
+        <li><a href="https://support.stripe.com">Help &amp; Support</a></li>
+
+        <li class="button">
+          <a data-adroll-segment='submit_two' href="https://dashboard.stripe.com/login">Sign in</a></li>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+
+      <div id="main-content">
+        
+  <header class="title inner-col">
+    <h1>Feature-packed payments</h1>
+    <p>A suite of APIs that powers commerce for businesses of all sizes.</p>
+
+    <nav class="sections">
+      <ul>
+        <li>
+          <a href="#built-for-developers" class="developers">
+            <strong>Built for developers</strong>
+            <span>Simple, composable, orthogonal APIs.</span>
+          </a>
+        </li>
+
+        <li>
+          <a href="#powerful-toolkit" class="complete">
+            <strong>Powerful toolkit</strong>
+            <span>Works with any type of business.</span>
+          </a>
+        </li>
+
+        <li>
+          <a href="#perfectly-scaled" class="reliable">
+            <strong>Perfectly scaled</strong>
+            <span>Robust support for companies of all sizes.</span>
+          </a>
+        </li>
+
+        <li>
+          <a href="#seamless-security" class="secure">
+            <strong>Seamless security</strong>
+            <span>Trusted, secure, and headache-free.</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+  </header>
+
+  <!-- Start 'Built for developers' -->
+  <article id="built-for-developers">
+    <header>
+      <h2>Built for developers</h2>
+      <p>Robust, clean APIs that let you focus on building great products.</p>
+    </header>
+
+    <div class="examples inner-col smaller">
+
+<script type='text/template' class='curl'><span class="keyword">curl</span> <span style="color:rgba(34, 135, 34, 1)">https://api.stripe.com/v1/charges</span> \
+  -u <span class="string">sk_test_BQokikJOvBiI2HlWgH4olfQ2</span>: \
+  -d <span class="symbol">amount</span>=<span class="string">400</span> \
+  -d <span class="symbol">currency</span>=<span class="string">usd</span> \
+  -d "<span class="symbol">description</span>=<span class="string">Charge for test@example.com</span>" \
+  -d "<span class="symbol">card[number]</span>=<span class="string">4242424242424242</span>" \
+  -d "<span class="symbol">card[exp_month]</span>=<span class="string">12</span>" \
+  -d "<span class="symbol">card[exp_year]</span>=<span class="string">2014</span>" \
+  -d "<span class="symbol">card[cvc]</span>=<span class="string">123</span>"</script>
+
+      <script type="text/javascript">
+        window.APIValues = {};
+
+          APIValues["ruby"] = "\u003Cspan class=\"highlight_js ruby\"\u003Erequire \u0026quot;stripe\u0026quot;\nStripe.api_key = \u0026quot;sk_test_BQokikJOvBiI2HlWgH4olfQ2\u0026quot;\n\nStripe::Charge.create(\n  :amount =\u0026gt; 400,\n  :currency =\u0026gt; \u0026quot;usd\u0026quot;,\n  :card =\u0026gt; {\n    :number =\u0026gt; \u0026quot;4242424242424242\u0026quot;,\n    :exp_month =\u0026gt; 8,\n    :exp_year =\u0026gt; 2015,\n    :cvc =\u0026gt; \u0026quot;314\u0026quot;\n  },\n  :description =\u0026gt; \u0026quot;Charge for test@example.com\u0026quot;\n)\u003C/span\u003E";
+          APIValues["python"] = "\u003Cspan class=\"highlight_js python\"\u003Eimport stripe\nstripe.api_key = \u0026quot;sk_test_BQokikJOvBiI2HlWgH4olfQ2\u0026quot;\n\nstripe.Charge.create(\n  amount=400,\n  currency=\u0026quot;usd\u0026quot;,\n  card={\n    \u0026quot;number\u0026quot;: \u0026#39;4242424242424242\u0026#39;,\n    \u0026quot;exp_month\u0026quot;: 12,\n    \u0026quot;exp_year\u0026quot;: 2015,\n    \u0026quot;cvc\u0026quot;: \u0026#39;123\u0026#39;\n  },\n  description=\u0026quot;Charge for test@example.com\u0026quot;\n)\u003C/span\u003E";
+          APIValues["php"] = "\u003Cspan class=\"highlight_js php\"\u003Erequire_once(\u0026#39;./lib/Stripe.php\u0026#39;);\nStripe::setApiKey(\u0026quot;sk_test_BQokikJOvBiI2HlWgH4olfQ2\u0026quot;);\n\nStripe_Charge::create(array(\n  \u0026quot;amount\u0026quot; =\u0026gt; 400,\n  \u0026quot;currency\u0026quot; =\u0026gt; \u0026quot;usd\u0026quot;,\n  \u0026quot;card\u0026quot; =\u0026gt; array(\n    \u0026quot;number\u0026quot; =\u0026gt; \u0026quot;4242424242424242\u0026quot;,\n    \u0026quot;exp_month\u0026quot; =\u0026gt; 8,\n    \u0026quot;exp_year\u0026quot; =\u0026gt; 2015,\n    \u0026quot;cvc\u0026quot; =\u0026gt; \u0026quot;314\u0026quot;\n  ),\n  \u0026quot;description\u0026quot; =\u0026gt; \u0026quot;Charge for test@example.com\u0026quot;\n));\u003C/span\u003E";
+          APIValues["java"] = "\u003Cspan class=\"highlight_js java\"\u003EStripe.apiKey = \u0026quot;sk_test_BQokikJOvBiI2HlWgH4olfQ2\u0026quot;;\n\nMap\u0026lt;String, Object\u0026gt; chargeParams = new HashMap\u0026lt;String, Object\u0026gt;();\nchargeParams.put(\u0026quot;amount\u0026quot;, 400);\nchargeParams.put(\u0026quot;currency\u0026quot;, \u0026quot;usd\u0026quot;);\nMap\u0026lt;String, Object\u0026gt; cardParams = new HashMap\u0026lt;String, Object\u0026gt;();\ncardParams.put(\u0026quot;number\u0026quot;, \u0026quot;4242424242424242\u0026quot;);\ncardParams.put(\u0026quot;exp_month\u0026quot;, 8);\ncardParams.put(\u0026quot;exp_year\u0026quot;, 2015);\ncardParams.put(\u0026quot;cvc\u0026quot;, \u0026quot;314\u0026quot;);\nchargeParams.put(\u0026quot;card\u0026quot;, cardParams);\nchargeParams.put(\u0026quot;description\u0026quot;, \u0026quot;Charge for test@example.com\u0026quot;);\n\nCharge.create(chargeParams);\u003C/span\u003E";
+          APIValues["node"] = "\u003Cspan class=\"highlight_js javascript\"\u003Evar stripe = require(\u0026quot;stripe\u0026quot;)(\n  \u0026quot;sk_test_BQokikJOvBiI2HlWgH4olfQ2\u0026quot;\n);\n\nstripe.charges.create({\n  amount: 400,\n  currency: \u0026quot;usd\u0026quot;,\n  card: {\n    number: \u0026#39;4242424242424242\u0026#39;,\n    exp_month: 12,\n    exp_year: 2015,\n    cvc: \u0026#39;123\u0026#39;\n  },\n  description: \u0026quot;Charge for test@example.com\u0026quot;\n}, function(err, charge) {\n  // asynchronously called\n});\u003C/span\u003E";
+      </script>
+
+      <ul>
+        <li>curl</li>
+          <li>Ruby</li>
+          <li>Python</li>
+          <li>PHP</li>
+          <li>Java</li>
+          <li>Node</li>
+      </ul>
+
+      <div class="code">
+        <pre></pre>
+      </div>
+
+      <aside>
+        <p>These actually work—try running them directly in your terminal.</p>
+      </aside>
+    </div>
+
+    <aside class="libraries inner-col smaller">
+      <p>There are Stripe <a href="/docs/libraries">libraries</a> in everything from Java to Go. Check out the <a href="/docs">docs</a> and explore the <a href="/docs/api" class="arrow">full API reference</a></p></small>
+    </aside>
+
+
+    <div class="clientside-integration inner-col smaller">
+      <section class="checkout">
+        <a href='https://stripe.com/checkout'><img width="421" height="473" src="/img/transparent.png" data-src="/img/features/developers/checkout.png?2" /></a>
+
+        <h3>Stripe Checkout <strong class="new">New</strong></h3>
+        <p>
+          No need to design payment forms from scratch. Stripe Checkout offers a beautiful, customizable payment flow that works great across desktop and mobile. When you use Checkout, you’re always up-to-date, with no extra code required.
+        </p>
+        <p>
+          <a href="https://stripe.com/checkout" class="arrow">Explore Checkout</a>
+        </p>
+      </section>
+
+      <section class="stripejs">
+        <h3>Total control with Stripe.js</h3>
+        <p>
+          Stripe.js securely transmits card details from browsers to Stripe. Use it to control every pixel of the experience and let Stripe take care of the pesky processing and&nbsp;compliance.
+        </p>
+        <p>
+          <a href="https://stripe.com/docs/stripe.js" class="arrow">Stripe.js documentation</a>
+        </p>
+      </section>
+    </div>
+
+    <section class="mobile-libraries">
+      <div class='inner-col smaller'>
+
+        <img width="430" height="488" src="/img/transparent.png" data-src="/img/features/developers/mobile-examples.png" />
+
+        <div>
+          <h3>Seamlessly integrated mobile payments</h3>
+          <p>
+            Lyft, Postmates, OrderAhead, Instacart, and thousands of other mobile applications use Stripe’s native iOS &amp; Android libraries to charge on the go. Even collect cards up front for seamless background billing later.
+          </p>
+          <p>
+            <a href="https://stripe.com/docs/mobile" class="arrow">View mobile documentation</a>
+          </p>
+          <aside>
+            <p>Lyft &amp; Instacart are available on the Apple App Store and Google Play.</p>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!--<aside class="link">
+        <p>
+          <strong>2.9% + 30¢.</strong>
+          No setup fees, no card storage fees, and no hidden costs.
+          <a href="https://stripe.com/pricing" class="arrow">See pricing</a>
+        </p>
+    </aside>-->
+
+  </article>
+  <!-- End 'Built for developers' -->
+
+  <!-- Start 'Powerful toolkit' -->
+  <article id="powerful-toolkit">
+    <header class='inner-col smaller'>
+      <h2>Payments from start to finish</h2>
+      <p>A flexible set of tools and functionality for modern commerce.</p>
+    </header>
+
+    <section class="full-stack inner-col smaller">
+      <img width="858" height="265" src="/img/transparent.png" data-src="/img/features/complete/two_cards.png" />
+      <h3>The whole stack</h3>
+      <p>
+        With clean, composable, and complete APIs, Stripe’s thoughtful interfaces and abstractions can handle your company’s needs &mdash; from storing cards and processing subscriptions to powering marketplaces and everything in between.
+      </p>
+      <p>
+        Stripe’s also got you covered if you just need to accept payments quickly and easily.
+      </p>
+    </section>
+
+    <section class="subscriptions">
+      <div class='inner-col'>
+        <div class="description">
+          <h3>Recurring billing</h3>
+          <p>
+            With Stripe’s subscription APIs<br> and webhooks, storing customers’<br> cards on file or even implementing<br> complex functionality like metered billing or<br> annual plans is easy.
+          </p>
+          <p>
+            Companies like Rackspace, Parse, and<br> Squarespace use Stripe to manage subscriptions<br> and recurring revenue.
+          </p>
+          <p>
+            <a href="https://stripe.com/docs/tutorials/subscriptions" class="arrow">View subscriptions documentation</a>
+          </p>
+        </div>
+
+        <dl>
+          <dt class="periods"><strong>Flexible billing periods</strong></dt>
+          <dd>Yearly, monthly, weekly, or custom intervals.</dd>
+
+          <dt class="coupons"><strong>Coupons</strong></dt>
+          <dd>Offer special deals &amp; coupons to your users.</dd>
+
+          <dt class="trials"><strong>Trials</strong></dt>
+          <dd>Let your users take your service for a spin.</dd>
+
+          <dt class="plans"><strong>Unlimited subscription options</strong></dt>
+          <dd>No limits on the type of plans you can offer.</dd>
+        </dl>
+      </div>
+    </section>
+
+    <section class="international-payments inner-col smaller">
+
+      <header>
+          <h2>Accept payments from anyone, anywhere</h2>
+          <p>
+            Stripe currently supports businesses in the US, Canada, UK, Australia, and many <a href="/global">European countries</a>. You can instantly accept payments from around the world.
+          </p>
+      </header>
+
+      <img width="722" height="331" src="/img/transparent.png" data-src="/img/features/complete/world.png" />
+
+        <div class="currencies">
+          <h3>Go global: 100+ currencies included <strong class="new">New</strong></h3>
+          <p>
+            Stripe automatically handles conversions so that you can instantly charge customers in their local currencies. <a href="https://support.stripe.com/questions/which-currencies-does-stripe-support" class='arrow'>Learn more</a>
+          </p>
+        </div>
+
+      <!--
+      <div class="cards">
+        <h3>Charge international cards right out of the box</h3>
+        <p class="cards all-cards">
+          Process major international debit or credit cards, including
+            Visa, 
+            MasterCard, 
+            American Express, 
+            Discover, 
+            Diners Club and 
+            JCB.
+        </p>
+      </div>
+      -->
+    </section>
+
+    <article id='for-platforms' class="marketplaces payouts">
+      <div class='inner-col smaller'>
+      <header>
+        <h2>Build platforms with Stripe and offer payments to your users</h2>
+        <p>
+          For marketplaces, store builders, invoicing systems, and any service that helps users get paid.
+        </p>
+      </header>
+
+      <aside>
+        <img width="411" height="389" src="/img/transparent.png" data-src="/img/features/complete/marketplaces/sites.png?2"/>
+        <p>Squarespace uses Stripe to easily let their customers<br> sell physical and digital goods.</p>
+      </aside>
+
+      <section class="connect">
+        <h3>Stripe Connect</h3>
+        <p>
+          Focus on creating and growing your platform, and we‘ll take care of spinning up Stripe accounts for your users and making sure they’re paid.
+        </p>
+
+
+        <p>
+          With OAuth, building on top of Stripe is a breeze.
+          <a href="https://stripe.com/connect" class="arrow">Learn more</a>
+        </p>
+      </section>
+
+        <section class="payouts">
+          <h3>Stripe for&nbsp;marketplaces&nbsp;<strong class="new">New</strong></h3>
+          <p>
+            If you’d prefer to pay out to your marketplace’s sellers directly, Stripe can give you unmatched control.
+            <a href="/marketplaces" class="arrow">Learn more</a>
+          </p>
+        </section>
+
+      </div>
+    </article>
+
+    <article class="more inner-col smaller">
+      <header>
+        <h2>And much, much more</h2>
+        <p>
+          With over a hundred powerful features, Stripe is the best way to accept payments online.
+
+            <a href="https://dashboard.stripe.com/signup" class="arrow" data-adroll-segment='submit_one'>Get started</a>
+        </p>
+      </header>
+
+      <div class="three-blocks">
+        <section class="teams">
+          <h3>Teams</h3>
+          <p>Add team members to your account, control access<br />levels, and more.</p>
+          <p><a href="https://stripe.com/blog/teams" class="arrow">Learn more</a></p>
+        </section>
+        <section class="webhooks">
+          <h3>Webhooks</h3>
+          <p>Forget batch jobs. Stay in sync with account events and<br />instantly take action.</p>
+          <p><a href="https://stripe.com/docs/webhooks" class="arrow">Learn more</a></p>
+        </section>
+        <section class="reporting">
+          <h3>Data &amp; reporting</h3>
+          <p>See transaction info in real-time, and freely export to CSV, QuickBooks, or other formats.</p>
+          <p><a href="https://support.stripe.com/questions/what-kind-of-reporting-is-available" class="arrow">Learn more</a></p>
+        </section>
+      </div>
+
+    </article>
+
+  </article>
+  <!-- End 'Powerful toolkit' -->
+
+  <!-- Start 'Perfectly scaled' -->
+  <article id="perfectly-scaled">
+    <header class='inner-col smaller'>
+      <h2>Designed with the whole company in mind</h2>
+      <p>Stripe's engineering, operations, finance, and support experts make payments run smoothly for everyone.</p>
+    </header>
+
+    <div class='features inner-col smaller'>
+      <div class="three-blocks">
+        <section class="accounting">
+          <h3>Accounting integrations</h3>
+          <p>With real-time access to reporting data, you can connect Stripe with your existing accounting or ERP&nbsp;systems.</p>
+        </section>
+        <section class="international-cards">
+          <h3>Proven fraud protection</h3>
+          <p>Stripe actively works to protect your business from fraudulent charges and monitors suspicious&nbsp;transactions.</p>
+        </section>
+        <section class="local-currencies">
+          <h3>Act locally, work globally</h3>
+          <p>Work with international customers right out of the box while still getting paid in your preferred currency.</p>
+        </section>
+      </div>
+      <div class="three-blocks">
+        <section class="operations">
+          <h3>Operations, simplified</h3>
+          <p>Handling billing support and disputes is easy with Stripe &mdash; address issues with a few clicks, or automate it.</p>
+        </section>
+        <section class="availability">
+          <h3>Battle-tested systems</h3>
+          <p><a href="https://status.stripe.com">High availability</a>, transparent uptime reporting, and always ready for high transaction throughput.</p>
+        </section>
+        <section class="ecosystem">
+          <h3>Rich 3rd-party ecosystem</h3>
+          <p>You can use Stripe with <a href="https://stripe.com/docs/integrations">lots of integrations</a> that provide everything from email automation to hassle-free hosting.</p>
+        </section>
+      </div>
+   </div>
+
+  </article>
+  <!-- End 'Perfectly scaled' -->
+
+  <!-- Start 'Seamless security' -->
+  <article id="seamless-security">
+    <header class='inner-col smaller'>
+      <h2>Seamless security</h2>
+      <p>Stripe provides security and compliance without the headaches.</p>
+    </header>
+
+
+    <div class='inner-col smaller'>
+    <section class="automatically-secure">
+      <img width="468" height="266" src="/img/transparent.png" data-src="/img/features/secure/lock_card.png" />
+
+      <h3>No-hassle security &amp; compliance</h3>
+      <p>By using any of Stripe’s client libraries, such as Stripe.js for the web or the mobile APIs, you’re automatically compliant with the strictest PCI requirements.</p>
+      <p>No sensitive data hits your servers, saving you hours of security headaches.</p>
+    </section>
+
+    <div class="three-blocks">
+      <section class="compliant">
+        <h3>Trusted</h3>
+        <p>Thousands of small and large companies use Stripe to power commerce for their business.</p>
+      </section>
+      <section class="pci-level-1">
+        <h3>Certified PCI level&nbsp;1</h3>
+        <p>Stripe is certified to PCI Service Provider Level 1, the most stringent level of certification.</p>
+      </section>
+      <section class="two-factor-auth">
+        <h3>Two-factor authentication</h3>
+        <p>Add an extra layer of security to your account by enabling two-factor authentication.</p>
+      </section>
+    </div>
+
+    </div>
+  </article>
+  <!-- End 'Seamless security' -->
+
+  <aside class='get-started inner-col'>
+    <p>
+      <strong>Got questions?</strong>
+      We'd love to talk to you.
+      <a href='https://stripe.com/contact/sales' class='arrow'>Contact sales</a>
+    </p>
+    <p>
+        <a href="https://dashboard.stripe.com/register" class="button default" data-adroll-segment='submit_one'>
+          <span>
+              Create your Stripe account
+          </span>
+        </a>
+
+      <a href="https://dashboard.stripe.com/login" class="button secondary" data-adroll-segment='submit_two'><span>Sign in</span></a>
+    </p>
+  </aside>
+
+
+        <footer id="main-footer">
+  <div class='inner-col'>
+    <p>&copy; Stripe</p>
+
+      <div class="country-selector">
+          <a class="select">
+              <span>
+                  <img width="23" height="17" alt="United States" src="/img/flags/us.png" data-hires="true" />
+                  <strong>United States</strong>
+              </span>
+          </a>
+
+          <ul>
+              <li >
+                <a href="/country?country=US&redirect=/features" class="selected">
+                  <img width="23" height="17" alt="United States" src="/img/flags/us.png" data-hires="true" />
+                  <span>United States</span>
+                </a>
+              </li>
+              <li >
+                <a href="/country?country=CA&redirect=/features" >
+                  <img width="23" height="17" alt="Canada" src="/img/flags/ca.png" data-hires="true" />
+                  <span>Canada</span>
+                </a>
+              </li>
+              <li >
+                <a href="/country?country=GB&redirect=/features" >
+                  <img width="23" height="17" alt="United Kingdom" src="/img/flags/gb.png" data-hires="true" />
+                  <span>United Kingdom</span>
+                </a>
+              </li>
+              <li >
+                <a href="/country?country=IE&redirect=/features" >
+                  <img width="23" height="17" alt="Ireland" src="/img/flags/ie.png" data-hires="true" />
+                  <span>Ireland</span>
+                </a>
+              </li>
+              <li >
+                <a href="/country?country=AU&redirect=/features" >
+                  <img width="23" height="17" alt="Australia" src="/img/flags/au.png" data-hires="true" />
+                  <span>Australia</span>
+                </a>
+              </li>
+              <li class="beta">
+                <a href="/country?country=BE&redirect=/features" >
+                  <img width="23" height="17" alt="Belgium" src="/img/flags/be.png" data-hires="true" />
+                  <span>Belgium</span>
+                    <em>Beta</em>
+                </a>
+              </li>
+              <li class="beta">
+                <a href="/country?country=DK&redirect=/features" >
+                  <img width="23" height="17" alt="Denmark" src="/img/flags/dk.png" data-hires="true" />
+                  <span>Denmark</span>
+                    <em>Beta</em>
+                </a>
+              </li>
+              <li class="beta">
+                <a href="/country?country=FI&redirect=/features" >
+                  <img width="23" height="17" alt="Finland" src="/img/flags/fi.png" data-hires="true" />
+                  <span>Finland</span>
+                    <em>Beta</em>
+                </a>
+              </li>
+              <li class="beta">
+                <a href="/country?country=FR&redirect=/features" >
+                  <img width="23" height="17" alt="France" src="/img/flags/fr.png" data-hires="true" />
+                  <span>France</span>
+                    <em>Beta</em>
+                </a>
+              </li>
+              <li class="beta">
+                <a href="/country?country=DE&redirect=/features" >
+                  <img width="23" height="17" alt="Germany" src="/img/flags/de.png" data-hires="true" />
+                  <span>Germany</span>
+                    <em>Beta</em>
+                </a>
+              </li>
+              <li class="beta">
+                <a href="/country?country=IT&redirect=/features" >
+                  <img width="23" height="17" alt="Italy" src="/img/flags/it.png" data-hires="true" />
+                  <span>Italy</span>
+                    <em>Beta</em>
+                </a>
+              </li>
+              <li class="beta">
+                <a href="/country?country=LU&redirect=/features" >
+                  <img width="23" height="17" alt="Luxembourg" src="/img/flags/lu.png" data-hires="true" />
+                  <span>Luxembourg</span>
+                    <em>Beta</em>
+                </a>
+              </li>
+              <li class="beta">
+                <a href="/country?country=NL&redirect=/features" >
+                  <img width="23" height="17" alt="Netherlands" src="/img/flags/nl.png" data-hires="true" />
+                  <span>Netherlands</span>
+                    <em>Beta</em>
+                </a>
+              </li>
+              <li class="beta">
+                <a href="/country?country=NO&redirect=/features" >
+                  <img width="23" height="17" alt="Norway" src="/img/flags/no.png" data-hires="true" />
+                  <span>Norway</span>
+                    <em>Beta</em>
+                </a>
+              </li>
+              <li class="beta">
+                <a href="/country?country=ES&redirect=/features" >
+                  <img width="23" height="17" alt="Spain" src="/img/flags/es.png" data-hires="true" />
+                  <span>Spain</span>
+                    <em>Beta</em>
+                </a>
+              </li>
+              <li class="beta">
+                <a href="/country?country=SE&redirect=/features" >
+                  <img width="23" height="17" alt="Sweden" src="/img/flags/se.png" data-hires="true" />
+                  <span>Sweden</span>
+                    <em>Beta</em>
+                </a>
+              </li>
+              <li class="beta">
+                <a href="/country?country=CH&redirect=/features" >
+                  <img width="23" height="17" alt="Switzerland" src="/img/flags/ch.png" data-hires="true" />
+                  <span>Switzerland</span>
+                    <em>Beta</em>
+                </a>
+              </li>
+            <li class='notify-signup-link'>
+              <a href='https://stripe.com/global'>
+                Stripe is expanding, more countries <span class='arrow'>coming soon</span>
+              </a>
+            </li>
+          </ul>
+
+      </div>
+
+    <ul>
+      <li><a href="https://status.stripe.com"><span>Status</span></a></li>
+      <li><a href="https://stripe.com/blog"><span>Blog</span></a></li>
+      <li><a href="https://stripe.com/about">About</a></li>
+      <li><a href="https://stripe.com/jobs"><span>Jobs</span></a></li>
+      <li><a href="https://stripe.com/contact">Contact</a></li>
+      <li><a href="https://stripe.com/terms">Privacy&nbsp;&amp;&nbsp;Terms</a></li>
+    </ul>
+  </div>
+</footer>
+
+      </div>
+
+    </div>
+
+    
+
+    <script type="application/json" id="mixpanel_config">{&quot;identifier&quot;:&quot;eb71b6171a4f7ed97de9b7a0395b7ca5&quot;}</script>
+<script type="application/json" id="analytics_config">{}</script>
+<script src="https://www.googleadservices.com/pagead/conversion.js"></script>
+<script src="/assets/external_analytics-a9e3d39cd6110aa8c184d9c1f2e5777e.js"></script>
+<script src="/assets/qframe-cb903dc9166e266dc7d9f11d44f5e81a.js"></script>
+<script src="/assets/adroll-2c65ca4279f1eae4a1e4ef09755dc695.js"></script>
+
+    <script type="text/javascript">
+      Analytics.track("site.features.viewed");
+    </script>
+    <script src="/assets/footer_analytics-6e8fc3677422b1ab0ef7aca057103605.js"></script>
+
+<noscript>
+  <div style="display:inline;">
+  <img height="1" width="1" style="border-style:none;" alt="" src="https://googleads.g.doubleclick.net/pagead/viewthroughconversion/1008370075/?value=0&amp;guid=ON&amp;script=0"/>
+  </div>
+</noscript>
+
+
+  </body>
+</html>

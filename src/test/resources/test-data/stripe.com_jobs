@@ -1,0 +1,1445 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Stripe: Jobs</title>
+  <link rel="stylesheet" type="text/css" href="/assets/site-26954f50b39852851f77d08e7ace9222.css" media="screen" />
+  <script type="text/javascript">
+    var _sf_startpt=(new Date()).getTime()
+    var APIValues = {};
+  </script>
+  <script type="application/json" id="mixpanel_config">{&quot;identifier&quot;:&quot;eb71b6171a4f7ed97de9b7a0395b7ca5&quot;}</script>
+<script type="application/json" id="analytics_config">{}</script>
+<script src="https://www.googleadservices.com/pagead/conversion.js"></script>
+<script src="/assets/external_analytics-a9e3d39cd6110aa8c184d9c1f2e5777e.js"></script>
+<script src="/assets/qframe-cb903dc9166e266dc7d9f11d44f5e81a.js"></script>
+<script src="/assets/adroll-2c65ca4279f1eae4a1e4ef09755dc695.js"></script>
+
+
+  <script type="text/javascript" src="//use.typekit.net/gbh7uto.js"></script>
+  <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+
+</head>
+<body id="jobs-page">
+  <div id="background"></div>
+
+  <div id="header">
+    <h1><a href="/">Stripe</a></h1>
+
+    <div class="navigation">
+    <div class="signin"><a id='signin' href="https://dashboard.stripe.com/login"><span>Sign In</span></a></div>
+
+  <ul class="global">
+    <li><a href="/docs">Documentation</a></li>
+    <li><a href="https://support.stripe.com">Help &amp; Support</a></li>
+  </ul>
+</div>
+
+  </div> <!-- END HEADER -->
+
+  <div id="images"><div class="inner">
+    <div class="catcher"></div>
+    <img src="/img/jobs/pics/1.png" width="422" height="288" class="first" />
+    <img src="/img/jobs/pics/2.png" width="422" height="288" class="second" />
+    <img src="/img/jobs/pics/3.png" width="422" height="288" class="unused" />
+  </div></div>
+
+  <div id="jobs" class="box">
+
+    <div class="title">
+      <h1>Jobs at Stripe</h1>
+      <p>
+        We’re looking for people who care deeply about quality of execution and who want to build technology that people love to&nbsp;use.
+      </p>
+
+      <!--<img src="/img/jobs/pictures.png" width="492" height="338" />-->
+    </div>
+
+    <div class="content">
+      <h2>Who we are</h2>
+
+      <div class="benefits">
+        <ul>
+          <li>Free breakfast, lunch, and dinner as well as endless snacks and beverages.</li>
+          <li>Open vacation policy. We don’t count days.</li>
+          <li>Buy or build your ideal work&nbsp;environment.</li>
+          <li>Free gym membership.</li>
+          <li>Flexible work hours.</li>
+          <li>Free laundry service.</li>
+          <li>Competitive salary and equity&nbsp;packages.</li>
+          <li>Health, dental, and vision benefits.</li>
+          <li>Relocation support.</li>
+          <li>Paid maternity and paternity leave.</li>
+          <li>401(k) plan.</li>
+        </ul>
+      </div>
+
+      <div class="standard-content clearfix">
+
+        <p>
+          We’re making it easier for people to transact on the internet. By building thoughtful infrastructure and interfaces, we’re helping to put new people and companies in business.
+        </p>
+
+        <p>
+          Our <a href="https://stripe.com/about">about page</a> lists the team so far. We’re good friends and enjoy spending time together. We like people who can set their own direction,
+          can debate without animosity, and care about what they create.
+        </p>
+
+        <p>
+          Our organization is very flat. The people making decisions are also the ones implementing them.
+        </p>
+
+        <p>
+          You might fit in well at Stripe if you enjoy teaching yourself whatever you need in order to get things done, and if you enjoy working with a team.
+        </p>
+
+        <p>
+          Stripe’s investors include
+Sequoia Capital, Peter Thiel, Andreessen Horowitz, Elon Musk, and Max Levchin.
+        </p>
+
+        <p>
+          We’re hiring for all roles. Below are some positions for which we’re particularly interested in finding people.
+        </p>
+      </div>
+
+      <div class="positions-content">
+
+        <div class="gradient"></div>
+
+        <ul id="positions">
+            <li>
+              <h3>San Francisco</h3>
+
+              <ul>
+                <li class="position" >
+                  <a href="#business_development">
+                    <strong>Business development</strong>
+                  </a>
+                </li>
+                <li class="position" >
+                  <a href="#business_operations">
+                    <strong>Business operations</strong>
+                  </a>
+                </li>
+                <li class="position" >
+                  <a href="#communications">
+                    <strong>Communications</strong>
+                  </a>
+                </li>
+                <li class="position" >
+                  <a href="#compliance">
+                    <strong>Compliance lead, U.S.</strong>
+                  </a>
+                </li>
+                <li class="position" >
+                  <a href="#corporate_accountant">
+                    <strong>Corporate accountant</strong>
+                  </a>
+                </li>
+                <li class="position" >
+                  <a href="#corporate_counsel">
+                    <strong>Corporate counsel</strong>
+                  </a>
+                </li>
+                <li class="position" >
+                  <a href="#designer">
+                    <strong>Designer</strong>
+                  </a>
+                </li>
+                <li class="position" >
+                  <a href="#engineer">
+                    <strong>Engineer</strong>
+                  </a>
+                </li>
+                <li class="position sub" >
+                  <a href="#data_engineer">
+                    <strong>Data engineer</strong>
+                  </a>
+                </li>
+                <li class="position sub" >
+                  <a href="#engineering_intern">
+                    <strong>Engineering Intern</strong>
+                  </a>
+                </li>
+                <li class="position sub" >
+                  <a href="#infrastructure_engineer">
+                    <strong>Infrastructure engineer</strong>
+                  </a>
+                </li>
+                <li class="position sub" >
+                  <a href="#product_engineer">
+                    <strong>Product engineer</strong>
+                  </a>
+                </li>
+                <li class="position sub" >
+                  <a href="#reliability_engineer">
+                    <strong>Reliability engineer</strong>
+                  </a>
+                </li>
+                <li class="position" >
+                  <a href="#financial_partnerships">
+                    <strong>Financial partnerships</strong>
+                  </a>
+                </li>
+                <li class="position" >
+                  <a href="#new_markets_operations">
+                    <strong>New market operations</strong>
+                  </a>
+                </li>
+                <li class="position" >
+                  <a href="#risk_analyst">
+                    <strong>Risk analyst</strong>
+                  </a>
+                </li>
+                <li class="position" >
+                  <a href="#tax_treasury">
+                    <strong>Tax and treasury</strong>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <h3>Dublin, Ireland</h3>
+
+              <ul>
+                <li class="position" >
+                  <a href="#ie_account_support">
+                    <strong>Account support</strong>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <h3>Australia</h3>
+
+              <ul>
+                <li class="position" >
+                  <a href="#au_developer_relations">
+                    <strong>Developer relations</strong>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <h3>Global</h3>
+
+              <ul>
+                <li class="position" >
+                  <a href="#country_lead">
+                    <strong>Country lead</strong>
+                  </a>
+                </li>
+                <li class="position" >
+                  <a href="#developer_support">
+                    <strong>Developer Support</strong>
+                  </a>
+                </li>
+              </ul>
+            </li>
+        </ul>
+
+        <div id="position-blocks">
+
+              <div class="business_development block standard-content">
+  <div class="block-title">
+    <h1>Business development</h1>
+    <p>Grow Stripe through partnerships.</p>
+  </div>
+
+  <p>
+    The Business Development team identifies worthwhile partners, negotiates and closes deals, and manages and cultivates ongoing partnerships. We’re looking for help defining and executing a partnership strategy that achieves user and revenue growth. The Business Development team collaborates across teams internally—from engineering and finance to sales and legal.
+  </p>
+
+  <h2>You will:</h2>
+
+  <ul>
+    <li>Identify partnership opportunities and lead all aspects of deal execution, including prioritization of partners, strategic and financial assessment, transaction structuring and negotiation.</li>
+    <li>Work on partnerships including, but not limited to, product integration partnerships with internet companies and distribution partnerships with financial institutions, developer shops, and agencies.</li>
+    <li>Manage established partnerships to increase the adoption of Stripe and extend our relationship with the partner.</li>
+    <li>Build partnerships with other companies that can help make Stripe’s products and services better for users.</li>
+  </ul>
+
+  <h2>Our ideal candidate will:</h2>
+
+  <ul>
+    <li>Have prior experience doing business development for a high-growth technology company.</li>
+    <li>Be experienced in negotiating and managing commercial relationships.</li>
+    <li>Demonstrate a strong grasp of technology and payments.</li>
+    <li>Have expertise in developing business and investment cases, financial analysis and modeling, and understanding of legal agreements.</li>
+    <li>Manage complex projects and multi-task with excellent organization skills.</li>
+    <li>Have strong internal and external communication abilities, and interpersonal skills.</li>
+    <li>Be comfortable with a fast-paced environment and changing requirements.</li>
+    <li>Flourish with minimal guidance, be proactive, and handle uncertainty and ambiguity.</li>
+  </ul>
+
+  <h2>Nice to haves:</h2>
+
+  <ul>
+    <li>Technical degree in Computer Science.</li>
+    <li>Programming or product management experience.</li>
+  </ul>
+
+  <h2>Applying:</h2>
+
+  <p>
+    To apply, email <a href="mailto:jobs+bd@stripe.com">jobs+bd@stripe.com</a> with a resume or LinkedIn profile.
+  </p>
+  <p>
+    Additionally, we’d like you to:
+  </p>
+  <ul>
+    <li>Tell us why you’re interested in working on partnerships at Stripe.</li>
+    <li>Tell us about some of the most challenging and/or creative partnerships you’ve worked on.</li>
+    <li>Identify a potential Stripe partner. Create a presentation for this partner that gives them an understanding of the opportunity to work with Stripe and a recommended business structure for our relationship. Separately, assess this partner from a strategic and financial perspective.</li>
+  </ul>
+
+  <a href="mailto:jobs+bd@stripe.com" class="apply button blue"><span>Apply now</span></a>
+</div>
+
+              <div class="business_operations block standard-content">
+  <div class="block-title">
+    <h1>Business operations</h1>
+    <p>Drive action with data.</p>
+  </div>
+
+  <p>As part of the Business Operations team, you’ll measure and track the health of the business. You’ll partner with teams across Stripe to identify ways to grow faster, work more efficiently, and delight our users. If you are incessantly curious, a believer in being data-driven, and eager to dive into a quickly-growing company, we want to hear from you.</p>
+
+  <h2>You will:</h2>
+
+  <ul>
+    <li>Analyze and track key metrics for the health of the business across functional teams.</li>
+    <li>Partner with team leaders to identify opportunities to improve performance.</li>
+    <li>Work closely with the data team to develop internal tools and pilot our data infrastructure.</li>
+    <li>Help us understand our business and users and help the company act on your findings.</li>
+  </ul>
+
+  <h2>Our ideal candidate will:</h2>
+
+  <ul>
+    <li>Have 2-4 years of experience in a data-focused role.</li>
+    <li>Have outstanding analytical ability.</li>
+    <li>Demonstrate superior communication and presentation skills.</li>
+    <li>Have statistics knowledge and experience working with large datasets.</li>
+    <li>Have experience with SQL or a willingness to learn quickly.</li>
+  </ul>
+
+  <h2>Nice to haves:</h2>
+
+  <ul>
+    <li>Computer science, mathematics, or statistics background.</li>
+    <li>Prior experience at a growth stage internet or software company.</li>
+    <li>Prior experience in consulting, PE/venture, or investment banking.</li>
+    <li>Coding ability.</li>
+  </ul>
+
+  <h2>Applying:</h2>
+
+  <p>
+    To apply, email <a href="mailto:jobs+biz-ops@stripe.com">jobs+biz-ops@stripe.com</a> with:
+  </p>
+
+  <ul>
+    <li>A resume or LinkedIn profile.</li>
+    <li>A 1-2 paragraph summary of the most interesting data investigation you’ve done and the key findings.</li>
+    <li>Your answer to: what is the metric you would be most curious to know about Stripe and why?</li>
+  </ul>
+
+  <a href="mailto:jobs+biz-ops@stripe.com" class="apply button blue"><span>Apply now</span></a>
+</div>
+
+              
+<div class="communications block standard-content">
+  <div class="block-title">
+    <h1>Communications</h1>
+    <p>Tell the Stripe story and manage media relations.</p>
+  </div>
+
+  <p>Stripe is expanding internet commerce by making it easy for new businesses to get started and grow globally. By helping businesses accept payments from anywhere in the world and broadening the types of transactions that happen online, we aim to increase the GDP of the internet.</p>
+  
+  <p>With only 156 people today, Stripe helps tens of thousands of businesses process billions of dollars every year. To date our growth has been driven by enthusiastic users, deep community involvement, and a bit of media coverage.</p>
+
+  <p>Now we’re looking for a media relations specialist to help spread the word. We live in a noisy space, but when told right, the Stripe story is a powerful one. We’re looking for an energetic and creative thinker who can quickly distill a sophisticated story to multiple audiences.</p>
+
+  <h2>You will:</h2>
+  <ul>
+    <li>Work with other Stripes to unearth our best untold stories and develop them across written and verbal forms.</li>
+    <li>Develop and maintain relationships with reporters and other influencers, particularly in the tech and developer communities.</li>
+    <li>Manage corporate events, executive speaking engagements, and awards.</li>
+    <li>Help manage a global agency team and ensure consistency across geographies.</li>
+  </ul>
+
+  <h2>Our ideal candidate will:</h2>
+  <ul>
+    <li>Demonstrate stellar written and verbal communication skills.</li>
+    <li>Have 2-4 years of experience in media relations, preferably in a high-growth and/or B2B environment.</li>
+    <li>Have a proven track record, and relationships with reporters in both tech and business press.</li>
+  </ul>
+
+  <h2>Applying:</h2>
+  
+  
+  <p>To apply, email <a href='mailto:jobs+communications@stripe.com'>jobs+communications@stripe.com</a> with your resume or LinkedIn profile. Include whatever information you think would be most useful for us in understanding your background and accomplishments. Writing samples are always useful.</p>
+
+  <a href="mailto:jobs+communications@stripe.com" class="apply button blue"><span>Apply now</span></a>
+</div>
+
+              <div class="compliance block standard-content">
+  <div class="block-title">
+    <h1>Compliance lead (U.S.)</h1>
+    <p>Move fast and don’t break anything—protect consumers, businesses, and Stripe.</p>
+  </div>
+
+  <p>
+    We are looking for an experienced compliance lead to join our legal and compliance team based in San Francisco. As regulatory compliance lead for Stripe’s U.S. operations, you’ll be responsible for a wide variety of regulatory compliance matters supporting Stripe’s growing business. In particular, in this role you will help Stripe build and manage our compliance infrastructure.
+  </p>
+
+  <p>
+    Stripe is both a technology company and a financial services company, and you will need to be comfortable straddling both of those worlds every day. The right person for the role will enjoy dealing with that puzzle, seeking creative solutions and moving quickly, often in the face of ambiguity.
+  </p>
+
+  <h2>You will:</h2>
+
+  <ul>
+    <li>Help oversee the continuing structuring and build out of our compliance policies and processes, including: </li>
+    <ul>
+      <li>Developing appropriate KYC/customer identification policies and procedures for existing and future product developments.</li>
+      <li>Working with Stripe's development team to create appropriate AML monitoring technology.</li>
+      <li>Review and investigate potential suspicious activity.</li>
+      <li>Complete our SAR filing.</li>
+    </ul>
+    <li>Communicate with state and federal financial services regulators.</li>
+    <li>Help in efforts to acquire appropriate licenses globally.</li>
+    <li>Work with others across the company to ensure Stripe's products and services are compliant.</li>
+  </ul>
+
+  <h2>Our ideal candidate will have:</h2>
+
+  <ul>
+    <li>At least two years of experience as a compliance officer, anti-money laundering officer, regulatory attorney, or equivalent.</li>
+    <li>Great written and oral communications skills.</li>
+    <li>Interest in solving novel problems in a fast-paced environment.</li>
+    <li>Ability to work fluidly in a collaborative, team-based setting within a high growth technology company.</li>
+  </ul>
+
+  <h2>Nice to haves:</h2>
+  
+  <ul>
+    <li>Experience advising (either in-house or outside) a licensed money transmitter or money services business.</li>
+    <li>Legal degree (J.D., LL.M., or equivalent)</li>
+    <li>Familiarity with Visa, MasterCard and other payment network regulatory requirements.</li>
+    <li>Familiarity with internet technologies and related policy issues.</li>
+    <li>Project management skills/experience.</li>
+    <li>Wry sense of humor.</li>
+  </ul>
+
+  <h2>Applying:</h2>
+  <p>
+    
+    To apply, send a resume or LinkedIn profile to <a href="mailto:jobs+compliance@stripe.com">jobs+compliance@stripe.com</a>. Please include a description of why you’re interested in working at Stripe in this role.
+  </p>
+
+  <a href="mailto:jobs+compliance@stripe.com" class="apply button blue"><span>Apply now</span></a>
+</div>
+              <div class="corporate_accountant block standard-content">
+  <div class="block-title">
+    <h1>Corporate accountant</h1>
+    <p>Help scale our finance infrastructure.</p>
+  </div>
+
+  <p>
+    Our finance team is responsible for shaping our understanding of how Stripe is performing as a business, as well as what our best opportunities are for continued growth. We’re looking for a corporate accountant to join our small team to help us build our financial systems and track our progress within a fast-paced environment that’s growing globally. 
+  </p>
+
+  <h2>You will:</h2>
+
+  <ul>
+    <li>Develop and own the monthly close process: prepare month-end journal entries, balance sheet reconciliations, and supporting schedules.</li>
+    <li>Evaluate and manage the implementation of systems as needed (ERP, HRIS, payroll, expense reporting, and more).</li>
+    <li>Drive audit readiness and compliance, including international statutory audit processes.</li>
+    <li>Research technical accounting guidance and issues, provide management reports, and perform analysis as needed.</li>
+    <li>Manage audit, tax, valuation, and other accounting providers.</li>
+    <li>Work alongside the team on other projects related to finance.</li>
+  </ul>
+
+  <h2>Our ideal candidate will:</h2>
+
+  <ul>
+    <li>Have 4-6 years of relevant accounting experience, with a degree in Accounting or Finance (CPA strongly preferred).</li>
+    <li>Have public accounting (Big 4 preferred) and private industry experience.</li>
+    <li>Know accounting systems (i.e. Oracle, Netsuite, Quickbooks).</li>
+    <li>Demonstrate a strong fluency with U.S. GAAP (IFRS a plus).</li>
+    <li>Be detail oriented, but able to visualize the larger impact of a series of transactions.</li>
+    <li>Love Excel (or R), and be comfortable with extremely large data sets. </li>
+    <li>Have a strong understanding of financial and operational controls.</li>
+    <li>Be flexible and comfortable with changing requirements.</li>
+  </ul>
+
+  <h2>Nice to haves:</h2>
+  
+  <ul>
+    <li>Knowledge of (or experience in) the payments industry.</li>
+    <li>Experience with SQL.</li>
+  </ul>
+
+  <h2>Applying:</h2>
+  <p>
+    
+    To apply, email <a href="mailto:jobs+accountant@stripe.com">jobs+accountant@stripe.com</a> with:
+    <ul>
+      <li>A resume or LinkedIn profile.</li>
+      <li>A 1-2 paragraph summary of an accounting project you’ve led and are proud of.</li>
+    </ul>
+  </p>
+
+  <a href="mailto:jobs+accountant@stripe.com" class="apply button blue"><span>Apply now</span></a>
+</div>
+              <div class="corporate_counsel block standard-content">
+  <div class="block-title">
+    <h1>Corporate counsel</h1>
+    <p>Join our growing legal team.</p>
+  </div>
+
+  <p>
+    Stripe is looking for a lawyer to join our legal team based in San Francisco, CA. As a part of our team, you’ll be responsible for a wide variety of commercial, regulatory, and corporate legal matters supporting Stripe’s growing business. Stripe is both a technology company and a financial services company, and you’ll need to be comfortable straddling both of those worlds every day. We also operate within a set of complex and interwoven legal, regulatory, and industry issues. The right person will enjoy creative problem solving in a fast-moving business, often in the face of ambiguity.
+  </p>
+
+  <h2>You will:</h2>
+
+  <ul>
+    <li>Draft, negotiate and review various types of commercial deals.</li>
+    <li>Help ensure Stripe is compliant with all federal, state, and local laws and regulations.</li>
+    <li>Identify and evaluate business and legal risks, and find creative ways to mitigate them while achieving business goals.</li>
+    <li>Work across a spectrum of complex legal, business, and strategic issues</li>
+  </ul>
+
+  <h2>Our ideal candidate will:</h2>
+
+  <ul>
+    <li>Have excellent academic credentials and professional experience.</li>
+    <li>Have 4+ years of experience as a practicing attorney, including at least two years at a top-tier law firm or in-house department.</li>
+    <li>Have experience with or strong interest in working with technology and emerging payments.</li>
+    <li>Have a membership in at least one state bar (preferably CA).</li>
+    <li>Demonstrate strong drafting and negotiating skills.</li>
+    <li>Have a terrific sense of humor and a curiosity about an evolving industry.</li>
+  </ul>
+
+  <h2>Nice to haves:</h2>
+  
+  <ul>
+    <li>Familiarity with the payment or financial services industries and knowledge of associated regulatory issues.</li>
+    <li>History of advising technology and/or high growth companies, particularly those involved in regulated industries, such as financial services, telecommunications, health care, etc.</li>
+    <li>Solid project management skills.</li>
+  </ul>
+
+  <h2>Applying:</h2>
+  <p>
+    
+    To apply, send a resume or LinkedIn profile to <a href="mailto:jobs+corporate-counsel@stripe.com">jobs+corporate-counsel@stripe.com</a>. Please include a 1-2 paragraph summary of how you resolved the most interesting issue in your legal career (respecting client secrets and confidences, of course!).
+  </p>
+
+  <a href="mailto:jobs+corporate-counsel@stripe.com" class="apply button blue"><span>Apply now</span></a>
+</div>
+              <div class="designer block standard-content">
+  <div class="block-title">
+    <h1>Designer</h1>
+    <p>Play a key role in the visual design and user experience of Stripe.</p>
+  </div>
+
+  <p>
+    We’re looking for designers who can make detailed graphics, but also have a deep understanding of how applications should work and—more importantly—how they should feel.
+  </p>
+
+  <h2>You will:</h2>
+
+  <ul>
+    <li>Implement your initiatives and ideas into working prototypes using HTML and CSS.</li>
+    <li>Work on everything from creating simple and intuitive user interfaces to more traditional web design.</li>
+    <li>Collaborate closely with engineers to develop new features and enhance current parts of Stripe.</li>
+    <li>Have creative control over your projects and help set the visual tone of Stripe.</li>
+  </ul>
+
+  <h2>Our ideal candidate will:</h2>
+
+  <ul>
+    <li>Have experience creating and maintaining products with real-world users.</li>
+    <li>Be comfortable working in HTML and CSS.</li>
+    <li>Showcase strong (and opinionated) visual design.</li>
+  </ul>
+
+  <h2>Nice to haves:</h2>
+
+  <ul>
+    <li>Icon or illustration work.</li>
+    <li>Great understanding of CSS, especially its issues and quirks.</li>
+    <li>Comfort with JavaScript or CoffeeScript.</li>
+  </ul>
+
+  <h2>Applying:</h2>
+  <p>
+    
+    To apply, send us work you’re proud of. Links to your <a href="http://dribbble.com/">Dribbble</a> profile or portfolio are always useful.
+  </p>
+
+  <a href="mailto:jobs+designer@stripe.com" class="apply button blue"><span>Apply now</span></a>
+</div>
+              <div class="engineer block standard-content">
+
+  <div class="block-title">
+    <h1>Engineer</h1>
+    <p>Type things to make the programs go.</p>
+  </div>
+
+  <h2>Ongoing Projects:</h2>
+
+  <p>
+    Our product is built primarily in Ruby and JavaScript/CoffeeScript.
+  </p>
+
+  
+    <h3>Data analytics and fraud detection</h3>
+    <p>
+      Stripe has a lot of data problems to tackle, ranging from fraud algorithms to understanding how people are using Stripe. Our data sources include everything from a user clicking around the Stripe web interface to a consumer making a purchase on that user’s website, and we’re always building better ways of discovering signals in the seeming chaos.
+    </p>
+
+
+    <h3>Applications</h3>
+    <p>
+      Our major external-facing applications are the Stripe web interface and the API. We move quickly, deploying code many times a day. We iterate rapidly, but we also spend time carefully thinking through the edge cases of our products and making sure that they work very well.
+    </p>
+
+    <h3>Infrastructure</h3>
+    <p>
+      Infrastructure encompasses everything below the application layer. Most of the work here is building software that enables the API and web interface. Examples include finding and removing performance bottlenecks, building a framework for stream processing, and server architecture and administration.
+    </p>
+
+
+  <h2>Applying:</h2>
+
+  <p>
+    
+    To apply, email us at <a
+    href="mailto:jobs+engineer@stripe.com">jobs+engineer@stripe.com</a>. Include whatever information you think would be most useful for us in understanding your background and accomplishments. Links to GitHub and Twitter are always useful. We especially appreciate pointers to projects of which you are particularly proud, along with some explanation of what that project does.
+  </p>
+
+  <p>
+    Resumes are useful, but they also tend to have fairly low signal on their own. It’s often quite useful for us if you also send along an explanation of your background, what you like to work on, and what excites you about working at Stripe.
+  </p>
+
+  <a href="mailto:jobs+engineer@stripe.com" class="apply button blue"><span>Apply now</span></a>
+</div>
+
+              <div class="data_engineer block standard-content">
+  <div class="block-title">
+    <h1>Data engineer</h1>
+    <p>Create knowledge from data.</p>
+  </div>
+
+  <div>
+    <p>
+      We’re looking for data engineers who can help us identify the questions we should be asking, and answer them. You should love clever analysis and get excited about elegance in experimental design.
+    </p>
+
+    <h2>You will:</h2>
+
+    <ul>
+      <li>Discover the important questions that Stripe should be asking, and then answer them with data.</li>
+      <li>Design and run your own experiments.</li>
+      <li>Identify useful metrics, and set up graphs and reports to track these metrics.</li>
+      <li>Keep our data structured in a way that makes regular analysis easy and flexible.</li>
+      <li>Evangelize data within the company.</li>
+    </ul>
+
+    <h2>Our ideal candidate will:</h2>
+
+    <ul>
+      <li>Be comfortable writing well-structured, production-ready code to support their work.</li>
+      <li>Demonstrate proficiency with your data program of choice (R, Matlab, SPSS, etc).</li>
+      <li>Have strong knowledge of experimental design and interpretation of results.</li>
+    </ul>
+    
+    <h2>Applying:</h2>
+
+    <p>To apply, email <a href="mailto:jobs+data@stripe.com">jobs+data@stripe.com</a> with:</p>
+
+    <ul>
+      <li>Your resume, LinkedIn and/or blog.</li>
+      <li>A link to or attachment of some code you’ve written.</li>
+      <li>A quick description of previous work you’re proud of.</li>
+      <li>A paper you think is interesting, and why.</li>
+    </ul>
+
+    <a href="mailto:jobs+data@stripe.com" class="apply button blue">
+      <span>Apply now</span>
+    </a>
+  </div>
+</div>
+
+              <div class="engineering_intern block standard-content">
+
+    <div class="block-title">
+        <h1>Engineering Intern</h1>
+        <p>Type things to make the programs go.</p>
+    </div>
+
+    <h2>Ongoing Projects</h2>
+
+    <p> Our engineering interns work alongside our full-time
+    engineers, all working on the same types of high-impact
+    projects. The Stripe product is built primarily in Ruby and
+    JavaScript/CoffeeScript. Problems we work on include: </p>
+
+            <h3>Infrastructure</h3>
+        <p>Infrastructure encompasses everything below
+        the application layer. Most of the work here is building software
+        that enables the API and web interface. Examples include finding and
+        removing performance bottlenecks, building a framework for stream
+        processing, and server architecture and administration. </p>
+
+
+        <h3>Applications</h3>
+        <p>Our major external-facing applications are the
+        Stripe web interface and the API. We move quickly, deploying code many
+        times a day. We iterate rapidly, but we also spend time carefully
+        thinking through the edge cases of our products and making sure that
+        they work very well. </p>
+
+
+        <h3>Data analytics and fraud detection</h3>
+        <p>Stripe has a lot of data
+        problems to tackle, ranging from fraud algorithms to understanding how
+        people are using Stripe. Our data sources include everything from a
+        user clicking around the Stripe web interface to a consumer making a
+        purchase on that user's website, and we're always building better
+        ways of discovering signals in the seeming chaos. </p>
+
+
+    <h2>Applying</h2>
+
+    <p>
+        
+        To apply, email us at <a
+        href="mailto:jobs+engineering-intern@stripe.com">jobs+engineering-intern@stripe.com</a>. Include whatever
+        information you think would be most useful for us in understanding
+        your background and accomplishments. Links to GitHub and Twitter are always useful. We especially appreciate pointers
+        to projects of which you are particularly proud, along with some explanation
+        of what that project does.
+    </p>
+
+    <p>Resumes are useful, but they also tend to have fairly low signal
+    on their own. It's often quite useful for us if you also send along an
+    explanation of your background, what you like to work on, and what
+    excites you about working at Stripe. <p>
+
+    <p>We accept fall, winter, spring, and summer intern applications
+    — let us know when you'd like to work with us!</p>
+
+    <a href="mailto:jobs+engineering-intern@stripe.com" class="apply button blue"><span>Apply now</span></a>
+</div>
+
+              <div class="infrastructure_engineer block standard-content">
+  <div class="block-title">
+    <h1>Infrastructure engineer</h1>
+    <p>Build the platform powering Stripe.</p>
+  </div>
+
+  <div>
+    <p>
+      Infrastructure engineers build the platform used by the rest of Stripe. Sometimes this involves building highly-available distributed systems. Sometimes this requires creating internal tools to improve our development workflow. Sometimes this involves staring at a backtrace trying to track down an obscure interaction between two system components.
+    </p>
+
+    <h2>Sample projects:</h2>
+
+    <ul>
+      <li>Design and implement a durable complex event-processing service with exactly-once semantics.</li>
+      <li>Create an internal framework for writing new API endpoints.</li>
+      <li>Track down and fix a memory leak plaguing a service.</li>
+    </ul>
+
+    <h2>Our ideal candidate will:</h2>
+
+    <ul>
+      <li>Have designed widely-used libraries.</li>
+      <li>Have scaled a large system before and realize that 95% of scaling is doing nitty-gritty detail work.</li>
+      <li>Have extensive experience with server operations, though you lean more towards writing code.</li>
+    </ul>
+
+    <h2>Applying:</h2>
+
+    <p>To apply, email <a href="mailto:jobs+infrastructure-engineer@stripe.com">jobs+infrastructure-engineer@stripe.com</a> with:</p>
+
+    <ul>
+      <li>A description of your relevant background and interests.</li>
+      <li>A production issue you ran into in the past, and how you solved it.</li>
+      <li>A sample of production-quality code you’ve written.</li>
+      <li>A link to relevant online profiles (e.g. Github, Twitter, Launchpad, maybe even Bitbucket).</li>
+      <li>Your SSH pubkey.</li>
+    </ul>
+
+    <a href="mailto:jobs+infrastructure-engineer@stripe.com" class="apply button blue">
+      <span>Apply now</span>
+    </a>
+  </div>
+</div>
+
+              <div class="product_engineer block standard-content">
+  <div class="block-title">
+    <h1>Product engineer</h1>
+    <p>Build the tools underlying commerce on the web.</p>
+  </div>
+
+  <div>
+    <p>
+      As a product engineer at Stripe, you'll create the software we ship to our users: the <a href="https://stripe.com/docs/api">Stripe API</a>, <a href="https://dashboard.stripe.com">dashboard</a>, <a href="https://stripe.com/docs">documentation</a>, <a href="https://stripe.com/docs/checkout">Checkout</a>, and <a href="https://stripe.com/docs/libraries">libraries</a>. You should expect to slide up and down the software stack, building the infrastructure to support the products you release.
+    </p>
+
+    <p>
+      You should be able to empathize both with users and the rest of your team. This means considering both how our users will use your software and how your peers will use your code.
+    </p>
+
+    <p>
+      You should have built and, more importantly, maintained widely-used products. You’re willing to pick up the slack and do the unglamorous tasks.
+    </p>
+
+    <p>
+      You should have a knack for making tools powerful without compromising their ease of use. This applies to both visual tools (like our dashboard) and programming tools (like our API).
+    </p>
+
+    <h2>Our ideal candidate will:</h2>
+
+    <ul>
+      <li>Have experience building and maintaining products with real-world usage.</li>
+      <li>Have opinions about good and bad products and the ability to justify them.</li>
+    </ul>
+
+    <h2>Nice to haves:</h2>
+
+    <ul>
+      <li>Previous work on an API.</li>
+      <li>Extensive familiarity with JavaScript/CoffeeScript.</li>
+      <li>Experience working on, and an understanding of, both client-side and server-side code.</li>
+    </ul>
+    
+    <h2>Applying:</h2>
+
+    <p>To apply, email <a href="mailto:jobs+product-engineer@stripe.com">jobs+product-engineer@stripe.com</a> with a resume or GitHub link and a summary of the products you’re most proud of and how they’re used.</p>
+
+    <a href="mailto:jobs+product-engineer@stripe.com" class="apply button blue">
+      <span>Apply now</span>
+    </a>
+  </div>
+</div>
+
+              <div class="reliability_engineer block standard-content">
+  <div class="block-title">
+    <h1>Reliability engineer</h1>
+    <p>Maximize Stripe’s availability and performance.</p>
+  </div>
+
+  <div>
+    <p>
+      Reliability engineers make Stripe work. Whether it’s deploying and maintaining server clusters, building tools to automate a deployment pipeline, or designing and implementing a new piece of our request pipeline, reliability engineers make sure that Stripe is as fast and reliable as possible.
+    </p>
+
+    <h2>Sample projects:</h2>
+
+    <ul>
+      <li>Design and build tools for managing our server fleet.</li>
+      <li>Build a profiling framework in our code, and fix performance bottlenecks.</li>
+      <li>Identify and eliminate the most likely reasons for Stripe to go down.</li>
+      <li>Improve our Puppet abstractions so it’s easy for others to deploy their own services.</li>
+    </ul>
+
+    <h2>Our ideal candidate will:</h2>
+
+    <ul>
+      <li>Have extensive experience writing production code, though lean more towards playing around with running systems.</li>
+      <li>Desire to automate all the things, but have the pragmatism to decide when and how to introduce automation.</li>
+      <li>Be comfortable with Bash as a tool for solving one-off problems, but switch to a language like Ruby or Python for general solutions.</li>
+    </ul>
+
+
+    <h2>Applying:</h2>
+
+    <p>To apply, email <a href="mailto:jobs+reliability-engineer@stripe.com">jobs+reliability-engineer@stripe.com</a> with:</p>
+
+    <ul>
+      <li>A description of your relevant background and interests.</li>
+      <li>A production issue you ran into in the past, and how you solved it.</li>
+      <li>A sample of production-quality code you've written.</li>
+      <li>A link to relevant online profiles (e.g. Github, Twitter, Launchpad, maybe even Bitbucket).</li>
+      <li>Your SSH pubkey.</li>
+    </ul>
+
+    <a href="mailto:jobs+reliability-engineer@stripe.com" class="apply button blue">
+      <span>Apply now</span>
+    </a>
+  </div>
+</div>
+
+              <div class="financial_partnerships block standard-content">
+  <div class="block-title">
+    <h1>Financial partnerships</h1>
+    <p>Help grow our financial partnerships.</p>
+  </div>
+
+  <p>
+    Stripe operates the payments infrastructure used by thousands of businesses on the internet. While accepting payments online has traditionally been slow and cumbersome, Stripe manages all the heavy lifting and gives its users a simple set of APIs to build everything they need. 
+  </p>
+
+  <p>
+    We’re looking for someone to help manage Stripe’s financial partnerships with banks and payment networks globally. You’ll work with a small team that focuses on building great relationships and actively seeks solutions to complex and nuanced issues. 
+  </p>
+
+  <h2>You will:</h2>
+
+  <ul>
+    <li>Clearly and consistently communicate with our partners and keep teams in sync.</li>
+    <li>Ensure we’re compliant with our partners’ agreements, regulations, and policies.</li>
+    <li>Champion and cultivate support among Stripe’s financial partners for new products and services.</li>
+    <li>Proactively document processes and policies—and share them with internal and external teams as needed.</li>
+  </ul>
+
+  <h2>Our ideal candidate will:</h2>
+
+  <ul>
+    <li>Have a B.A. degree (or equivalent) and 3+ years of experience in B2B relationship management.</li>
+    <li>Demonstrate cultural sensitivity across a broad set of markets with extensive international experience.</li>
+    <li>Have proven communication and interpersonal skills with a strong emphasis on maintaining collaborative and productive relationships.</li>
+    <li>Be detail oriented, with an ability to synthesize and codify complex policies into actionable tasks for a variety of teams.</li>
+    <li>Be able to find innovative approaches to complex problems.</li>
+    <li>Adapt well to change and be flexible to shifting goals.</li>
+    <li>Be excited to work in a cross-functional team environment.</li>
+  </ul>
+
+  <h2>Nice to haves:</h2>
+  
+  <ul>
+    <li>Experience in a start-up and/or high-growth technology company (payments industry experience a plus).</li>
+    <li>Background in risk, compliance, legal, or related field.</li>
+    <li>Additional language skills beyond English.</li>
+  </ul>
+
+  <h2>Applying:</h2>
+  <p>
+    
+    To apply, email <a href="mailto:jobs+financial-partnerships@stripe.com">jobs+financial-partnerships@stripe.com</a> with:
+    <ul>
+      <li>A resume or LinkedIn profile.</li>
+      <li>A couple paragraphs describing what you see as Stripe’s main challenges in developing and navigating a financial partnership as we scale our business, and why.</li>
+    </ul>
+  </p>
+
+  <a href="mailto:jobs+financial-partnerships@stripe.com" class="apply button blue"><span>Apply now</span></a>
+</div>
+              <div class="new_markets_operations block standard-content">
+  <div class="block-title">
+    <h1>New market operations</h1>
+    <p>Help Stripe go global.</p>
+  </div>
+
+  <p>Stripe supports 13 countries today, but we’re rapidly expanding around the globe. We’re looking for someone to join our international team to drive a thoughtful approach to entering new markets.</p>
+
+  <p>You’ll be developing and executing go-to-market strategies to enter new countries. Supported by copious (and likely hard-to-find) data, you’ll work to segment global markets, prioritize them, and help drive our international expansion. The role blends analytical strategy with executional responsibility.</p>
+
+  <p>The role will include significant opportunities to work across different teams at Stripe as you help coordinate the launches of new markets.</p>
+
+  <h2>You will:</h2>
+  <ul>
+    <li>Refine the framework used to prioritize and allocate investment for new markets.</li>
+    <li>Identify, vet, and obtain relevant data from both public and private sources (and manage data providers where needed).</li>
+    <li>Comprehensively analyze potential markets, including competitive and pricing analysis.</li>
+    <li>Develop detailed business cases and the financial models to support them.</li>
+    <li>Stay up-to-date with financial partners and competitors.</li>
+    <li>Support other internal teams with locally-available data to adequately prepare for new markets.</li>
+    <li>Manage specific country launches by partnering on key activities with different teams.</li>
+  </ul>
+
+  <h2>Our ideal candidate will:</h2>
+  <ul>
+    <li>Have 3-4 years of experience driving strategy and entry plans in international markets, ideally for a high growth technology company.</li>
+    <li>Have extensive research experience with a proven track record of being creative in finding and vetting data.</li>
+    <li>Have a strong quantitative background, love Excel (or R, or IPython), and are comfortable combing through—and excavating insights from—data.</li>
+    <li>Be able to manage complex projects that include a variety of people across functions, and enjoy problem solving as the environment and variables change.</li>
+    <li>Have a proven understanding of local markets and love to travel internationally.</li>
+  </ul>
+
+  <h2>Nice to haves:</h2>
+  <ul>
+    <li>Experience in the payments space.</li>
+    <li>Language capabilities beyond English.</li>
+  </ul>
+
+  <h2>Applying:</h2>
+
+  
+  <p>To apply, email <a href='mailto:jobs+newmarketsops@stripe.com'>jobs+newmarketsops@stripe.com</a> with your resume or LinkedIn profile. Include whatever information you think would be most useful for us in understanding your background and accomplishments.</p>
+
+  <a href="mailto:jobs+newmarketsops@stripe.com" class="apply button blue"><span>Apply now</span></a>
+</div>
+
+              <div class="risk_analyst block standard-content">
+  <div class="block-title">
+    <h1>Risk analyst</h1>
+    <p>Help make internet payments safer.</p>
+  </div>
+
+  <p>
+    As a Risk Analyst, you’ll be responsible for enabling safer payments for our users and for helping Stripe manage payments fraud intelligently. The stakes will be high, and you will be up against ever-changing and always-improving opponents. You will face some of the most complex and dynamic problems at the company, and they will evolve every time you devise a solution.  
+  </p>
+
+  <h2>You will:</h2>
+
+  <ul>
+    <li>Monitor accounts and transactions to identify and anticipate fraudulent behavior.</li>
+    <li>Scale risk processes to cover an increasingly large and complex landscape of fraud, especially as our user base (rapidly) expands.</li>
+    <li>Work with our banking partners around the world to tailor our compliance and credit risk management techniques to different geographies.</li>
+    <li>Work with Stripe users to help them eliminate fraud.</li>
+    <li>Challenge the payments industry status quo to help enable innovative businesses to flourish online.</li>
+  </ul>
+
+  <h2>Our ideal candidate will be:</h2>
+
+  <ul>
+    <li>Naturally curious: if something seems off, you want to figure out what's going on.</li>
+    <li>Decisive, yet open to learning: you will make many critical decisions every day, and you will be wrong some of the time.</li>
+    <li>Understanding and empathetic to the challenges of setting up a new business.</li>
+    <li>A strong believer in knowing and understanding the numbers behind a problem</li>
+    <li>An excellent communicator with an ability to convey complex ideas succinctly.</li>
+    <li>Fluent in one or more non-English languages (not required, but a big plus as Stripe continues to expand internationally).</li>
+  </ul>
+
+  <h2>Applying:</h2>
+
+  <p>
+    To apply, email <a href="mailto:jobs+risk@stripe.com">jobs+risk@stripe.com</a> with your resume and your answer to the following: given free rein, what is one improvement you would have made to the processes at a company or organization where you have worked? How would you assess if the change was successful?
+  </p>
+
+
+  <a href="mailto:jobs+risk@stripe.com" class="apply button blue"><span>Apply now</span></a>
+</div>
+              <div class="tax_treasury block standard-content">
+  <div class="block-title">
+    <h1>Tax and treasury</h1>
+    <p>Lead our international tax and treasury operations.</p>
+  </div>
+
+  <p>
+    The finance team at Stripe is responsible for developing and scaling financial reporting in a fast-paced environment that’s growing globally. As our tax and treasury lead, you’ll drive the development and implementation of appropriate global tax structures, and manage tax compliance and reporting worldwide. 
+  </p>
+
+  <h2>You will:</h2>
+
+  <ul>
+    <li>Design an ideal international and domestic tax structure as we grow globally.</li>
+    <li>Manage and coordinate tax and legal advisors across multiple jurisdictions ensuring best practices and international compliance.</li>
+    <li>Ensure appropriate tax filings and tax compliance (including completion of international, federal, and state income tax returns).</li>
+    <li>Help grow our business while complying with all tax requirements such as VAT, GST, and other state and local obligations.</li>
+    <li>Oversee accounting for income taxes (SFAS No. 109) in the U.S. and for international subsidiaries.</li>
+    <li>Actively develop financial reporting and appropriate internal controls as needed.</li>
+    <li>Help manage global treasury processes, including managing key banking relationships.</li>
+    <li>Drive our foreign currency cash management.</li>
+    <li>Develop our transfer pricing and management fee arrangements.</li>
+  </ul>
+
+  <h2>Our ideal candidate will:</h2>
+
+  <ul>
+    <li>Have 10 to 15 years of relevant tax experience (ASC 740/FAS 109, state, and local) with a degree in Law, Tax, Accounting, or Finance.</li>
+    <li>Be detail oriented, but able to visualize the larger impact of a series of transactions.</li>
+    <li>Quickly roll up their sleeves, learn independently, and be curious.</li>
+    <li>Be flexible and comfortable with changing requirements.</li>
+  </ul>
+
+  <h2>Nice to haves:</h2>
+  
+  <ul>
+    <li>Experience in public accounting (Big 4 or international legal practice preferred).</li>
+    <li>Treasury management experience (international tax structuring, treasury experience in technology or payments a plus).</li>
+    <li>JD and/or CPA.</li>
+    <li>ERP and tax software experience.</li>
+  </ul>
+
+  <h2>Applying:</h2>
+  <p>
+    
+    To apply, email <a href="mailto:jobs+tax-treasury@stripe.com">jobs+tax-treasury@stripe.com</a> with:
+    <ul>
+      <li>A resume or LinkedIn profile.</li>
+      <li>A 1-2 paragraph summary of the top few things you think Stripe needs to think about in building an international tax infrastructure, and why.</li>
+    </ul>
+  </p>
+
+  <a href="mailto:jobs+tax-treasury@stripe.com" class="apply button blue"><span>Apply now</span></a>
+</div>
+              <div class="ie_account_support block standard-content">
+  <div class="block-title">
+    <h1>Account support</h1>
+    <p>Tailor our systems to our European Stripe users and help us hit the ground running with our new office in Dublin, Ireland.</p>
+  </div>
+
+  <p>
+    As part of the Account Support team at Stripe, you’ll be on the front lines working with Stripe’s users from fledgling start-ups to Fortune 500s, including companies like Lyft, TED, WolframAlpha, and the Electronic Frontier Foundation. You’ll work hands-on with a collaborative team to educate our users on new products, improve their experience with our product, and help them find success with Stripe.
+  </p>
+
+  <p>
+    Stripe is live on 3 continents with over 100 supported currencies and rapidly expanding to power the online payments infrastructure throughout the world. Further, Account Support team members are spread across the UK, the continental US, Germany, Australia, and Alaska. While helping our users, the Account Support team works closely with every part of Stripe, learning the intricacies of how we build products, manage risk, launch new countries, and keep users happy.
+  </p>
+
+  <p>
+    Account Support at Stripe interacts with people from a multitude of backgrounds, and our team has grown to match that diversity. People on the team have previously provided support at MIT and Ringling Bros., run an indie bookstore chain, created a sustainable seafood business, studied physics before turning to restaurants as a professional chef, and so on. We’re a close group that’s passionate about helping people, improving products, and animated GIFs.
+  </p>
+
+  <p>
+    If you’re a strong writer, a fast researcher, constantly curious, and can’t stand users having anything less than a stellar experience, we want to hear from you!
+  </p>
+
+  <h2>You will:</h2>
+
+  <ul>
+    <li>Interact with users by email or real-time chat.</li>
+    <li>Gain unique insights into how thousands of businesses on Stripe scale and operate.
+    <li>Help optimize our internal and external documentation for subscriptions, <a href="/checkout">Checkout</a>, and a host of other products.</li>
+    <li>Work closely with other teams to improve our product offerings and messaging around new products.</li>
+  </ul>
+
+  <h2>Our ideal candidate will:</h2>
+
+  <ul>
+    <li>Love interacting with new people.</li>
+    <li>Enjoy writing, and do so quickly and clearly. Be fluent and highly proficient in English./li>
+    <li>Enjoy talking about technical concepts, and would be comfortable explaining how Stripe works.</li>
+    <li>Empathize with users and can see through their questions to quickly grasp the issues they’re facing.</li>
+    <li>Enjoy the puzzle of solving open-ended problems, both individually and as a member of the team.</li>
+    <li>Love constantly learning and re-learning a changing technical product, even when you’re a little out of your depth.</li>
+  </ul>
+
+  <h2>Applying:</h2>
+  <p>
+    
+    To apply, please email <a href="mailto:jobs+account-support-ie@stripe.com">jobs+account-support-ie@stripe.com</a> with:
+  </p>
+
+  <ul>
+    <li>Your background and accomplishments.</li>
+    <li>Why you want to work in this role.</li>
+    <li>Languages you’d be comfortable communicating in beyond English, if any.</li>
+    <li>A short piece on any topic you’re passionate about.</li>
+  </ul>
+
+  <p>This position is based in Dublin, Ireland. Our current language needs are for English-language support only. We’re only looking for a few candidates, who can also work one weekend day per week.</p>
+
+  <a href="mailto:jobs+account-support-ie@stripe.com" class="apply button blue"><span>Apply now</span></a>
+</div>
+
+              <div class="au_developer_relations block standard-content">
+  <div class="block-title">
+    <h1>Developer relations</h1>
+    <p>Show Stripe to the world.</p>
+  </div>
+
+  <p>
+    At Stripe, we’re trying to help more people transact on the web through better infrastructure. On developer relations at Stripe, you’ll interact with the people using that infrastructure and help make it better.
+  </p>
+
+  <h2>You will:</h2>
+  <ul>
+    <li>Meet with some of the thousands of developers using Stripe, attend tech events, build compelling demos, write documentation, and create tutorials.</li>
+    <li>Help grow the developer relations team and take a strong lead directing how we market ourselves.</li>
+    <li>Work closely with teams across Stripe, our partners, and users to steer the direction of our products.</li>
+  </ul>
+
+  <h2>Our ideal candidate will:</h2>
+
+  <ul>
+    <li>Care about the direction of the web and the technologies we use to build it.</li>
+    <li>Love building and launching things.</li>
+    <li>Be vocal in online and offline developer communities.</li>
+    <li>Love to travel.</li>
+  </ul>
+
+  <h2>Applying:</h2>
+
+  <p>
+    
+    To apply, email <a href="mailto:jobs+au-developer-relations@stripe.com">jobs+au-developer-relations@stripe.com</a> with the following:
+  </p>
+
+  <ul>
+    <li>Code you’re proud of.</li>
+    <li>Products or projects you’ve worked on.</li>
+    <li>Links to your blog or profile in online communities like GitHub, Quora, Twitter, Stack Overflow, or Hacker News.</li>
+    <li>Languages you are fluent in, both human and technical.</li>
+    <li>What you find interesting about Stripe.</li>
+  </ul>
+
+  <p>You’ll be based out of either Melbourne or Sydney for this role.</p>
+
+  <a href="mailto:jobs+au-developer-relations@stripe.com" class="apply button blue"><span>Apply now</span></a>
+</div>
+              <div class="country_lead block standard-content">
+  <div class="block-title">
+    <h1>Country lead</h1>
+    <p>Help launch a new Stripe country.</p>
+  </div>
+
+  <p>
+    Stripe is rapidly expanding globally, and we are looking for the people who will help make this happen. Specifically, we feel that each market has its own challenges and opportunities, and that these are best served by a strong local team.
+  </p>
+
+   <p>
+    As one of the most diverse roles at Stripe, you’ll excel at handling ambiguity and uncertainty. You know what it is like to start something from scratch, grow it structurally and methodically. We are looking for people who have been directly involved in scaling a business from inception. Stripe is a highly technical company and a strong sense of how to market and localize our product is key.
+  </p>
+
+  <h2>You will:</h2>
+
+  <ul>
+    <li>Help recruit the local team needed to support and grow the market.</li>
+    <li>Work to establish the “for developer” brand, gain trust in the community and build out wider brand recognition.</li>
+    <li>Drive comprehensive in-market growth through the structuring and execution of a sales, marketing, and partnerships strategy.</li>
+    <li>Handle the day-to-day operations of Stripe in your market, fielding questions and issues which touch every part of the organization.</li>
+    <li>Work to localize the product where needed through coordination with the product team to create the best experience possible for local users.</li>
+  </ul>
+
+  <h2>Our ideal candidate will:</h2>
+
+  <ul>
+    <li>Be a native speaker of the language of the country for which they are applying—and have lived and worked there extensively.</li>
+    <li>Love building and scaling and have previous experience building out the team and operations for a technical company.</li>
+    <li>Have a strong track record of engaging with the local tech community.</li>
+    <li>Be passionate about building communities, be outgoing, and love bringing people together.</li>
+    <li>Feel comfortable communicating with customers and partners, and be able to explain complex issues in clear, non-technical language.</li>
+    <li>Have successfully led growth efforts, know how to segment a market, and prioritize appropriately.</li>
+    <li>Love the details. (Building a great localized product means caring about every nuance of the experience.)</li>
+    <li>Be highly analytical, love having data to back up an argument, and be a strong believer in knowing the numbers and what they mean.</li>
+    <li>Be naturally curious: if something seems off, they’ll figure out what is going on and fix it.</li>
+    <li>Think globally, act locally, and thrive in a multicultural, startup environment.</li>
+    <li>Like and be willing to travel.</li>
+  </ul>
+
+  <h2>Applying:</h2>
+  <p>
+    
+    To apply, email <a href="mailto:jobs+country-lead@stripe.com">jobs+country-lead@stripe.com</a> with:
+  </p>
+
+  <ul>
+    <li>A description of your relevant background and interests.</li>
+    <li>Three paragraphs on how you would scale Stripe in your country. </li>
+    <li>A link to relevant online profiles (e.g. LinkedIn, Twitter).</li>
+  </ul>
+
+  <a href="mailto:jobs+country-lead@stripe.com" class="apply button blue"><span>Apply now</span></a>
+</div>
+              <div class="developer_support block standard-content">
+  <div class="block-title">
+    <h1>Developer support</h1>
+    <p>Deliver incredible experiences to developers building with Stripe.</p>
+  </div>
+
+  <p>As an early member of the Developer Support team at Stripe, you'll be on the front lines working with Stripe’s users from fledgling start-ups to Fortune 500s, including companies like Lyft, TED, WolframAlpha, and the Electronic Frontier Foundation. You'll work hands-on with a collaborative team to help developers building with Stripe make the best use of what we have to offer, then use those interactions to influence what we build next.</p>
+
+  <p>Stripe is building the payments infrastructure for the Internet, offering a set of unified APIs and tools to give businesses instant access to customers worldwide. Stripe is live on 3 continents with over 100 supported currencies and rapidly expanding. While working with our users, the Developer Support team collaborates with every part of Stripe, learning the intricacies of how we build products, unify fragmented payment technologies, and keep our APIs simple and reliable amid rapid change.</p>
+
+  <p>Developer Support at Stripe is full service. We are persistent at solving problems for engineers from a multitude of backgrounds. We interact with users through email, IRC, and face-to-face, teaching them the primitives powering our APIs and guiding them to a complete integration, built specifically for their needs. We understand the fundamentals of programming incredibly well and eagerly jump into others' code no matter how unfamiliar things seem at first glance.</p>
+
+  <p>If you enjoy hacking on code and are a fast researcher, strong writer, and enthusiastic about helping others build mission-critical products with Stripe, we want to hear from you!</p>
+
+  <h2>You will:</h2>
+
+  <ul>
+    <li>Interact with users by email, IRC (up to half your week), and potentially face-to-face.</li>
+    <li>Gain unique insights into how engineers building the newest or most interesting businesses make use of Stripe.</li>
+    <li>Optimize our internal and external documentation for subscriptions, Checkout, and a host of other products.</li>
+    <li>Take an analytical approach to tracking points of friction for users, and then work with other teams to make those parts of Stripe better.</li>
+  </p>
+
+  <h2>Our ideal candidate will:</h2>
+
+  <ul>
+    <li>Enjoy writing, and do so quickly and clearly.</li>
+    <li>Love interacting with new people, sometimes chatting live with many at the same time.</li>
+    <li>Enjoy the puzzle of solving open-ended problems, both individually and as a member of the team.</li>
+    <li>Be an expert at talking about technical concepts, and would be comfortable explaining how Stripe works.</li>
+    <li>Love constantly learning and re-learning a changing technical product, even when you’re a little out of your depth.</li>
+    <li>Empathize with users of all experience levels and see through their questions to quickly grasp the issues they’re facing.</li>
+    <li>Have tinkered with a bunch of languages and services, giving enough insight across the programming landscape to step into unfamiliar code and make sense of what's going on.</li>
+  </ul>
+
+  <h2>Applying:</h2>
+  <p>
+    
+    To apply, email us at <a href="mailto:jobs+developer-support@stripe.com">jobs+developer-support@stripe.com</a>. Include whatever information you think would be most useful for us in understanding your background and accomplishments. The following is especially helpful:
+  </p>
+
+  <ul>
+    <li>Your resume, GitHub, and/or blog. (We particularly like reading technical posts you've written!)</li>
+    <li>Pointers to projects of which you are particularly proud, along with some explanation of what that project does.</li>
+    <li>Languages you feel comfortable with (both technical and human!)</li>
+  </ul>
+
+  <p>Please note that we strongly prefer candidates who are able to work one weekend day and four weekdays (e.g. Sunday to Thursday; Monday to Thursday and Saturday), though are willing to discuss other options as needed. Our office is based in San Francisco with over half the team living outside SF; we welcome strong candidates from other locations!</p>
+
+  <a href="mailto:jobs+developer-support@stripe.com" class="apply button blue"><span>Apply now</span></a>
+</div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </div> <!-- END JOBS -->
+
+  <div id="footer">
+    <div class="country-dropdown-view">
+        <a class="select">
+            <span>
+                <img src="/img/flags/us.png" width="23" height="17" data-hires="true" />
+                <strong>United States</strong>
+            </span>
+        </a>
+
+        <div class="popover">
+            <div class="arrow"></div>
+            <h4>Select your Country</h4>
+            <ul>
+                    <li>
+                        <a href="/country?country=US&redirect=/jobs" class="selected">
+                            <img src="/img/flags/us.png" width="23" height="17" data-hires="true" />
+                            <span>United States</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/country?country=CA&redirect=/jobs" >
+                            <img src="/img/flags/ca.png" width="23" height="17" data-hires="true" />
+                            <span>Canada</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/country?country=GB&redirect=/jobs" >
+                            <img src="/img/flags/gb.png" width="23" height="17" data-hires="true" />
+                            <span>United Kingdom</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/country?country=IE&redirect=/jobs" >
+                            <img src="/img/flags/ie.png" width="23" height="17" data-hires="true" />
+                            <span>Ireland</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/country?country=AU&redirect=/jobs" >
+                            <img src="/img/flags/au.png" width="23" height="17" data-hires="true" />
+                            <span>Australia</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/country?country=BE&redirect=/jobs" >
+                            <img src="/img/flags/be.png" width="23" height="17" data-hires="true" />
+                            <span>Belgium</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/country?country=DK&redirect=/jobs" >
+                            <img src="/img/flags/dk.png" width="23" height="17" data-hires="true" />
+                            <span>Denmark</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/country?country=FI&redirect=/jobs" >
+                            <img src="/img/flags/fi.png" width="23" height="17" data-hires="true" />
+                            <span>Finland</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/country?country=FR&redirect=/jobs" >
+                            <img src="/img/flags/fr.png" width="23" height="17" data-hires="true" />
+                            <span>France</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/country?country=DE&redirect=/jobs" >
+                            <img src="/img/flags/de.png" width="23" height="17" data-hires="true" />
+                            <span>Germany</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/country?country=IT&redirect=/jobs" >
+                            <img src="/img/flags/it.png" width="23" height="17" data-hires="true" />
+                            <span>Italy</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/country?country=LU&redirect=/jobs" >
+                            <img src="/img/flags/lu.png" width="23" height="17" data-hires="true" />
+                            <span>Luxembourg</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/country?country=NL&redirect=/jobs" >
+                            <img src="/img/flags/nl.png" width="23" height="17" data-hires="true" />
+                            <span>Netherlands</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/country?country=NO&redirect=/jobs" >
+                            <img src="/img/flags/no.png" width="23" height="17" data-hires="true" />
+                            <span>Norway</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/country?country=ES&redirect=/jobs" >
+                            <img src="/img/flags/es.png" width="23" height="17" data-hires="true" />
+                            <span>Spain</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/country?country=SE&redirect=/jobs" >
+                            <img src="/img/flags/se.png" width="23" height="17" data-hires="true" />
+                            <span>Sweden</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/country?country=CH&redirect=/jobs" >
+                            <img src="/img/flags/ch.png" width="23" height="17" data-hires="true" />
+                            <span>Switzerland</span>
+                        </a>
+                    </li>
+          </ul>
+        </div>
+    </div>
+
+
+    <p><a href="https://stripe.com">&copy; Stripe</a></p>
+
+    <ul>
+        <li><a href="https://status.stripe.com"><span>System Status</span></a></li>
+        <li><a href="https://stripe.com/about">About</a></li>
+        <li><a href="https://stripe.com/blog"><span>Blog</span></a></li>
+        <li><a href="https://stripe.com/jobs"><span>Jobs</span></a></li>
+        <li><a href="http://twitter.com/stripe">Twitter</a></li>
+    </ul>
+    <ul class="lesser">
+        <li><a href="https://stripe.com/terms">Terms of Service</a></li>
+        <li><a href="https://stripe.com/privacy">Privacy Policy</a></li>
+    </ul>
+</div>
+<div class="country-dropdown-overlay"></div>
+
+    <script src="/assets/jquery-47d53801b9f61ca8a21dcc2571aeb3ec.js"></script>
+    <script src="/assets/shared-3abadcaa3af6e785a085062e45894014.js"></script>
+
+<script src="/assets/footer_analytics-6e8fc3677422b1ab0ef7aca057103605.js"></script>
+
+<noscript>
+  <div style="display:inline;">
+  <img height="1" width="1" style="border-style:none;" alt="" src="https://googleads.g.doubleclick.net/pagead/viewthroughconversion/1008370075/?value=0&amp;guid=ON&amp;script=0"/>
+  </div>
+</noscript>
+
+
+  <script src="/assets/jobs-ac8bd9bb57e9ca58dee998b18b32c6d2.js"></script>
+</body>
+</html>
+

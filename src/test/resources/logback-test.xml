@@ -1,0 +1,16 @@
+<configuration scan="false" debug="false">
+    <appender name="stdout" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>%date{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %-5level %logger - %message%n</pattern>
+        </encoder>
+    </appender>
+
+    <logger name="com.bwarner.siteanalysis" level="DEBUG" />
+    <logger name="httpclient" level="ERROR" />
+    <logger name="org.apache" level="ERROR" />
+    <logger name="org.springframework" level="ERROR" />
+	
+    <root level="ERROR">
+        <appender-ref ref="stdout" />
+    </root>
+</configuration>
