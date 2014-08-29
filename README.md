@@ -8,13 +8,13 @@ A simple web crawler to recursively crawl content for a particular site (restric
 
 Currently, everything is done in one invocation of a script. My plan is to have the app run an embedded Jetty and expose some REST endpoints for the user to tweak their search queries after the site crawling has been completed.
 
-TOOD: Make sense of results ;)
+*TODO*: Make sense of results ;)
 
 
 Requirements
 ------------
-Java 7+
-Maven 3+
++ Java 7+
++ Maven 3+
 
 
 Usage

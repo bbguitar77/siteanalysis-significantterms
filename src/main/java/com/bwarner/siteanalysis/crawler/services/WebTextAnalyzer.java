@@ -26,6 +26,8 @@ public class WebTextAnalyzer {
   };
 
   /**
+   * Method to extract a set of links from the HTML page content, constrained to
+   * the domain of the request URI
    *
    * @param uri
    * @param pageContent
