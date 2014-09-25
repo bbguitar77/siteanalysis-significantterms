@@ -31,7 +31,7 @@ public class ElasticSearchQueryServiceTest extends ElasticSearchTestHelper {
     // setup some sample data
     SiteDocument[] siteData = generateSiteData();
     esIndexingService.indexSites(siteData);
-    Thread.sleep(1000); // need to sleep for ES refresh
+    Thread.sleep(1500); // need to sleep for ES refresh
     Assert.assertEquals("Expected -5- site documents after indexing", 5, documentCount(DOC_TYPE_SITE));
 
     /*

@@ -1,5 +1,6 @@
 package com.bwarner.siteanalysis.search.config;
 
+import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStream;
@@ -14,42 +15,36 @@ import org.slf4j.LoggerFactory;
 
 public class ElasticSearchClientFactory {
 
-  private static Logger log          = LoggerFactory.getLogger(ElasticSearchClientFactory.class);
+  private static Logger       log          = LoggerFactory.getLogger(ElasticSearchClientFactory.class);
 
-  protected Node        node;
+  private Node                node;
 
-  protected Client      client;
+  private String[]            templates;
 
-  /**
-   * Should be a path in the classpath.
-   */
-  protected String      configPath   = "elasticsearch/config";
+  /** should be present in classpath */
+  private static final String configPath   = "elasticsearch" + File.separator + "config";
 
-  /**
-   * Should be relative to configPath.
-   */
-  protected String      templatePath = "templates";
-
-  protected String[]    templates;
+  /** relative to configPath */
+  private static final String templatePath = "templates";
 
   public Client buildClient() throws Exception {
     if (node == null)
-      throw new Exception("You must define an ElasticSearch Node.");
-    client = node.client();
-    initTemplates();
+      throw new RuntimeException("You must define an ElasticSearch Node.");
+    Client client = node.client();
+    initTemplates(client);
     return client;
   }
 
-  protected void initTemplates() {
+  protected void initTemplates(final Client client) {
     if (null == templates || templates.length == 0)
       return;
 
     for (String template : templates) {
       try {
-        if (isTemplateExist(template)) {
-          this.client.admin().indices().prepareDeleteTemplate(template).execute().actionGet();
+        if (isTemplateDefined(client, template)) {
+          client.admin().indices().prepareDeleteTemplate(template).execute().actionGet();
         }
-        pushTemplate(template);
+        pushTemplate(client, template);
       }
       catch (Exception e) {
         log.error("Unable to load template {}. Error was \"{}\". Skipping.", template, e.getMessage());
@@ -58,22 +53,19 @@ public class ElasticSearchClientFactory {
     }
   }
 
-  private boolean isTemplateExist(String template) {
-    GetIndexTemplatesResponse gitr = this.client.admin().indices().prepareGetTemplates(template).execute().actionGet();
-
+  private boolean isTemplateDefined(final Client client, final String template) {
+    GetIndexTemplatesResponse gitr = client.admin().indices().prepareGetTemplates(template).execute().actionGet();
     if (gitr.getIndexTemplates().size() > 0)
       return true;
     return false;
   }
 
-  private void pushTemplate(String template) throws IOException {
-
-    String templateFullPath = configPath + "/" + templatePath + "/" + template + ".json";
+  private void pushTemplate(final Client client, final String template) throws IOException {
+    String templateFullPath = configPath + File.separator + templatePath + File.separator + template + ".json";
     InputStream inputStream = getClass().getClassLoader().getResourceAsStream(templateFullPath);
     if (null == inputStream)
       inputStream = new FileInputStream(templateFullPath);
 
-    // ElasticSearch in-memory nodes require one shard and zero replicas
     String templateJson = IOUtils.toString(inputStream);
     PutIndexTemplateResponse templateResponse = client.admin()
                                                       .indices()
@@ -86,19 +78,13 @@ public class ElasticSearchClientFactory {
   }
 
   /* GETTERS & SETTERS */
-  public void setNode(Node node) {
+  public ElasticSearchClientFactory setNode(Node node) {
     this.node = node;
+    return this;
   }
 
-  public void setConfigPath(String configPath) {
-    this.configPath = configPath;
-  }
-
-  public void setTemplatePath(String templatePath) {
-    this.templatePath = templatePath;
-  }
-
-  public void setTemplates(String[] templates) {
+  public ElasticSearchClientFactory setTemplates(String[] templates) {
     this.templates = templates;
+    return this;
   }
 }

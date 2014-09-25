@@ -1,7 +1,6 @@
 package com.bwarner.siteanalysis.search.config;
 
 import java.util.HashSet;
-import java.util.Map;
 import java.util.Set;
 
 import javax.annotation.PreDestroy;
@@ -14,40 +13,31 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Service;
 
-/**
- * A factory to produce ElasticSearch {@link Node} instances
- *
- * @author bwarner
- */
 @Service
 public class ElasticSearchNodeFactory {
 
-  private static Logger       log          = LoggerFactory.getLogger(ElasticSearchNodeFactory.class);
+  private static Logger    log    = LoggerFactory.getLogger(ElasticSearchNodeFactory.class);
 
-  private String              settingsFile;
+  private String           settingsFile;
 
-  private Map<String, String> settings;
+  private boolean          local;
 
-  private boolean             local        = false;
-
-  private Set<Node>           managedNodes = new HashSet<>();
+  private static Set<Node> _nodes = new HashSet<>();
 
   public Node buildNode() {
-    ImmutableSettings.Builder settingsBuilder = ImmutableSettings.settingsBuilder().put("node.local", this.local);
+    ImmutableSettings.Builder settingsBuilder = ImmutableSettings.settingsBuilder().put("node.local", local);
     if (StringUtils.isNotBlank(this.settingsFile))
       settingsBuilder.loadFromClasspath(this.settingsFile.trim());
-    if (null != settings)
-      settingsBuilder.put(settings);
 
     Node node = NodeBuilder.nodeBuilder().settings(settingsBuilder.build()).node();
+    _nodes.add(node);
     log.debug("Node settings: {}", node.settings().getAsMap());
-    managedNodes.add(node);
     return node;
   }
 
   @PreDestroy
   public void preDestroy() {
-    for (Node node : managedNodes) {
+    for (Node node : _nodes) {
       log.debug("Closing client in cluster {}", node.settings().get("cluster.name"));
       node.client().close();
       log.debug("Closing node in cluster {}", node.settings().get("cluster.name"));
@@ -56,15 +46,13 @@ public class ElasticSearchNodeFactory {
   }
 
   /* GETTERS & SETTERS */
-  public void setSettingsFile(String settingsFile) {
+  public ElasticSearchNodeFactory setSettingsFile(String settingsFile) {
     this.settingsFile = settingsFile;
+    return this;
   }
 
-  public void setSettings(Map<String, String> settings) {
-    this.settings = settings;
-  }
-
-  public void setLocal(boolean local) {
+  public ElasticSearchNodeFactory setLocal(boolean local) {
     this.local = local;
+    return this;
   }
 }
