@@ -24,17 +24,19 @@ import com.bwarner.siteanalysis.search.model.SignificantTermsQueryResponse.Signi
 import com.bwarner.siteanalysis.search.services.SearchQueryService;
 import com.bwarner.siteanalysis.utils.Utils;
 
+/**
+ * Stand-alone script that launches crawling & significant terms aggregation in
+ * one launch
+ */
 public class SignificantTermsAggregator {
 
   private static Logger              log                              = LoggerFactory.getLogger(SignificantTermsAggregator.class);
 
   final private static String        SPRING_APP_CONTEXT_RESOURCE_FILE = "classpath:/META-INF/appContext.siteanalysis.standalone.xml";
 
+  /** spring-wired services */
   private static SiteAnalysisService siteAnalysisService;
-
   private static SearchQueryService  searchQueryService;
-
-  private static SiteAnalysisOptions siteAnalysisOptions;
 
   @SuppressWarnings("static-access")
   private static Options buildOptions() {
@@ -78,15 +80,15 @@ public class SignificantTermsAggregator {
       log.info("- {}: {}", o.getLongOpt(), o.getValue());
 
     SiteAnalysisOptionsBuilder builder = new SiteAnalysisOptionsBuilder();
-    if (params.hasOption("u"))
-      builder.setUri(params.getOptionValue("u"));
-    if (params.hasOption("d"))
-      builder.setMaxDepth(Integer.parseInt(params.getOptionValue("d")));
-    if (params.hasOption("q"))
-      builder.setQuery(params.getOptionValue("q"));
+    builder.setUri(params.getOptionValue("u"));
+    builder.setMaxDepth(Integer.parseInt(params.getOptionValue("d")));
 
     siteAnalysisOptions = builder.build();
+    query = params.getOptionValue("q");
   }
+
+  private static SiteAnalysisOptions siteAnalysisOptions;
+  private static String              query;
 
   public static void main(String[] args) {
     Options options = buildOptions();
@@ -105,10 +107,8 @@ public class SignificantTermsAggregator {
       // pause for a bit to allow for ES refresh interval
       Thread.sleep(2000);
 
-      SignificantTermsQueryResponse significantTermsResponse = searchQueryService.getSignificantTerms(siteAnalysisOptions.query);
-      Utils.printLogHeader(log,
-                           "Significant Terms Response",
-                           new String[] { "query=".concat(siteAnalysisOptions.query) });
+      SignificantTermsQueryResponse significantTermsResponse = searchQueryService.getSignificantTerms(query);
+      Utils.printLogHeader(log, "Significant Terms Response", new String[] { "query=".concat(query) });
       for (SignificantTerm term : significantTermsResponse.significantTerms) {
         log.info(term.toString());
       }
