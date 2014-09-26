@@ -1,10 +1,13 @@
 package com.bwarner.siteanalysis.integration.services;
 
 import java.util.Set;
+import java.util.concurrent.Future;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.scheduling.annotation.Async;
+import org.springframework.scheduling.annotation.AsyncResult;
 import org.springframework.stereotype.Service;
 
 import com.bwarner.siteanalysis.crawler.exception.CrawlingException;
@@ -36,13 +39,16 @@ public class SiteAnalysisService {
   @Autowired
   private Transformer<SiteDocument> transformer;
 
-  public void analyzeSite(SiteAnalysisOptions options) throws CrawlingException, SearchIndexingException {
+  @Async
+  public Future<Boolean> analyzeSite(SiteAnalysisOptions options) throws CrawlingException, SearchIndexingException {
     // crawl
     Set<SiteCrawlInfo> crawlResults = siteCrawlingService.crawl(options.uri, options.maxDepth);
     // transform
     SiteDocument[] siteDocs = transformer.transform(crawlResults.toArray(new SiteCrawlInfo[0]));
     // index
     searchIndexingService.indexSites(siteDocs);
+    // future proxy
+    return new AsyncResult<Boolean>(true);
   }
 
   /* GETTERS & SETTERS */

@@ -1,6 +1,7 @@
 package com.bwarner.siteanalysis.app;
 
 import java.util.Comparator;
+import java.util.concurrent.ExecutionException;
 
 import org.apache.commons.cli.CommandLine;
 import org.apache.commons.cli.CommandLineParser;
@@ -101,8 +102,11 @@ public class SignificantTermsAggregator {
       }
       setParameters(line);
 
+      // init spring context
       initApplicationContext();
-      siteAnalysisService.analyzeSite(siteAnalysisOptions);
+
+      // launch analysis execution and block until finished
+      siteAnalysisService.analyzeSite(siteAnalysisOptions).get();
 
       // pause for a bit to allow for ES refresh interval
       Thread.sleep(2000);
@@ -118,6 +122,10 @@ public class SignificantTermsAggregator {
     catch (ParseException e) {
       log.error(e.getMessage());
       printHelp(options);
+      System.exit(1);
+    }
+    catch (ExecutionException ee) {
+      log.error("Something went awry during execution of site analysis", ee);
       System.exit(1);
     }
     catch (Exception e) {

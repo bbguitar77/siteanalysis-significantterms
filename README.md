@@ -4,11 +4,11 @@ Site Analysis via ElasticSearch
 Introduction
 ------------
 
-A simple web crawler to recursively crawl content for a particular site (restricted to that site's domain) and index the content to an in-memory instance of ElasticSearch. We then run a simple analysis on the indexed content to retrieve "significant terms" against an input query string. ElasticSearch defines significant terms as those that have a high disparity between their frequency to the entire document corpus (background) vs. their frequency to the user's search (foreground). Significant terms could be valuable in surfacing recommended terms to a user's specific search. To read more, see [http://www.elasticsearch.org/guide/en/elasticsearch/reference/current/search-aggregations-bucket-significantterms-aggregation.html](ElasticSearch's documentation)
+A simple web crawler to recursively crawl content for a particular site (restricted to that site's domain) and index the content to an in-memory instance of ElasticSearch. We then can analyze the indexed content to retrieve significant terms aggregations for particular input queries. ElasticSearch defines [significant terms](http://www.elasticsearch.org/guide/en/elasticsearch/reference/current/search-aggregations-bucket-significantterms-aggregation.html) as those that have a high disparity between their frequency to the entire document corpus (background) vs. their frequency to the user's search (foreground). 
 
-Currently, everything is done in one invocation of a script. My plan is to have the app run an embedded Jetty and expose some REST endpoints for the user to tweak their search queries after the site crawling has been completed.
+For instance, Stripe is a company that provides APIs for managing and processing payments. Maybe we're interested in seeing what terms appear frequently next to the term 'payment'. So, we can crawl and index content for 'http://stripe.com' and then run the significant terms aggregation for the query term 'payment'. This will provide us with the results that we're interested in (hopefully)
 
-*TODO*: Make sense of results ;)
+At the moment, the results are a bit hard to understand - significant terms aggregation might need a sizable document corpus to return good results. Restricting it to a particular domain's content might not be providing enough contrast for foreground/background frequencies.
 
 
 Requirements
@@ -22,15 +22,21 @@ Usage
 
 To compile/assemble, run:
 
-   mvn clean package
+    mvn clean package
 
-To run the Significant Terms analysis for a particular domain, run:
+To run the SiteAnalysis app, run the start.sh script. This will launch an embedded Jetty running on port 9080
 
-   ./start.sh -u 'http://stripe.com' -d 2 -q payment
-   
-+ u = seed uri to crawl
-+ d = max-depth to crawl recursively
-+ q = query term to mimic user search
+    ./start.sh
+
+To launch a web crawl for a particular domain, make the following REST call:
+
+    curl -XPOST http://localhost:9080/site/analyze --data "url=http://stripe.com&max-depth=2"
+
+Just update the form parameters with the desired site and depth. The web crawl / content indexing is execued asynchronously in the background, so tail the logs to see when it completes
+
+Once done, we then can run significant terms aggregation queries on the indexed content. For example:
+
+    curl -XGET http://localhost:9080/site/sigterms?query=payment
 
 Logging is configured under config/logback.xml
 Application properties are configured under config/siteanalysis.properties
