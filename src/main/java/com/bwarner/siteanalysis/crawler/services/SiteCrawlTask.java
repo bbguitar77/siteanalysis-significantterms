@@ -3,6 +3,7 @@ package com.bwarner.siteanalysis.crawler.services;
 import java.util.Set;
 import java.util.concurrent.Callable;
 
+import org.apache.commons.lang3.StringUtils;
 import org.apache.http.HttpStatus;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -45,5 +46,17 @@ public class SiteCrawlTask implements Callable<SiteCrawlInfo> {
     }
 
     return new SiteCrawlInfo(uri, depth, httpResonse, extractedLinks);
+  }
+
+  @Override
+  public boolean equals(Object obj) {
+    if (this == obj)
+      return true;
+    if (obj == null)
+      return false;
+    if (getClass() != obj.getClass())
+      return false;
+    SiteCrawlTask sct = (SiteCrawlTask) obj;
+    return StringUtils.equals(this.uri, sct.uri);
   }
 }

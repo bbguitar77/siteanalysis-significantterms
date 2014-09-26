@@ -22,7 +22,7 @@ public class MockHttpService implements HttpService {
     final String testFile = String.format("test-data/%s", uriToFilename(uri));
     try {
       final String htmlContent = IOUtils.toString(getClass().getClassLoader().getResourceAsStream(testFile));
-      ret = new HttpResponseBuilder().setStatus(200).setContent(htmlContent);
+      ret = new HttpResponseBuilder().setStatus(200).setContent(htmlContent).setUri(uri);
 
       // one of our sample test files represents a re-direct to another test
       // data-file

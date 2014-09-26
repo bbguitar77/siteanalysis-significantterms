@@ -74,21 +74,21 @@ public class ThreadedSiteCrawlingService implements SiteCrawlingService {
     List<SiteCrawlTask> futureTasks = new ArrayList<>();
     for (int i = 0; i < incomingFutures.size(); i++) {
       SiteCrawlInfo info = crawlerECS.take().get();
+      visitedLinks.add(info.requestUri); // mark as visited
       if (info.isSuccess()) {
         log.debug("Successful Site crawling response: {}", info.toString());
         // Check to see if we have already encountered the HTTP response URI
         // (e.g. as a possible re-direct)
         final String responseUri = info.httpResponse.uri;
-        if (visitedLinks.contains(responseUri)) {
+
+        if (siteData.contains(info)) {
           log.debug("Omitting crawl response - the HTTP response URI [{}] has already been encountered", responseUri);
           continue;
         }
 
-        // Add the request URI (plus redirect URI, if applicable) to the set
-        // of visited links
-        visitedLinks.add(info.requestUri);
+        // for redirects, mark response URI as visited
         if (info.httpResponse.isRedirect)
-          visitedLinks.add(info.httpResponse.uri);
+          visitedLinks.add(responseUri);
 
         // Add crawl info to result set
         siteData.add(info);
@@ -97,19 +97,20 @@ public class ThreadedSiteCrawlingService implements SiteCrawlingService {
         // links to the list of future tasks
         if (info.requestDepth < maxDepth) {
           for (String link : info.extractedLinks) {
-            // only create a future task if we haven't encountered the link
-            // before
+            // only create a future task if link hasn't been visited
             if (!visitedLinks.contains(link)) {
-              futureTasks.add(new SiteCrawlTask(link, info.requestDepth + 1));
-              visitedLinks.add(link);
+              SiteCrawlTask ft = new SiteCrawlTask(link, info.requestDepth + 1);
+              // check to see if we already have a future task for link
+              if (!futureTasks.contains(ft))
+                futureTasks.add(ft);
             }
           }
         } // end if (info.requestDepth < maxDepth) {
       } // end if (info.isSuccess()) {
       else {
-        log.warn("NON-successful Site crawling response: {}", info.toString());
+        log.debug("NON-successful Site crawling response: {}", info.toString());
       }
-    }
+    } // end for (int i = 0; i < incomingFutures.size(); i++)
 
     final boolean keepCrawling = futureTasks.size() > 0;
     if (keepCrawling) {
