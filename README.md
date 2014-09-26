@@ -1,12 +1,12 @@
-Site Analysis via ElasticSearch
-===============================
+Site Analysis - Significant Terms
+=================================
 
 Introduction
 ------------
 
 A simple web crawler to recursively crawl content for a particular site (restricted to that site's domain) and index the content to an in-memory instance of ElasticSearch. We then can analyze the indexed content to retrieve significant terms aggregations for particular input queries. ElasticSearch defines [significant terms](http://www.elasticsearch.org/guide/en/elasticsearch/reference/current/search-aggregations-bucket-significantterms-aggregation.html) as those that have a high disparity between their frequency to the entire document corpus (background) vs. their frequency to the user's search (foreground). 
 
-For instance, Stripe is a company that provides APIs for managing and processing payments. Maybe we're interested in seeing what terms appear frequently next to the term 'payment'. So, we can crawl and index content for 'http://stripe.com' and then run the significant terms aggregation for the query term 'payment'. This will provide us with the results that we're interested in (hopefully)
+Use case - Stripe is a company that provides APIs for managing and processing payments. Maybe we're interested in seeing what terms appear frequently next to the term 'payment'. So, we can crawl and index content for 'http://stripe.com' and then run the significant terms aggregation for the query term 'payment'. This will provide us with the results that we're interested in (hopefully)
 
 At the moment, the results are a bit hard to understand - significant terms aggregation might need a sizable document corpus to return good results. Restricting it to a particular domain's content might not be providing enough contrast for foreground/background frequencies.
 
