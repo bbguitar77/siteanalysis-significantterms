@@ -14,9 +14,10 @@ logging:
 
   # Logger-specific levels.
   loggers:
-
-    # Sets the level for 'com.example.app' to DEBUG.
-    com.traackr.reveal: TRACE
+    com.bwarner.siteanalysis: DEBUG
+    org.apache: ERROR
+    org.springframework: ERROR
+    httpclient: ERROR
 
   appenders:
     - type: console
