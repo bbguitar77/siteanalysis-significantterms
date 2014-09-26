@@ -3,10 +3,10 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>org.bwarner</groupId>
-	<artifactId>siteanalysis-es</artifactId>
+	<artifactId>siteanalysis-sigterms</artifactId>
 	<version>1.0-SNAPSHOT</version>
 	<name>${project.artifactId}</name>
-	<description>Analyze site content to determine significant terms across a web domain</description>
+	<description>Analyze site content to run significant terms aggregations</description>
 
 	<properties>
 		<spring.version>4.0.7.RELEASE</spring.version>
