@@ -3,6 +3,7 @@ package com.bwarner.siteanalysis.crawler.services;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashSet;
+import java.util.Iterator;
 import java.util.List;
 import java.util.Set;
 import java.util.concurrent.ExecutionException;
@@ -65,52 +66,73 @@ public class ThreadedSiteCrawlingService implements SiteCrawlingService {
     }
   }
 
+  /**
+   * Recursive function that processes a set of incoming {@link SiteCrawlInfo}
+   * future results (blocking until all are completed) for a particular crawl
+   * depth.
+   *
+   * <p>
+   * Recursive loop is broken once the max-depth is reached
+   *
+   * @param crawlerECS
+   * @param incomingFutures
+   * @param visitedLinks
+   * @param maxDepth
+   * @return
+   * @throws InterruptedException
+   * @throws ExecutionException
+   */
   protected Set<SiteCrawlInfo> getMore(final ExecutorCompletionService<SiteCrawlInfo> crawlerECS,
                                        final List<Future<SiteCrawlInfo>> incomingFutures,
                                        final Set<String> visitedLinks,
                                        final int maxDepth) throws InterruptedException, ExecutionException {
 
     Set<SiteCrawlInfo> siteData = new HashSet<>();
-    List<SiteCrawlTask> futureTasks = new ArrayList<>();
+    Set<SiteCrawlTask> futureTasks = new HashSet<>();
     for (int i = 0; i < incomingFutures.size(); i++) {
       SiteCrawlInfo info = crawlerECS.take().get();
-      visitedLinks.add(info.requestUri); // mark as visited
       if (info.isSuccess()) {
-        log.debug("Successful Site crawling response: {}", info.toString());
+        log.debug("Successful Crawl: {}", info.toString());
+
         // Check to see if we have already encountered the HTTP response URI
         // (e.g. as a possible re-direct)
         final String responseUri = info.httpResponse.uri;
-
-        if (siteData.contains(info)) {
-          log.debug("Omitting crawl response - the HTTP response URI [{}] has already been encountered", responseUri);
+        if (visitedLinks.contains(responseUri)) {
+          log.debug("Duplicate HTTP response URI ({}) encountered, omitting response", responseUri);
           continue;
         }
 
-        // for redirects, mark response URI as visited
-        if (info.httpResponse.isRedirect)
-          visitedLinks.add(responseUri);
+        visitedLinks.add(responseUri); // mark as visited
+        if (info.httpResponse.isRedirect) {
+          // for redirects, mark original request URI as visited
+          visitedLinks.add(info.requestUri);
+        }
 
-        // Add crawl info to result set
+        // add response to results
         siteData.add(info);
 
         // If we have not exceeded the max crawl depth, then add the extracted
         // links to the list of future tasks
         if (info.requestDepth < maxDepth) {
           for (String link : info.extractedLinks) {
-            // only create a future task if link hasn't been visited
-            if (!visitedLinks.contains(link)) {
-              SiteCrawlTask ft = new SiteCrawlTask(link, info.requestDepth + 1);
-              // check to see if we already have a future task for link
-              if (!futureTasks.contains(ft))
-                futureTasks.add(ft);
-            }
+            SiteCrawlTask ft = new SiteCrawlTask(link, info.requestDepth + 1);
+            futureTasks.add(ft);
           }
         } // end if (info.requestDepth < maxDepth) {
       } // end if (info.isSuccess()) {
       else {
-        log.debug("NON-successful Site crawling response: {}", info.toString());
+        log.debug("[NON]Successful Crawl: {}", info.toString());
+        visitedLinks.add(info.requestUri); // mark as visited
       }
     } // end for (int i = 0; i < incomingFutures.size(); i++)
+
+    // prune future tasks that have already been visited
+    Iterator<SiteCrawlTask> ftIter = futureTasks.iterator();
+    while (ftIter.hasNext()) {
+      SiteCrawlTask ft = ftIter.next();
+      if (visitedLinks.contains(ft.uri))
+        ftIter.remove();
+    } // end while (ftIter.hasNext()) {
 
     final boolean keepCrawling = futureTasks.size() > 0;
     if (keepCrawling) {

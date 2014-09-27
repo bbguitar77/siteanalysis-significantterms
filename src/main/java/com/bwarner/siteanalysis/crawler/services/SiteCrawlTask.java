@@ -59,4 +59,9 @@ public class SiteCrawlTask implements Callable<SiteCrawlInfo> {
     SiteCrawlTask sct = (SiteCrawlTask) obj;
     return StringUtils.equals(this.uri, sct.uri);
   }
+
+  @Override
+  public int hashCode() {
+    return uri.hashCode();
+  }
 }
