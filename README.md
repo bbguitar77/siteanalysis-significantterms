@@ -30,13 +30,13 @@ To run the SiteAnalysis app, run the start.sh script. This will launch an embedd
 
 To launch a web crawl for a particular domain, make the following REST call:
 
-    curl -XPOST http://localhost:9080/site/analyze --data "url=http://stripe.com&max-depth=2"
+    curl -XPOST http://localhost:9080/site/analyze --data "uri=http://stripe.com&max-depth=2"
 
 Just update the form parameters with the desired site and depth. The web crawl / content indexing is execued asynchronously in the background, so tail the logs to see when it completes
 
 Once done, we then can run significant terms aggregation queries on the indexed content. For example:
 
-    curl -XGET http://localhost:9080/site/sigterms?query=payment
+    curl -XGET http://localhost:9080/site/sigterms?qt=payment
 
 Logging is configured under config/logback.xml
 Application properties are configured under config/siteanalysis.properties

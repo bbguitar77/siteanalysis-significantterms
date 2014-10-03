@@ -1,6 +1,5 @@
 package com.bwarner.siteanalysis.app.resources;
 
-import javax.ws.rs.DefaultValue;
 import javax.ws.rs.FormParam;
 import javax.ws.rs.GET;
 import javax.ws.rs.POST;
@@ -31,16 +30,33 @@ public class SiteResource {
 
   @POST
   @Path("/analyze")
-  public Response
-      crawl(@FormParam("url") String url, @DefaultValue("2") @FormParam("max-depth") Integer maxDepth) throws Exception {
-    siteAnalysisService.analyzeSite(new SiteAnalysisOptionsBuilder().setUri(url).setMaxDepth(maxDepth).build());
-    return Response.ok("analyzing - check logs").build();
+  public Response crawl(@FormParam("uri") String uri, @FormParam("max-depth") Integer maxDepth) throws Exception {
+    try {
+      SiteAnalysisOptionsBuilder options = new SiteAnalysisOptionsBuilder().setUri(uri);
+      if (maxDepth != null)
+        options.setMaxDepth(maxDepth);
+      siteAnalysisService.analyzeSite(options.build());
+      return Response.ok("analyzing - check logs").build();
+    }
+    catch (IllegalArgumentException iae) {
+      return buildError("Malformed parameters", iae);
+    }
   }
 
   @GET
   @Path("/sigterms")
-  public Response query(@QueryParam("query") String query) throws Exception {
-    SignificantTermsQueryResponse stResponse = searchQueryService.getSignificantTerms(query);
+  public Response query(@QueryParam("qt") String qt) throws Exception {
+    SignificantTermsQueryResponse stResponse = searchQueryService.getSignificantTerms(qt);
     return Response.ok(stResponse.significantTerms).build();
+  }
+
+  /**
+   * Builds a 400 HTTP response with the given error message
+   */
+  protected Response buildError(final String msg, final Exception e) {
+    return Response.status(Response.Status.BAD_REQUEST)
+                   .entity(String.format("%s: %s", msg, e.getMessage()))
+                   .type(MediaType.TEXT_PLAIN)
+                   .build();
   }
 }

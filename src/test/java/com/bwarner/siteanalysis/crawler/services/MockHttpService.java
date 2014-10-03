@@ -1,5 +1,7 @@
 package com.bwarner.siteanalysis.crawler.services;
 
+import java.net.URI;
+
 import org.apache.commons.io.IOUtils;
 import org.apache.commons.lang3.StringUtils;
 import org.slf4j.Logger;
@@ -16,7 +18,15 @@ public class MockHttpService implements HttpService {
   @Override
   public HttpResponse doGet(String uri) throws IllegalArgumentException, HttpException {
     if (StringUtils.isBlank(uri))
-      throw new IllegalArgumentException("URI parameter cannot be blank");
+      throw new IllegalArgumentException("URI string cannot be blank");
+
+    return doGet(URI.create(uri));
+  }
+
+  @Override
+  public HttpResponse doGet(URI uri) throws IllegalArgumentException, HttpException {
+    if (uri == null)
+      throw new IllegalArgumentException("URI cannot be null");
 
     HttpResponseBuilder ret = null;
     final String testFile = String.format("test-data/%s", uriToFilename(uri));
@@ -26,13 +36,13 @@ public class MockHttpService implements HttpService {
 
       // one of our sample test files represents a re-direct to another test
       // data-file
-      if (uri.equals("https://stripe.com/features")) {
-        ret.setIsRedirect(true).setUri("https://stripe.com/us/features");
+      if (uri.toString().equals("https://stripe.com/features")) {
+        ret.setIsRedirect(true).setUri(URI.create("https://stripe.com/us/features"));
       }
     }
     catch (Exception e) { // simulate 404 with unable to locate file
       log.trace("404 Simlulated - Could not open test file '{}'", testFile);
-      ret = new HttpResponseBuilder().setStatus(500);
+      ret = new HttpResponseBuilder().setStatus(404);
     }
 
     return ret.build();
@@ -44,7 +54,7 @@ public class MockHttpService implements HttpService {
    * @param uri
    * @return
    */
-  private static String uriToFilename(final String uri) {
-    return uri.replaceFirst("http[s]?://", "").replaceAll("/", "_");
+  private static String uriToFilename(final URI uri) {
+    return uri.toString().replaceFirst("http[s]?://", "").replaceAll("/", "_");
   }
 }

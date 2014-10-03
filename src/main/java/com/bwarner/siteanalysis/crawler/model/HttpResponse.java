@@ -1,11 +1,10 @@
 package com.bwarner.siteanalysis.crawler.model;
 
+import java.net.URI;
 import java.util.Map;
 
 /**
  * Encapsulates various HTTP response information
- *
- * @author bwarner
  */
 public class HttpResponse {
 
@@ -13,7 +12,7 @@ public class HttpResponse {
   public final String              charset;
   public final Integer             status;
   public final String              statusText;
-  public final String              uri;
+  public final URI                 uri;
   public final Boolean             isRedirect;
   public final Map<String, String> responseHeaders;
 
@@ -40,7 +39,7 @@ public class HttpResponse {
     private String              charset;
     private Integer             status;
     private String              statusText;
-    private String              uri;
+    private URI                 uri;
     private Boolean             isRedirect = false;
     private Map<String, String> responseHeaders;
 
@@ -88,11 +87,11 @@ public class HttpResponse {
       return this;
     }
 
-    public String getUri() {
+    public URI getUri() {
       return uri;
     }
 
-    public HttpResponseBuilder setUri(String uri) {
+    public HttpResponseBuilder setUri(URI uri) {
       this.uri = uri;
       return this;
     }

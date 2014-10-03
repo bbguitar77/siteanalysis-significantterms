@@ -1,5 +1,6 @@
 package com.bwarner.siteanalysis.crawler.services;
 
+import java.net.URI;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashSet;
@@ -20,6 +21,7 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 
 import com.bwarner.siteanalysis.crawler.exception.CrawlingException;
+import com.bwarner.siteanalysis.crawler.model.CrawlOptions;
 import com.bwarner.siteanalysis.crawler.model.SiteCrawlInfo;
 import com.bwarner.siteanalysis.utils.Utils;
 
@@ -41,18 +43,20 @@ public class ThreadedSiteCrawlingService implements SiteCrawlingService {
 
   @Override
   @SuppressWarnings("unchecked")
-  public Set<SiteCrawlInfo> crawl(final String uri, final int maxDepth) throws CrawlingException {
+  public Set<SiteCrawlInfo> crawl(CrawlOptions options) throws CrawlingException {
     try {
+      final URI seedURI = options.seedURI;
       Utils.printLogHeader(log,
                            "Beginning Site Crawl",
-                           new String[] { "URI=".concat(uri), "max-depth=".concat(String.valueOf(maxDepth)) });
+                           new String[] { "URI=".concat(seedURI.toString()),
+                               "max-depth=".concat(String.valueOf(options.maxDepth)) });
 
       final int maxThreads = Integer.parseInt(crawlThroughput);
       final ExecutorCompletionService<SiteCrawlInfo> crawlerECS = new ExecutorCompletionService<>(Executors.newFixedThreadPool(maxThreads));
-      Future<SiteCrawlInfo>[] outgoingFutures = new Future[] { crawlerECS.submit(new SiteCrawlTask(uri, 0)) };
-      Set<SiteCrawlInfo> results = getMore(crawlerECS, Arrays.asList(outgoingFutures), new HashSet<String>(), maxDepth);
-      Utils.printLogHeader(log, "Ending Site Crawl", new String[] { "URI=".concat(uri),
-          "max-depth=" + maxDepth,
+      Future<SiteCrawlInfo>[] outgoingFutures = new Future[] { crawlerECS.submit(new SiteCrawlTask(seedURI, 0, options)) };
+      Set<SiteCrawlInfo> results = getMore(crawlerECS, Arrays.asList(outgoingFutures), new HashSet<URI>(), options);
+      Utils.printLogHeader(log, "Ending Site Crawl", new String[] { "URI=".concat(seedURI.toString()),
+          "max-depth=" + options.maxDepth,
           "#-results=" + results.size() });
       return results;
     }
@@ -84,45 +88,47 @@ public class ThreadedSiteCrawlingService implements SiteCrawlingService {
    */
   protected Set<SiteCrawlInfo> getMore(final ExecutorCompletionService<SiteCrawlInfo> crawlerECS,
                                        final List<Future<SiteCrawlInfo>> incomingFutures,
-                                       final Set<String> visitedLinks,
-                                       final int maxDepth) throws InterruptedException, ExecutionException {
+                                       final Set<URI> visitedLinks,
+                                       final CrawlOptions options) throws InterruptedException, ExecutionException {
 
-    Set<SiteCrawlInfo> siteData = new HashSet<>();
+    Set<SiteCrawlInfo> results = new HashSet<>();
     Set<SiteCrawlTask> futureTasks = new HashSet<>();
     for (int i = 0; i < incomingFutures.size(); i++) {
-      SiteCrawlInfo info = crawlerECS.take().get();
-      if (info.isSuccess()) {
-        log.debug("Successful Crawl: {}", info.toString());
+      SiteCrawlInfo crawlInfo = crawlerECS.take().get();
+      if (crawlInfo.isSuccess()) {
+        log.debug("Successful Crawl: {}", crawlInfo.toString());
 
         // Check to see if we have already encountered the HTTP response URI
         // (e.g. as a possible re-direct)
-        final String responseUri = info.httpResponse.uri;
-        if (visitedLinks.contains(responseUri)) {
-          log.debug("Duplicate HTTP response URI ({}) encountered, omitting response", responseUri);
+        final URI responseURI = crawlInfo.responseData.uri;
+        if (visitedLinks.contains(responseURI)) {
+          log.debug("[DUPLICATE] HTTP response URI ({}) encountered, omitting response", responseURI);
+          // mark original request URI as visited in case of redirect
+          visitedLinks.add(crawlInfo.requestURI);
           continue;
         }
 
-        visitedLinks.add(responseUri); // mark as visited
-        if (info.httpResponse.isRedirect) {
+        visitedLinks.add(responseURI); // mark as visited
+        if (crawlInfo.responseData.isRedirect) {
           // for redirects, mark original request URI as visited
-          visitedLinks.add(info.requestUri);
+          visitedLinks.add(crawlInfo.requestURI);
         }
 
         // add response to results
-        siteData.add(info);
+        results.add(crawlInfo);
 
         // If we have not exceeded the max crawl depth, then add the extracted
         // links to the list of future tasks
-        if (info.requestDepth < maxDepth) {
-          for (String link : info.extractedLinks) {
-            SiteCrawlTask ft = new SiteCrawlTask(link, info.requestDepth + 1);
+        if (crawlInfo.requestDepth < options.maxDepth) {
+          for (URI link : crawlInfo.links) {
+            SiteCrawlTask ft = new SiteCrawlTask(link, crawlInfo.requestDepth + 1, options);
             futureTasks.add(ft);
           }
         } // end if (info.requestDepth < maxDepth) {
       } // end if (info.isSuccess()) {
       else {
-        log.debug("[NON]Successful Crawl: {}", info.toString());
-        visitedLinks.add(info.requestUri); // mark as visited
+        log.debug("[NON]Successful Crawl: {}", crawlInfo.toString());
+        visitedLinks.add(crawlInfo.requestURI); // mark as visited
       }
     } // end for (int i = 0; i < incomingFutures.size(); i++)
 
@@ -130,18 +136,18 @@ public class ThreadedSiteCrawlingService implements SiteCrawlingService {
     Iterator<SiteCrawlTask> ftIter = futureTasks.iterator();
     while (ftIter.hasNext()) {
       SiteCrawlTask ft = ftIter.next();
-      if (visitedLinks.contains(ft.uri))
+      if (visitedLinks.contains(ft.requestURI))
         ftIter.remove();
-    } // end while (ftIter.hasNext()) {
+    } // end while (ftIter.hasNext())
 
     final boolean keepCrawling = futureTasks.size() > 0;
     if (keepCrawling) {
       final List<Future<SiteCrawlInfo>> outgoingFutures = new ArrayList<>();
       for (SiteCrawlTask task : futureTasks)
         outgoingFutures.add(crawlerECS.submit(task));
-      siteData.addAll(getMore(crawlerECS, outgoingFutures, visitedLinks, maxDepth));
-    }
+      results.addAll(getMore(crawlerECS, outgoingFutures, visitedLinks, options));
+    } // end if (keepCrawling)
 
-    return siteData;
+    return results;
   }
 }

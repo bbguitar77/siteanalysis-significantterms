@@ -26,8 +26,10 @@ public class ElasticSearchIndexingService implements SearchIndexingService {
 
   public static final String DOC_TYPE_SITE          = "site";
 
-  public static final String DOC_FIELD_SITE_URI     = "uri";
   public static final String DOC_FIELD_SITE_CONTENT = "content";
+  public static final String DOC_FIELD_SITE_DOMAIN  = "domain";
+  public static final String DOC_FIELD_SITE_HOST    = "host";
+  public static final String DOC_FIELD_SITE_URI     = "uri";
 
   @Autowired
   private Client             elasticSearchClient;
@@ -66,15 +68,17 @@ public class ElasticSearchIndexingService implements SearchIndexingService {
   protected IndexRequestBuilder prepareForIndexing(SiteDocument payload) {
     IndexRequestBuilder indexRequest = null;
     try {
-      XContentBuilder jsonBuilder = jsonBuilder().startObject();
-      jsonBuilder.field(DOC_FIELD_SITE_URI, payload.uri);
-      jsonBuilder.field(DOC_FIELD_SITE_CONTENT, payload.content);
-      indexRequest = elasticSearchClient.prepareIndex(index, DOC_TYPE_SITE, String.valueOf(payload.uri.hashCode()))
-                                        .setSource(jsonBuilder);
+      final String docId = String.valueOf(payload.uri.hashCode());
+      XContentBuilder docFields = jsonBuilder().startObject()
+                                               .field(DOC_FIELD_SITE_CONTENT, payload.content)
+                                               .field(DOC_FIELD_SITE_DOMAIN, payload.domain)
+                                               .field(DOC_FIELD_SITE_HOST, payload.host)
+                                               .field(DOC_FIELD_SITE_URI, payload.uri);
+      indexRequest = elasticSearchClient.prepareIndex(index, DOC_TYPE_SITE, docId).setSource(docFields);
     }
     catch (IOException ioe) {
       // should never happen...
-      log.error("Unable to convert site payload to index request. Error was {}", ioe.getMessage());
+      log.error("Unable to convert SiteDocument payload to index request. Error was {}", ioe.getMessage());
     }
     return indexRequest;
   }

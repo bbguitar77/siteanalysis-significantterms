@@ -20,7 +20,7 @@ public class SiteDocumentTransformer implements Transformer<SiteDocument> {
     log.debug("Transforming {} SiteCrawlInfo items to SiteDocuments");
     List<SiteDocument> ret = new ArrayList<>();
     for (SiteCrawlInfo item : items)
-      ret.add(new SiteDocument(item.httpResponse.uri, item.httpResponse.content));
+      ret.add(new SiteDocument(item.responseData.uri, item.responseData.content));
     return ret.toArray(new SiteDocument[0]);
   }
 }

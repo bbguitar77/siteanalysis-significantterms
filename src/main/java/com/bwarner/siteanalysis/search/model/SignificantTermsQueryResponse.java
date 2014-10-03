@@ -4,8 +4,6 @@ import java.util.List;
 
 /**
  * Response container for ElasticSearch Significant Term aggregations
- *
- * @author bwarner
  */
 public class SignificantTermsQueryResponse {
 

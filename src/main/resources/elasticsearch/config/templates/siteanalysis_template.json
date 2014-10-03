@@ -6,7 +6,7 @@
       "number_of_replicas" : 0,
       "analysis":{
         "analyzer":{
-          "custom_text":{
+          "web_content":{
             "type":"custom",
             "char_filter":["html_strip"],
             "tokenizer":"standard",
@@ -19,8 +19,10 @@
   "mappings" : {
     "site" : {
       "properties" : {
-        "uri" : {"type" : "string", "index" : "not_analyzed"},
-        "content" : {"type" : "string", "analyzer": "custom_text"}
+        "content" : {"type" : "string", "analyzer": "web_content"},
+        "domain" : {"type" : "string", "index" : "not_analyzed"},
+        "host" : {"type" : "string", "index" : "not_analyzed"},
+        "uri" : {"type" : "string", "index" : "not_analyzed"}
       }
     }
   }

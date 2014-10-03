@@ -1,42 +1,42 @@
 package com.bwarner.siteanalysis.crawler.model;
 
+import java.net.URI;
+import java.util.Objects;
 import java.util.Set;
 
-import org.apache.commons.lang3.StringUtils;
+import org.apache.http.HttpStatus;
 
 /**
  * Represents information retrieved from crawling a particular site
- *
- * @author bwarner
  */
 public class SiteCrawlInfo {
 
-  final public String       requestUri;
+  final public URI          requestURI;
   final public int          requestDepth;
-  final public HttpResponse httpResponse;
-  final public Set<String>  extractedLinks;
+  final public HttpResponse responseData;
+  final public Set<URI>     links;
 
-  public SiteCrawlInfo(final String requestUri,
+  public SiteCrawlInfo(final URI requestURI,
                        final int requestDepth,
-                       final HttpResponse httpResponse,
-                       final Set<String> extractedLinks) {
-    this.requestUri = requestUri;
+                       final HttpResponse responseData,
+                       final Set<URI> links) {
+    this.requestURI = requestURI;
     this.requestDepth = requestDepth;
-    this.httpResponse = httpResponse;
-    this.extractedLinks = extractedLinks;
+    this.responseData = responseData;
+    this.links = links;
   }
 
   public boolean isSuccess() {
-    return (null != httpResponse && 200 == httpResponse.status);
+    return (null != responseData && HttpStatus.SC_OK == responseData.status);
   }
 
   @Override
   public String toString() {
     return String.format("Request URI: %s, Request Depth: [%d], Http Response: {%s}, # Extracted Links: [%d]",
-                         requestUri,
+                         requestURI.toString(),
                          requestDepth,
-                         (null != httpResponse ? httpResponse.toString() : "null"),
-                         (null != extractedLinks ? extractedLinks.size() : 0));
+                         (null != responseData ? responseData.toString() : "null"),
+                         (null != links ? links.size() : 0));
   }
 
   @Override
@@ -48,16 +48,16 @@ public class SiteCrawlInfo {
     if (getClass() != obj.getClass())
       return false;
     SiteCrawlInfo sci = (SiteCrawlInfo) obj;
-    if (null != httpResponse && null != sci.httpResponse)
-      return StringUtils.equals(httpResponse.uri, sci.httpResponse.uri);
-    if (null == httpResponse && null == sci.httpResponse)
-      return StringUtils.equals(requestUri, sci.requestUri);
+    if (null != responseData && null != sci.responseData)
+      return Objects.equals(responseData.uri, sci.responseData.uri);
+    if (null == responseData && null == sci.responseData)
+      return Objects.equals(this.requestURI, sci.requestURI);
     return false;
   }
 
   @Override
   public int hashCode() {
-    String uri = (null != httpResponse) ? httpResponse.uri : requestUri;
+    URI uri = (null != responseData) ? responseData.uri : requestURI;
     return uri.hashCode();
   }
 }

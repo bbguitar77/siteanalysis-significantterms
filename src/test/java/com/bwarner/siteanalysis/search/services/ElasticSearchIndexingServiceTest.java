@@ -38,7 +38,7 @@ public class ElasticSearchIndexingServiceTest extends ElasticSearchTestHelper {
       payloads.add(new SiteDocument(String.format("http://%s.com", (char) i), new String(content)));
     }
     esIndexingService.indexSites(payloads.toArray(new SiteDocument[0]));
-    Thread.sleep(1000); // need to sleep for ES refresh
+    Thread.sleep(2000); // need to sleep for ES refresh
     Assert.assertEquals("Expected -26- site documents after indexing", 26, documentCount(DOC_TYPE_SITE));
   }
 }

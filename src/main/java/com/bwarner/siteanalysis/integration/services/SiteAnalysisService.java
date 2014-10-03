@@ -11,6 +11,7 @@ import org.springframework.scheduling.annotation.AsyncResult;
 import org.springframework.stereotype.Service;
 
 import com.bwarner.siteanalysis.crawler.exception.CrawlingException;
+import com.bwarner.siteanalysis.crawler.model.CrawlOptions;
 import com.bwarner.siteanalysis.crawler.model.SiteCrawlInfo;
 import com.bwarner.siteanalysis.crawler.services.SiteCrawlingService;
 import com.bwarner.siteanalysis.integration.model.SiteAnalysisOptions;
@@ -42,7 +43,7 @@ public class SiteAnalysisService {
   @Async
   public Future<Boolean> analyzeSite(SiteAnalysisOptions options) throws CrawlingException, SearchIndexingException {
     // crawl
-    Set<SiteCrawlInfo> crawlResults = siteCrawlingService.crawl(options.uri, options.maxDepth);
+    Set<SiteCrawlInfo> crawlResults = siteCrawlingService.crawl(new CrawlOptions(options.uri, options.maxDepth));
     // transform
     SiteDocument[] siteDocs = transformer.transform(crawlResults.toArray(new SiteCrawlInfo[0]));
     // index

@@ -1,14 +1,16 @@
 package com.bwarner.siteanalysis.integration.model;
 
+import java.net.URI;
+
+import com.bwarner.siteanalysis.crawler.services.URINormalizer;
+
 /**
  * Options for Site Analysis task(s)
- *
- * @author bwarner
  */
 public class SiteAnalysisOptions {
 
-  public final String uri;
-  public int          maxDepth;
+  public final URI uri;
+  public int       maxDepth;
 
   private SiteAnalysisOptions(SiteAnalysisOptionsBuilder builder) {
     this.uri = builder.getUri();
@@ -16,8 +18,8 @@ public class SiteAnalysisOptions {
   }
 
   public static class SiteAnalysisOptionsBuilder {
-    private String uri;
-    private int    maxDepth = 0;
+    private URI uri;
+    private int maxDepth = 2; // default depth
 
     public SiteAnalysisOptionsBuilder() {
     }
@@ -27,12 +29,12 @@ public class SiteAnalysisOptions {
     }
 
     /* GETTERS & SETTERS */
-    public String getUri() {
+    public URI getUri() {
       return uri;
     }
 
     public SiteAnalysisOptionsBuilder setUri(String uri) {
-      this.uri = uri;
+      this.uri = URI.create(URINormalizer.normalize(uri));
       return this;
     }
 

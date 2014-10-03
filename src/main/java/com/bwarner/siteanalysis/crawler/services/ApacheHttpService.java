@@ -42,7 +42,15 @@ public class ApacheHttpService implements HttpService {
   @Override
   public HttpResponse doGet(final String uri) throws IllegalArgumentException, HttpException {
     if (StringUtils.isBlank(uri))
-      throw new IllegalArgumentException("URI parameter cannot be blank");
+      throw new IllegalArgumentException("URI string cannot be blank");
+
+    return doGet(URI.create(uri));
+  }
+
+  @Override
+  public HttpResponse doGet(final URI uri) throws IllegalArgumentException, HttpException {
+    if (uri == null)
+      throw new IllegalArgumentException("URI cannot be null");
 
     CloseableHttpClient httpClient = null;
     CloseableHttpResponse response = null;
@@ -129,7 +137,7 @@ public class ApacheHttpService implements HttpService {
                                                 httpContext.getTargetHost(),
                                                 httpContext.getRedirectLocations());
       if (null != resolvableLocation && !resolvableLocation.toString().equalsIgnoreCase(requestUri)) {
-        responseBuilder.setIsRedirect(true).setUri(resolvableLocation.toString());
+        responseBuilder.setIsRedirect(true).setUri(resolvableLocation);
       }
     }
 

@@ -1,29 +1,32 @@
 package com.bwarner.siteanalysis.crawler.services;
 
+import java.net.MalformedURLException;
+import java.net.URI;
+import java.net.URISyntaxException;
 import java.util.Arrays;
+import java.util.Collections;
 import java.util.HashSet;
 import java.util.Set;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 import org.apache.commons.lang3.StringUtils;
+import org.apache.nutch.util.URLUtil;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Service;
 
+import com.bwarner.siteanalysis.crawler.model.CrawlOptions;
+
 @Service
 public class WebTextAnalyzer {
 
-  private static Logger        log         = LoggerFactory.getLogger(WebTextAnalyzer.class);
+  private static Logger        log           = LoggerFactory.getLogger(WebTextAnalyzer.class);
 
-  private static final Pattern hrefPattern = Pattern.compile(String.format("<a\\s+href=\"([^\\s]+)\""),
-                                                             Pattern.CASE_INSENSITIVE);
+  private static final Pattern hrefPattern   = Pattern.compile(String.format("<a\\s+href=\"([^\\s]+)\""),
+                                                               Pattern.CASE_INSENSITIVE);
 
-  private static final Pattern uriPattern  = Pattern.compile("^((http[s]?|ftp|feed):/)?/?([^:/\\s?#]+)(:([\\d]*))?((/[^:/\\s?]+)*/)?([!~%_@]?[\\w]+[\\w\\-\\.]*[^#?\\s]*)?(\\?([^#]*))?(#(.*))?$");
-
-  public static enum UriSection {
-    PROTOCOL, HOST, PORT, PATH, FILE, QUERYSTRING, HASH
-  };
+  private static final Pattern schemePattern = Pattern.compile("http[s]?", Pattern.CASE_INSENSITIVE);
 
   /**
    * Method to extract a set of links from the HTML page content, constrained to
@@ -33,138 +36,91 @@ public class WebTextAnalyzer {
    * @param pageContent
    * @return
    */
-  public static Set<String> extractLinks(final String uri, final String pageContent) {
-
+  public static Set<URI> extractLinks(final String uri, final String pageContent, final CrawlOptions options) {
     if (StringUtils.isBlank(uri))
       throw new IllegalArgumentException("URI value must be provided in order to validate extracted links");
 
-    final String originDomain = getDomainForUri(uri);
+    Set<URI> ret = null;
+    final String host = URLUtil.getHost(uri);
+    if (host != null) {
+      final Matcher m = hrefPattern.matcher(pageContent);
+      while (m.find()) {
+        final String target = m.group(1);
+        if (StringUtils.isNotBlank(target)) {
+          try {
+            final String link = URINormalizer.normalize(uri, target);
+            if (validate(link, options)) {
+              if (ret == null)
+                ret = new HashSet<>();
+              ret.add(URI.create(link));
+            }
+          }
+          catch (URISyntaxException e) {
+            log.error("URI syntax error on extracted link target: {}", target);
+          }
+        }
+      } // end while (m.find())
 
-    Set<String> ret = new HashSet<>();
-    Matcher m = hrefPattern.matcher(pageContent);
-    while (m.find()) {
-      String link = m.group(1);
-      if (validateLink(originDomain, link)) {
-        ret.add(sanitizeLink(uri, link));
+      if (log.isTraceEnabled()) {
+        log.trace("Extacted {} links from Uri '{}'", ret.size(), uri);
+        if (ret.size() > 0)
+          log.trace("==> {}", Arrays.toString(ret.toArray(new String[0])));
       }
-    }
-
-    if (log.isTraceEnabled()) {
-      log.trace("Extacted {} links from Uri '{}'", ret.size(), uri);
-      if (ret.size() > 0)
-        log.trace("==> {}", Arrays.toString(ret.toArray(new String[0])));
+    } // end if (host != null)
+    else {
+      ret = Collections.emptySet();
     }
 
     return ret;
   }
 
-  final static private String[] uriBreaks = { "?", "#" };
-
-  protected static String sanitizeLink(String uri, String link) {
-    String ret = link;
-    for (String brk : uriBreaks) {
-      if (ret.contains(brk))
-        ret = ret.split(Pattern.quote(brk))[0];
-    }
-
-    // relative links need to be appended to the originating request Uri
-    if (isLinkRelative(ret)) {
-      ret = uri.concat(ret);
-    }
-
-    return ret.toLowerCase();
-  }
-
   /**
-   * Validates to see whether an extracted link belongs to the same domain as
-   * the originating request URI
+   * Validates to see whether an extracted link satisfies the following
+   * conditions:
+   * <ol>
+   * <li>Acceptable URI scheme
+   * <li>Same URI host as the seed URI host
+   * </ol>
    *
    * @param domain
-   *          Domain of the originating request URI
+   *          Host of the originating seed URI
    * @param link
    *          URI to validate
    * @return
    */
-  protected static boolean validateLink(final String domain, final String link) {
-    // consider only http[s] links and relative paths "/" as valid
-    final String protocol = extractFromUri(link, UriSection.PROTOCOL);
-    final boolean isLinkRelative = isLinkRelative(link);
-    if ((StringUtils.isBlank(protocol) && !isLinkRelative) || (StringUtils.isNotBlank(protocol) && !protocol.matches("http[s]?"))) {
-      log.trace("Skipping Link '{}' - failed HTTP protocol validation", link);
-      return false;
-    }
-
-    final String linkDomain = getDomainForUri(link);
-    if (!StringUtils.equalsIgnoreCase(domain, linkDomain) && !isLinkRelative) {
-      log.trace("Skipping Link '{}' - failed domain validation for origin '{}'", link, domain);
-      return false;
-    }
-
-    return true;
-  }
-
-  protected static boolean isLinkRelative(final String uri) {
-    return StringUtils.defaultString(uri).matches("^/.+");
-  }
-
-  /**
-   * Extracts the domain for a given URL
-   *
-   * @param url
-   * @return
-   */
-  protected static String getDomainForUri(String uri) {
-    String ret = extractFromUri(uri, UriSection.HOST);
-    if (null != ret) {
-      ret = ret.toLowerCase();
-      // Strip out leading www.
-      if (ret.startsWith("www."))
-        ret = ret.replace("www.", "");
-    }
-
-    return ret;
-  }
-
-  protected static String extractFromUri(String uri, UriSection section) {
-    if (StringUtils.isBlank(uri))
-      return null;
-
+  protected static boolean validate(final String link, final CrawlOptions options) {
+    boolean ret = false;
     try {
-      String ret = null;
-      Matcher m = uriPattern.matcher(uri.trim());
-      m.find();
-      switch (section) {
-        case PROTOCOL:
-          ret = m.group(2);
+      final URI linkURI = new URI(link);
+      // validate scheme
+      if (linkURI.getScheme() == null || !schemePattern.matcher(linkURI.getScheme()).matches()) {
+        log.trace("Skipping Link '{}', failed URI scheme validation", link);
+        return false;
+      }
+
+      // validate same domain or host
+      final URI seedURI = options.seedURI;
+      switch (options.restrictionPolicy) {
+        case DOMAIN:
+          if (!StringUtils.equalsIgnoreCase(URLUtil.getDomainName(linkURI.toString()),
+                                            URLUtil.getDomainName(seedURI.toString()))) {
+            log.trace("Skipping Link '{}', failed URI domain validation for '{}'", link, seedURI.toString());
+            return false;
+          }
           break;
         case HOST:
-          ret = m.group(3);
-          break;
-        case PORT:
-          ret = m.group(5);
-          break;
-        case PATH:
-          ret = m.group(6);
-          break;
-        case FILE:
-          ret = m.group(8);
-          break;
-        case QUERYSTRING:
-          ret = m.group(10);
-          break;
-        case HASH:
-          ret = m.group(12);
-          break;
-        default:
+          if (!StringUtils.equalsIgnoreCase(linkURI.getHost(), seedURI.getHost())) {
+            log.trace("Skipping Link '{}', failed URI host validation for '{}'", link, seedURI.toString());
+            return false;
+          }
           break;
       }
-      return ret;
+
+      ret = true;
     }
-    catch (IllegalStateException Ignore) {
-      return null;
+    catch (URISyntaxException | MalformedURLException e) { // shouldn't happen
+      log.warn("Unexpected malformed URI link to validate: {}", link);
     }
-    catch (Exception Ignore) {
-      return null;
-    }
+    return ret;
   }
 }

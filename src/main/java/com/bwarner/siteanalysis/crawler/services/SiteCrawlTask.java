@@ -1,51 +1,56 @@
 package com.bwarner.siteanalysis.crawler.services;
 
+import java.net.URI;
+import java.util.Objects;
 import java.util.Set;
 import java.util.concurrent.Callable;
 
-import org.apache.commons.lang3.StringUtils;
 import org.apache.http.HttpStatus;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import com.bwarner.siteanalysis.crawler.exception.HttpException;
+import com.bwarner.siteanalysis.crawler.model.CrawlOptions;
 import com.bwarner.siteanalysis.crawler.model.HttpResponse;
 import com.bwarner.siteanalysis.crawler.model.SiteCrawlInfo;
 
+/**
+ * {@link Callable} task for crawling a URI at a specified depth with the given
+ * {@link CrawlOptions} settings
+ */
 public class SiteCrawlTask implements Callable<SiteCrawlInfo> {
 
-  private static Logger log = LoggerFactory.getLogger(SiteCrawlTask.class);
+  private static Logger     log = LoggerFactory.getLogger(SiteCrawlTask.class);
 
-  static HttpService    httpService;
+  static HttpService        httpService;
 
-  final public String   uri;
-  final public int      depth;
+  final public URI          requestURI;
+  final public int          requestDepth;
+  final public CrawlOptions options;
 
-  public SiteCrawlTask(final String uri, final int depth) {
-    this.uri = uri;
-    this.depth = depth;
+  public SiteCrawlTask(final URI requestURI, final int depth, final CrawlOptions options) {
+    this.requestURI = requestURI;
+    this.requestDepth = depth;
+    this.options = options;
   }
 
   @Override
   public SiteCrawlInfo call() throws Exception {
-    HttpResponse httpResonse = null;
-    Set<String> extractedLinks = null;
+    HttpResponse response = null;
+    Set<URI> links = null;
     try {
-      httpResonse = httpService.doGet(uri);
-      if (HttpStatus.SC_OK == httpResonse.status)
-        extractedLinks = WebTextAnalyzer.extractLinks(uri, httpResonse.content);
+      response = httpService.doGet(requestURI.toString());
+      if (HttpStatus.SC_OK == response.status)
+        links = WebTextAnalyzer.extractLinks(requestURI.toString(), response.content, options);
     }
     catch (HttpException he) {
-      log.error("Could not process HTTP request for URI '{}', skipping...", uri);
-    }
-    catch (IllegalArgumentException iae) {
-      log.error("Crawling task was provided a blank URI, skipping...");
+      log.error("Could not process HTTP request for URI '{}', skipping...", requestURI.toString());
     }
     catch (Exception e) {
       log.error("Unknown error occurred within crawling task...", e);
     }
 
-    return new SiteCrawlInfo(uri, depth, httpResonse, extractedLinks);
+    return new SiteCrawlInfo(requestURI, requestDepth, response, links);
   }
 
   @Override
@@ -57,11 +62,11 @@ public class SiteCrawlTask implements Callable<SiteCrawlInfo> {
     if (getClass() != obj.getClass())
       return false;
     SiteCrawlTask sct = (SiteCrawlTask) obj;
-    return StringUtils.equals(this.uri, sct.uri);
+    return Objects.equals(requestURI, sct.requestURI);
   }
 
   @Override
   public int hashCode() {
-    return uri.hashCode();
+    return requestURI.hashCode();
   }
 }
