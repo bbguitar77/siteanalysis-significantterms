@@ -36,8 +36,8 @@ public class MockHttpService implements HttpService {
 
       // one of our sample test files represents a re-direct to another test
       // data-file
-      if (uri.toString().equals("https://stripe.com/features")) {
-        ret.setIsRedirect(true).setUri(URI.create("https://stripe.com/us/features"));
+      if (uri.toString().equals("http://stripe.com/features")) {
+        ret.setIsRedirect(true).setUri(URI.create("http://stripe.com/us/features"));
       }
     }
     catch (Exception e) { // simulate 404 with unable to locate file

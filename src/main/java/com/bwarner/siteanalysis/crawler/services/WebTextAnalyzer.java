@@ -36,42 +36,34 @@ public class WebTextAnalyzer {
    * @param pageContent
    * @return
    */
-  public static Set<URI> extractLinks(final String uri, final String pageContent, final CrawlOptions options) {
-    if (StringUtils.isBlank(uri))
-      throw new IllegalArgumentException("URI value must be provided in order to validate extracted links");
+  public static Set<URI> extractLinks(final URI baseURI, final String pageContent, final CrawlOptions options) {
+    if (baseURI == null)
+      throw new IllegalArgumentException("Base URI must be provided in order to validate extracted links");
 
-    Set<URI> ret = null;
-    final String host = URLUtil.getHost(uri);
-    if (host != null) {
-      final Matcher m = hrefPattern.matcher(pageContent);
-      while (m.find()) {
-        final String target = m.group(1);
-        if (StringUtils.isNotBlank(target)) {
-          try {
-            final String link = URINormalizer.normalize(uri, target);
-            if (validate(link, options)) {
-              if (ret == null)
-                ret = new HashSet<>();
-              ret.add(URI.create(link));
-            }
-          }
-          catch (URISyntaxException e) {
-            log.error("URI syntax error on extracted link target: {}", target);
+    Set<URI> ret = new HashSet<>();
+    final Matcher m = hrefPattern.matcher(pageContent);
+    while (m.find()) {
+      final String target = m.group(1);
+      if (StringUtils.isNotBlank(target)) {
+        try {
+          final String link = URINormalizer.normalize(baseURI.toString(), target);
+          if (validate(link, options)) {
+            ret.add(URI.create(link));
           }
         }
-      } // end while (m.find())
-
-      if (log.isTraceEnabled()) {
-        log.trace("Extacted {} links from Uri '{}'", ret.size(), uri);
-        if (ret.size() > 0)
-          log.trace("==> {}", Arrays.toString(ret.toArray(new String[0])));
+        catch (IllegalArgumentException iae) {
+          log.error("URI syntax error on extracted link target: {}", target);
+        }
       }
-    } // end if (host != null)
-    else {
-      ret = Collections.emptySet();
+    } // end while (m.find())
+
+    if (log.isTraceEnabled()) {
+      log.trace("Extacted {} links from Base URI '{}'", ret.size(), baseURI.toString());
+      if (ret.size() > 0)
+        log.trace("==> {}", Arrays.toString(ret.toArray(new String[0])));
     }
 
-    return ret;
+    return Collections.unmodifiableSet(ret);
   }
 
   /**
@@ -79,13 +71,14 @@ public class WebTextAnalyzer {
    * conditions:
    * <ol>
    * <li>Acceptable URI scheme
-   * <li>Same URI host as the seed URI host
+   * <li>Satisfies URI restriction policy as specified by the
+   * {@link CrawlOptions}
    * </ol>
    *
-   * @param domain
-   *          Host of the originating seed URI
    * @param link
    *          URI to validate
+   * @param options
+   *          {@link CrawlOptions} for originating web crawl request
    * @return
    */
   protected static boolean validate(final String link, final CrawlOptions options) {

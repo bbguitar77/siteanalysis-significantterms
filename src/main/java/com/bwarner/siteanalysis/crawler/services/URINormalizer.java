@@ -1,6 +1,9 @@
 package com.bwarner.siteanalysis.crawler.services;
 
+import java.net.MalformedURLException;
+import java.net.URI;
 import java.net.URISyntaxException;
+import java.net.URL;
 
 import org.apache.commons.lang3.StringUtils;
 import org.apache.http.client.utils.URIBuilder;
@@ -22,27 +25,30 @@ public class URINormalizer {
       throw new IllegalArgumentException("Base URI is required for relative path");
 
     try {
-      String normUri = uri.toLowerCase();
-      normUri = prefixScheme(normUri);
+      URIBuilder uriBuilder = new URIBuilder(uri.toLowerCase());
+      // prefix default scheme, if absent
+      if (StringUtils.isBlank(uriBuilder.getScheme()) || "https".equals(uriBuilder.getScheme()))
+        uriBuilder.setScheme(DEFAULT_SCHEME);
 
-      URIBuilder ret = new URIBuilder(normUri);
-      final String host = ret.getHost();
-      // strip www. from host
-      if (host != null && host.contains("www."))
-        ret.setHost(host.replaceFirst("www.", ""));
-      // strip default port
-      if (DEFAULT_PORT == ret.getPort())
-        ret.setPort(-1);
-      // clear query parameters
-      ret.clearParameters();
-      // clear fragment
-      ret.setFragment(null);
+      if (DEFAULT_SCHEME.equals(uriBuilder.getScheme())) {
+        // strip www. from host
+        final String host = uriBuilder.getHost();
+        if (host != null && host.contains("www."))
+          uriBuilder.setHost(host.replaceFirst("www.", ""));
+        // strip default port
+        if (DEFAULT_PORT == uriBuilder.getPort())
+          uriBuilder.setPort(-1);
+        // strip query parameters
+        uriBuilder.clearParameters();
+        // strip fragment (i.e. anchor)
+        uriBuilder.setFragment(null);
+      }
 
-      normUri = ret.build().toString();
-      // omit trailing /, #
-      if (normUri.matches(".*[/#]$"))
-        normUri = normUri.substring(0, normUri.length() - 1);
-      return normUri;
+      String ret = uriBuilder.build().toString();
+      // omit trailing slash '/'
+      if (ret.endsWith("/"))
+        ret = ret.substring(0, ret.length() - 1);
+      return ret;
     }
     catch (URISyntaxException e) {
       log.error("Could not normalize URI: {}", uri, e);
@@ -50,27 +56,24 @@ public class URINormalizer {
     }
   }
 
-  public static String normalize(final String baseURI, final String target) throws IllegalArgumentException,
-                                                                           URISyntaxException {
-    StringBuilder ret = new StringBuilder();
+  public static String normalize(final String baseURI, final String target) throws IllegalArgumentException {
+    String ret = null;
     if (isLinkRelative(target)) {
-      ret.append(baseURI);
-      ret.append(target);
+      try {
+        URL context = new URL(baseURI);
+        ret = new URL(context, target).toString();
+      }
+      catch (MalformedURLException e) {
+        throw new IllegalArgumentException(e);
+      }
     }
     else {
-      ret.append(target);
+      ret = target;
     }
-    return normalize(ret.toString());
-  }
-
-  protected static String prefixScheme(final String uri) {
-    if (!uri.matches("^(http|https|feed|ftp|emailto):.*"))
-      return DEFAULT_SCHEME + "://" + uri;
-    else
-      return uri;
+    return normalize(ret);
   }
 
   protected static boolean isLinkRelative(final String uri) {
-    return StringUtils.defaultString(uri).matches("^[/#].*");
+    return StringUtils.isBlank(URI.create(uri).getScheme());
   }
 }

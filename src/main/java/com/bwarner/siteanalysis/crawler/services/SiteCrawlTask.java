@@ -41,7 +41,7 @@ public class SiteCrawlTask implements Callable<SiteCrawlInfo> {
     try {
       response = httpService.doGet(requestURI.toString());
       if (HttpStatus.SC_OK == response.status)
-        links = WebTextAnalyzer.extractLinks(requestURI.toString(), response.content, options);
+        links = WebTextAnalyzer.extractLinks(requestURI, response.content, options);
     }
     catch (HttpException he) {
       log.error("Could not process HTTP request for URI '{}', skipping...", requestURI.toString());

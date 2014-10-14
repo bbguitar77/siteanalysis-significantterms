@@ -38,7 +38,7 @@ public class ElasticSearchIndexingService implements SearchIndexingService {
   private String             index;
 
   @Override
-  public void indexSites(SiteDocument[] sites) throws SearchIndexingException {
+  public void indexSites(final SiteDocument[] sites) throws SearchIndexingException {
     if (null != sites && sites.length > 0) {
       long indexingStart = System.currentTimeMillis();
       Utils.printLogHeader(log, "Beginning Site Indexing to ES", new String[] { "#-index_requests=" + sites.length });
@@ -65,16 +65,15 @@ public class ElasticSearchIndexingService implements SearchIndexingService {
     }
   }
 
-  protected IndexRequestBuilder prepareForIndexing(SiteDocument payload) {
+  protected IndexRequestBuilder prepareForIndexing(final SiteDocument doc) {
     IndexRequestBuilder indexRequest = null;
     try {
-      final String docId = String.valueOf(payload.uri.hashCode());
       XContentBuilder docFields = jsonBuilder().startObject()
-                                               .field(DOC_FIELD_SITE_CONTENT, payload.content)
-                                               .field(DOC_FIELD_SITE_DOMAIN, payload.domain)
-                                               .field(DOC_FIELD_SITE_HOST, payload.host)
-                                               .field(DOC_FIELD_SITE_URI, payload.uri);
-      indexRequest = elasticSearchClient.prepareIndex(index, DOC_TYPE_SITE, docId).setSource(docFields);
+                                               .field(DOC_FIELD_SITE_CONTENT, doc.content)
+                                               .field(DOC_FIELD_SITE_DOMAIN, doc.domain)
+                                               .field(DOC_FIELD_SITE_HOST, doc.host)
+                                               .field(DOC_FIELD_SITE_URI, doc.uri);
+      indexRequest = elasticSearchClient.prepareIndex(index, DOC_TYPE_SITE, doc.id).setSource(docFields);
     }
     catch (IOException ioe) {
       // should never happen...

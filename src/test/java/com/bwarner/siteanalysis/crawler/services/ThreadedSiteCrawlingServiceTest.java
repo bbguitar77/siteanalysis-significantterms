@@ -1,6 +1,5 @@
 package com.bwarner.siteanalysis.crawler.services;
 
-import java.net.URI;
 import java.util.Set;
 
 import org.apache.commons.lang.StringUtils;
@@ -33,7 +32,7 @@ public class ThreadedSiteCrawlingServiceTest {
 
   @Test
   public void crawl() {
-    Set<SiteCrawlInfo> results = siteCrawlingService.crawl(new CrawlOptions(URI.create("https://stripe.com"), 1));
+    Set<SiteCrawlInfo> results = siteCrawlingService.crawl(new CrawlOptions("http://stripe.com", 1));
     // The test data file for stripe.com produces 20 external links, eight of
     // which simulate a 404 and two of which two are duplicate links
     // So, 11 = request URI + 20 extracted links - 8 404s - 2 duplicates

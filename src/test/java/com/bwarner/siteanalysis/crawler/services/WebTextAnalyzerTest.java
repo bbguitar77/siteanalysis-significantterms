@@ -25,8 +25,8 @@ public class WebTextAnalyzerTest {
       String htmlContent = IOUtils.toString(getClass().getClassLoader().getResourceAsStream(testFile));
       Assert.assertTrue("Expected non-blank HTML content to analyze", StringUtils.isNotBlank(htmlContent));
 
-      final CrawlOptions crawlOptions = new CrawlOptions(URI.create("http://stripe.com"), 0);
-      Set<URI> links = WebTextAnalyzer.extractLinks("https://stripe.com", htmlContent, crawlOptions);
+      final CrawlOptions crawlOptions = new CrawlOptions("http://stripe.com", 0);
+      Set<URI> links = WebTextAnalyzer.extractLinks(URI.create("https://stripe.com"), htmlContent, crawlOptions);
       Assert.assertNotNull("Expected non-null set of extracted links", links);
       Assert.assertEquals("Wrong number of extracted links from text", 20, links.size());
       for (URI link : links)
@@ -41,7 +41,7 @@ public class WebTextAnalyzerTest {
 
   @Test
   public void validateLink_restrictionHost() {
-    final CrawlOptions crawlOptions = new CrawlOptions(URI.create("http://stripe.com"), 0);
+    final CrawlOptions crawlOptions = new CrawlOptions("http://stripe.com", 0);
     Assert.assertTrue("Expected link to be validated", WebTextAnalyzer.validate("http://stripe.com", crawlOptions));
     Assert.assertTrue("Expected link to be validated", WebTextAnalyzer.validate("https://stripe.com", crawlOptions));
     Assert.assertFalse("Expected link to be NOT validated",

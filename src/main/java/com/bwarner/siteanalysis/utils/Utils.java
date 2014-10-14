@@ -17,4 +17,14 @@ public class Utils {
       }
     log.info("#############################################");
   }
+
+  public static String NEWLINE = System.getProperty("line.separator");
+
+  public static String getStackTraceText(Throwable e) {
+    String message = e.toString().concat(NEWLINE);
+    StackTraceElement[] stackTrace = e.getStackTrace();
+    for (StackTraceElement stackTraceElement : stackTrace)
+      message = message.concat(stackTraceElement.toString()).concat(NEWLINE);
+    return message;
+  }
 }

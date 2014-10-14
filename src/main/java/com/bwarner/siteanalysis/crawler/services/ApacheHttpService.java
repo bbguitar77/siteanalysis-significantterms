@@ -63,6 +63,7 @@ public class ApacheHttpService implements HttpService {
 
         // create HttpGet instance
         HttpGet httpGet = new HttpGet(uri);
+        httpGet.addHeader("User-Agent", "SiteAnalysis Bot");
         httpGet.setConfig(defaultRequestConfig());
 
         // execute request

@@ -43,7 +43,9 @@ public class SiteAnalysisService {
   @Async
   public Future<Boolean> analyzeSite(SiteAnalysisOptions options) throws CrawlingException, SearchIndexingException {
     // crawl
-    Set<SiteCrawlInfo> crawlResults = siteCrawlingService.crawl(new CrawlOptions(options.uri, options.maxDepth));
+    Set<SiteCrawlInfo> crawlResults = siteCrawlingService.crawl(new CrawlOptions(options.uri,
+                                                                                 options.maxDepth,
+                                                                                 options.restrictionPolicy));
     // transform
     SiteDocument[] siteDocs = transformer.transform(crawlResults.toArray(new SiteCrawlInfo[0]));
     // index

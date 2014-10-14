@@ -9,6 +9,7 @@ import javax.ws.rs.QueryParam;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 
+import org.apache.commons.lang.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
@@ -16,6 +17,7 @@ import com.bwarner.siteanalysis.integration.model.SiteAnalysisOptions.SiteAnalys
 import com.bwarner.siteanalysis.integration.services.SiteAnalysisService;
 import com.bwarner.siteanalysis.search.model.SignificantTermsQueryResponse;
 import com.bwarner.siteanalysis.search.services.SearchQueryService;
+import com.bwarner.siteanalysis.utils.Utils;
 
 @Component
 @Path("/site")
@@ -30,23 +32,30 @@ public class SiteResource {
 
   @POST
   @Path("/analyze")
-  public Response crawl(@FormParam("uri") String uri, @FormParam("max-depth") Integer maxDepth) throws Exception {
+  public Response crawl(@FormParam("uri") String uri,
+                        @FormParam("max-depth") Integer maxDepth,
+                        @FormParam("restriction") String restrictionPolicy) throws Exception {
     try {
-      SiteAnalysisOptionsBuilder options = new SiteAnalysisOptionsBuilder().setUri(uri);
+      SiteAnalysisOptionsBuilder optionsBuilder = new SiteAnalysisOptionsBuilder().setUri(uri);
       if (maxDepth != null)
-        options.setMaxDepth(maxDepth);
-      siteAnalysisService.analyzeSite(options.build());
+        optionsBuilder.setMaxDepth(maxDepth);
+      if (StringUtils.isNotBlank(restrictionPolicy))
+        optionsBuilder.setRestrictionPolicy(restrictionPolicy);
+      siteAnalysisService.analyzeSite(optionsBuilder.build());
       return Response.ok("analyzing - check logs").build();
     }
     catch (IllegalArgumentException iae) {
-      return buildError("Malformed parameters", iae);
+      return buildError(String.format("Malformed parameters: uri=%s, max-depth=%s, restriction=%s",
+                                      uri,
+                                      maxDepth,
+                                      restrictionPolicy), iae);
     }
   }
 
   @GET
   @Path("/sigterms")
-  public Response query(@QueryParam("qt") String qt) throws Exception {
-    SignificantTermsQueryResponse stResponse = searchQueryService.getSignificantTerms(qt);
+  public Response query(@QueryParam("q") String q) throws Exception {
+    SignificantTermsQueryResponse stResponse = searchQueryService.getSignificantTerms(q);
     return Response.ok(stResponse.significantTerms).build();
   }
 
@@ -55,7 +64,7 @@ public class SiteResource {
    */
   protected Response buildError(final String msg, final Exception e) {
     return Response.status(Response.Status.BAD_REQUEST)
-                   .entity(String.format("%s: %s", msg, e.getMessage()))
+                   .entity(String.format("%s\n%s", msg, Utils.getStackTraceText(e)))
                    .type(MediaType.TEXT_PLAIN)
                    .build();
   }

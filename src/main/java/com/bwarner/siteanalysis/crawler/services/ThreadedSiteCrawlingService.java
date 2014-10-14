@@ -61,7 +61,7 @@ public class ThreadedSiteCrawlingService implements SiteCrawlingService {
       return results;
     }
     catch (ExecutionException e) {
-      Utils.printLogHeader(log, "Ending Site Crawl [error state]", new String[] { e.getMessage() });
+      Utils.printLogHeader(log, "Ending Site Crawl [error state]", new String[] { e.getCause().getMessage() });
       throw new CrawlingException("ExecutionException triggered by Executor completion service", e);
     }
     catch (Exception e) {

@@ -36,7 +36,7 @@ Just update the form parameters with the desired site and depth. The web crawl /
 
 Once done, we then can run significant terms aggregation queries on the indexed content. For example:
 
-    curl -XGET http://localhost:9080/site/sigterms?qt=payment
+    curl -XGET http://localhost:9080/site/sigterms?q=payment
 
 Logging is configured under config/logback.xml
 Application properties are configured under config/siteanalysis.properties

@@ -2,6 +2,8 @@ package com.bwarner.siteanalysis.crawler.model;
 
 import java.net.URI;
 
+import com.bwarner.siteanalysis.crawler.services.URINormalizer;
+
 public class CrawlOptions {
 
   final public URI               seedURI;
@@ -11,6 +13,10 @@ public class CrawlOptions {
   // HOST => domain + sub-domain equality
   public enum RestrictionPolicy {
     DOMAIN, HOST
+  }
+
+  public CrawlOptions(final String uri, final int maxDepth) throws IllegalArgumentException {
+    this(URI.create(URINormalizer.normalize(uri)), maxDepth);
   }
 
   public CrawlOptions(final URI uri, final int maxDepth) {
